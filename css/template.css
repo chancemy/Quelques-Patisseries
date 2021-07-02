@@ -1,70 +1,83 @@
 * {
-    margin: 0;
-    box-sizing: border-box;
-    font-family: "Noto Serif TC", serif;
-}
-h1 {
-    font-family: "Noto Serif JP", serif;
-    font-family: "Noto Serif TC", serif;
-    font-weight: 700;
-    font-size: 150px;
-}
-nav{
-    font-size: 16px;
-    letter-spacing: 2px;
-
-    height: 127px;
-    width: 100%;
-    position: fixed;
-    transition: .4s ease-in-out;
-    top: 0;
-}
-nav.hide-up{
-    top: -127px;
-
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Noto Serif TC", serif;
 }
 
-main{
-    min-height: calc(100vh - 108px);
-}
-nav .logo{
-    position: absolute;
-    left: 30px;
-    top: 16px;
-    width: 110px;
-    height: 74px;
-    
-
-}
-nav li{
-    padding: 20px;
-}
-ul,ol{
-    list-style: none;
-    margin: 0%;
-
-}
-p{
-    font-size: 18px;
-    margin: 0%;
+body h1 {
+  font-family: "Noto Serif JP", serif;
+  font-family: "Noto Serif TC", serif;
+  font-weight: 700;
+  font-size: 150px;
 }
 
-footer{
-    background-color: #000;
-    color: #FFF;
-    font-family: times, serif;
-    font-size: 16px;
-    letter-spacing: 1px;
-    height: 81px;
-    width: 100%;
+body ul,
+body ol {
+  list-style: none;
+  margin: 0%;
 }
 
-.bgc-gray{
-    background-color: #F4F3EF;
+body nav {
+  font-size: 16px;
+  letter-spacing: 2px;
+  height: 108px;
+  width: 100%;
+  position: fixed;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+  top: 0;
 }
-.bgc-yellow{
-    background-color: #E6E3E0;
+
+body nav .hide-up {
+  top: -127px;
 }
-.bgc-gray-2{
-    background-color: rgb(244, 243 ,239);
+
+body nav .hide-up .logo {
+  position: absolute;
+  left: 30px;
+  top: 16px;
+  width: 88px;
+  height: 88px;
 }
+
+body nav li {
+  padding: 20px;
+}
+
+body main {
+  min-height: calc(100vh - 108px);
+}
+
+body p {
+  font-size: 18px;
+  margin: 0%;
+}
+
+body footer {
+  background-color: #000;
+  height: 108px;
+  width: 100%;
+}
+
+body footer span {
+  color: #fff;
+  font-family: times, serif;
+  font-size: 16px;
+  letter-spacing: 1px;
+  width: 100%;
+  height: 100%;
+}
+
+body .bgc-gray {
+  background-color: #f4f3ef;
+}
+
+body .bgc-yellow {
+  background-color: #e6e3e0;
+}
+
+body .bgc-gray-2 {
+  background-color: #f4f3ef;
+}
+/*# sourceMappingURL=template.css.map */
