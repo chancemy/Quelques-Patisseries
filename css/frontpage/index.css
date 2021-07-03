@@ -26,6 +26,10 @@ body .loading.hidden {
   opacity: 0;
 }
 
+body .loading.display-none {
+  display: none;
+}
+
 body .loading .logo {
   height: 439px;
   width: 625px;

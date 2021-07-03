@@ -19,6 +19,10 @@ body {
         transition: .8s;
         &.hidden {
            opacity: 0;
+           
+        }
+        &.display-none{
+            display: none;
         }
         .logo {
             height: 439px;
