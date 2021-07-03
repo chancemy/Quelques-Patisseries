@@ -1,0 +1,28 @@
+main {
+  position: relative;
+}
+
+main .about_mian {
+  position: absolute;
+  top: 108px;
+  left: 0px;
+}
+
+main .about_mian .title-frame {
+  width: 520px;
+  height: 420px;
+  background-color: yellow;
+}
+
+main .about_mian .title-frame .title-text {
+  font-size: 100px;
+}
+
+main .about_mian .title-frame .text {
+  font-size: 26px;
+}
+
+main .about_mian .title-frame .img-a {
+  background-image: url("");
+}
+/*# sourceMappingURL=aboutUs.css.map */
