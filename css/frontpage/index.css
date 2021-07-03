@@ -1,0 +1,69 @@
+body img {
+  display: block;
+  -o-object-position: center;
+     object-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+body nav.front-nav {
+  background-color: transparent;
+}
+
+body nav.front-nav .logo {
+  left: -100px;
+}
+
+body .banner {
+  height: 100vh;
+  width: 100%;
+  background-image: url(/img/frontpage/frontpage-banner.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body .banner .logo {
+  height: 439px;
+  width: 625px;
+  position: relative;
+  left: 105px;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+}
+
+body .banner .logo .a {
+  fill: white;
+}
+
+body .banner .logo .b {
+  fill: none;
+  stroke: white;
+  stroke-miterlimit: 10;
+  stroke-width: 2px;
+}
+
+body main .arrow {
+  font-size: 40px;
+}
+
+body main .text-area {
+  max-width: 517px;
+}
+
+body main .store-title {
+  -webkit-transform-origin: bottom left;
+          transform-origin: bottom left;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  position: absolute;
+  top: 0;
+  left: 5%;
+  z-index: 10;
+}
+
+body main .address p {
+  font-size: 24px;
+}
+/*# sourceMappingURL=index.css.map */

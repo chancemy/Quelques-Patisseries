@@ -1,0 +1,67 @@
+body {
+    //可直接調img外型 防img變形參數
+    img{
+        display: block;
+        object-position: center;
+        object-fit: cover;
+    }
+    nav {
+        &.front-nav {
+            background-color: transparent;
+            .logo {
+               
+                left: -100px;
+            }
+        }
+
+        
+    }
+    .banner {
+        height: 100vh;
+        width: 100%;
+        background-image: url(/img/frontpage/frontpage-banner.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        .logo{
+            height: 439px;
+            width: 625px;
+            position: relative;
+            left: 105px;
+            top: 50%;
+            transform: translate(0,-50%);
+            .a {
+                fill: white;
+            }
+
+            .b {
+                fill: none;
+                stroke: white;
+                stroke-miterlimit: 10;
+                stroke-width: 2px;
+            }
+            
+        }
+    }
+    main{
+        .arrow{
+            font-size: 40px;
+        }
+        .text-area{
+            max-width: 517px;
+        }
+        .store-title {
+            transform-origin: bottom left;
+            transform: rotate(90deg);
+            position: absolute;
+            top: 0;
+            left: 5%;
+            z-index: 10;
+        }
+        .address{
+            p{
+                font-size: 24px;
+            }
+        }
+    }
+}
