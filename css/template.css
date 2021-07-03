@@ -23,6 +23,7 @@ body h1 {
   font-family: "Noto Serif TC", serif;
   font-weight: 700;
   font-size: 150px;
+  margin: 0;
 }
 
 body ul,
@@ -39,6 +40,7 @@ body p {
 body nav {
   font-size: 16px;
   letter-spacing: 2px;
+  z-index: 50;
   height: 108px;
   width: 100%;
   position: fixed;
@@ -48,14 +50,17 @@ body nav {
 }
 
 body nav .logo {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
   position: absolute;
   left: 30px;
   top: 16px;
   width: 88px;
   height: 88px;
+  z-index: 100;
 }
 
-body nav .hide-up {
+body nav.hide-up {
   top: -127px;
 }
 

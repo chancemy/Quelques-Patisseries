@@ -21,6 +21,7 @@ body {
         font-family: "Noto Serif TC", serif;
         font-weight: 700;
         font-size: 150px;
+        margin: 0;
     }
     ul,
     ol {
@@ -36,21 +37,23 @@ body {
     nav {
         font-size: 16px;
         letter-spacing: 2px;
-
+        z-index: 50;
         height: 108px;
         width: 100%;
         position: fixed;
         transition: 0.4s ease-in-out;
         top: 0;
         .logo {
+            transition: 0.4s;
             position: absolute;
             left: 30px;
             top: 16px;
             width: 88px;
             height: 88px;
+            z-index: 100;
         }
         //這個是把nav藏起來用的 不要放東西在裡面
-        .hide-up {
+        &.hide-up {
             top: -127px;
         }
         li {
@@ -76,6 +79,7 @@ body {
             letter-spacing: 1px;
         }
     }
+   
 
     //預設內容會用到的色塊顏色
     .bgc-gray {
