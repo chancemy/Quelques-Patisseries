@@ -1,22 +1,65 @@
-main{
-    position: relative;
-    .about_mian{
-        position: absolute;
-        top: 108px;
-        left: 0px;
-        .title-frame{
-            width: 520px;
-            height: 420px;
-            background-color: yellow;
-            .title-text{
-                font-size: 100px;
-            }
-            .text{
-                font-size: 26px;
+body{
+    
+    main.move-down{
+        margin-top: 108px;
+        .block-a{
+            width: 100vw;
+            height: calc(100vh - 108px);
+            .title-frame{
+                padding-top: 115px;
+                padding-right: 30px;
+                .title{
+                    width: 520px;
+                    height: 420px;                
+                    // background-color: yellow;
+                    .title-text{
+                        font-size: 100px;
+                        font-weight: bolder;
+                    }
+                    .text{
+                        font-size: 26px;
+                    }            
+                }
             }
             .img-a{
-                background-image: url('');
+                width: 100%;
+                height: 712px;
+                background-image: url('/img/frontpage/aboutUs/img-a.jpg');
+                background-position: center;
+                background-size: cover;
+            }
+            .back-group{
+                z-index: -1;
+                width: 100vw;
+                height: 100vh;
+                position: absolute;
+                top: 0;
+                left: 0;
+                .white-div{
+                    width: 100%;
+                    height: 432px;
+                    background-color: white;
+                }
+                .gray-div{
+                    width: 100%;
+                    height: 648px;
+                    background-color: #E6E3E0;
+                }
             }
         }
+        .block-b{
+            .img-b{
+                width: 100vw;
+                height: 100vh;
+                background-image: url('/img/frontpage/aboutUs/img-b.jpg');
+                background-size: cover;
+                background-position: center;
+            }
+        }
+    }
+    footer{
+        position: relative;
+        bottom: 0;
+        left: 0;
     }
 }
