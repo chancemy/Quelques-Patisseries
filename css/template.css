@@ -55,12 +55,21 @@ body nav .logo {
   height: 88px;
 }
 
-body nav .hide-up {
+body nav.hide-up {
   top: -127px;
 }
 
 body nav li {
   padding: 20px;
+}
+
+body .top-btn {
+  position: fixed;
+  bottom: 65px;
+  right: 128px;
+  z-index: 20;
+  font-size: 55px;
+  color: #4d4d4d;
 }
 
 body main {

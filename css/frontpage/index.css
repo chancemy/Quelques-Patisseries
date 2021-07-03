@@ -6,21 +6,84 @@ body img {
      object-fit: cover;
 }
 
+body.loading-animate {
+  height: 100vh;
+  overflow-y: hidden;
+}
+
+body .loading {
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+  z-index: 500;
+  position: fixed;
+  top: 0%;
+  -webkit-transition: .8s;
+  transition: .8s;
+}
+
+body .loading.hidden {
+  opacity: 0;
+}
+
+body .loading .logo {
+  height: 439px;
+  width: 625px;
+  position: relative;
+  left: 105px;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+}
+
+body .loading .logo .path {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  -webkit-animation: dash 4s ease-in-out;
+          animation: dash 4s ease-in-out;
+}
+
+@-webkit-keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+body .loading .logo .a {
+  -webkit-animation: fade-in 4s;
+          animation: fade-in 4s;
+}
+
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+}
+
 body nav.front-nav {
   background-color: transparent;
 }
 
 body nav.front-nav .logo {
   left: -100px;
-}
-
-body .top-btn {
-  position: fixed;
-  bottom: 65px;
-  right: 128px;
-  z-index: 20;
-  font-size: 55px;
-  color: #4d4d4d;
 }
 
 body .banner {

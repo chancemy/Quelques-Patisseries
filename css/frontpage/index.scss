@@ -1,29 +1,66 @@
 body {
     //可直接調img外型 防img變形參數
-    img{
+    img {
         display: block;
         object-position: center;
         object-fit: cover;
     }
+    &.loading-animate {
+        height: 100vh;
+        overflow-y: hidden;
+    }
+    .loading {
+        width: 100%;
+        height: 100vh;
+        background-color: white;
+        z-index: 500;
+        position: fixed;
+        top: 0%;
+        transition: .8s;
+        &.hidden {
+           opacity: 0;
+        }
+        .logo {
+            height: 439px;
+            width: 625px;
+            position: relative;
+            left: 105px;
+            top: 50%;
+            transform: translate(0, -50%);
+            .path {
+                stroke-dasharray: 1000;
+                stroke-dashoffset: 1000;
+                animation: dash 4s ease-in-out;
+            }
+
+            @keyframes dash {
+                to {
+                    stroke-dashoffset: 0;
+                }
+            }
+            .a{
+                animation: fade-in 4s;
+            }
+            @keyframes fade-in{
+                0%{
+                    opacity: 0;
+                }
+                40%{
+                    opacity: 0;
+                }
+            }
+        }
+    }
+
     nav {
         &.front-nav {
             background-color: transparent;
             .logo {
-               
                 left: -100px;
             }
         }
-
-        
     }
-    .top-btn{
-        position: fixed;
-        bottom: 65px;
-        right: 128px;
-        z-index: 20;
-        font-size: 55px;
-        color: #4d4d4d;
-    }
+    
     .banner {
         height: 100vh;
         width: 100%;
@@ -31,13 +68,13 @@ body {
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        .logo{
+        .logo {
             height: 439px;
             width: 625px;
             position: relative;
             left: 105px;
             top: 50%;
-            transform: translate(0,-50%);
+            transform: translate(0, -50%);
             .a {
                 fill: white;
             }
@@ -48,14 +85,13 @@ body {
                 stroke-miterlimit: 10;
                 stroke-width: 2px;
             }
-            
         }
     }
-    main{
-        .arrow{
+    main {
+        .arrow {
             font-size: 40px;
         }
-        .text-area{
+        .text-area {
             max-width: 517px;
         }
         .store-title {
@@ -66,8 +102,8 @@ body {
             left: 5%;
             z-index: 10;
         }
-        .address{
-            p{
+        .address {
+            p {
                 font-size: 24px;
             }
         }

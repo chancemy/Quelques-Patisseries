@@ -50,12 +50,21 @@ body {
             height: 88px;
         }
         //這個是把nav藏起來用的 不要放東西在裡面
-        .hide-up {
+        &.hide-up {
             top: -127px;
         }
         li {
             padding: 20px;
         }
+    }
+    //回到最頂按鈕
+    .top-btn {
+        position: fixed;
+        bottom: 65px;
+        right: 128px;
+        z-index: 20;
+        font-size: 55px;
+        color: #4d4d4d;
     }
 
     main {

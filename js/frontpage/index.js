@@ -1,7 +1,7 @@
 
 var frontNav = document.querySelector('nav');
 const banner = document.querySelector('.banner');
-    
+
 window.addEventListener('scroll', function (e) {
     let st = this.scrollY;
     let bannerHeight = banner.offsetHeight;
@@ -11,5 +11,16 @@ window.addEventListener('scroll', function (e) {
     } else {
         frontNav.classList.add('front-nav');
     }
-    
+
 });
+
+
+setTimeout(showPage, 4000);
+
+function showPage() {
+    var loadingPage = document.querySelector('.loading');
+    var body = document.querySelector('body');
+    loadingPage.classList.add('hidden');
+    body.classList.remove('loading-animate');
+
+}
