@@ -19,6 +19,7 @@
 
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="/css/template.css">
     <link rel="stylesheet" href="/css/frontpage/index.css">
     <title>Document</title>
@@ -88,18 +89,7 @@
             <div class="logo"><a href="">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 248 178.99">
                         <defs>
-                            <style>
-                                .a {
-                                    fill: #201512;
-                                }
 
-                                .b {
-                                    fill: none;
-                                    stroke: #201512;
-                                    stroke-miterlimit: 10;
-                                    stroke-width: 2px;
-                                }
-                            </style>
                         </defs>
                         <title>Logo</title>
                         <path class="a"
@@ -147,10 +137,10 @@
                     <li><a href="">線上商城</a></li>
                     <li><a href="">聯絡我們</a></li>
                 </ul>
-                <div class="d-flex  align-items-center justify-content-between" style="width: 80px;margin-left: 10px;">
+                <div class="d-flex  align-items-center justify-content-between icon-group">
                     <a href="">
-                        <i class="fab fa-facebook-square" style="font-size:35px"></i></a>
-                    <a href=""><i class="fab fa-instagram" style="font-size:35px"></i></a>
+                        <i class="fab fa-facebook-square"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>
                 </div>
             </div>
         </div>
@@ -211,11 +201,11 @@
             </div>
 
         </div>
-        <section class="position-relative bgc-gray" style="z-index: -10;">
-            <div class="container-fluid row no-gutters" style="padding: 10vh 0;">
-                <div class="col-7">
-                    <div class="w-100" style="height: 80vh;">
-                        <img src="/img/frontpage/index/section1.jpg" alt="" style="width: 100%;height: 100%;">
+        <section class="position-relative bgc-gray section-about ">
+            <div class="container-fluid row no-gutters container-about">
+                <div class="col-7 about-img">
+                    <div class="w-100">
+                        <img src="/img/frontpage/index/section1.jpg" alt="" data-aos="fade-up"  data-aos-duration="3000">
                     </div>
                 </div>
                 <div class="col-5 d-flex flex-column justify-content-center align-items-center">
@@ -229,42 +219,40 @@
                     </div>
                 </div>
             </div>
-            <div class="position-absolute bgc-yellow"
-                style="width: 85%;height: 30vh;bottom: 0;left: 50%;transform: translate(-50%,0);z-index: -5;"></div>
+            <div class="position-absolute bgc-yellow about-bg-block"></div>
         </section>
-        <section class="position-relative bgc-gray" style="z-index: -10;">
-            <div class="container-fluid row no-gutters" style="padding: 10vh 0;">
+        <section class="position-relative bgc-gray section-news">
+            <div class="container-fluid row no-gutters container-news">
                 <div class="col-3">
+                    <div
+                        class=" d-flex flex-column justify-content-center align-items-center position-absolute text-area-news">
+                        <div class="title mb-3 ">
+                            <h1 class="d-inline-block">News</h1>
+                        </div>
 
+                        <div class="text-area d-flex flex-column align-items-center">
+                            <p class="text-center mb-4">Quelque法文的意思是某些，像是quelque
+                                chose指某物，quelquun指某人，Quelques就是複數，指某些某些。
+                            </p>
+                            <a href=""><i
+                                    class="far fa-arrow-alt-circle-right text-center d-inline-block arrow"></i></a>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="col-9">
-                    <div class="w-100" style="height: 100vh;">
-                        <img src="/img/frontpage/index/news.jpg" alt="" style="width: 100%;height: 100%;">
+                    <div class="w-100" data-aos="fade-left"  style="height: 100vh; ">
+                        <img src="/img/frontpage/index/news.jpg" alt="">
                     </div>
                 </div>
-                <div class=" d-flex flex-column justify-content-center align-items-center position-absolute"
-                    style="top:50%;left:5%;transform: translate(0,-50%);">
-                    <div class="title mb-3 ">
-                        <h1 class="d-inline-block">News</h1>
-                    </div>
 
-                    <div class="text-area d-flex flex-column align-items-center">
-                        <p class="text-center mb-4">Quelque法文的意思是某些，像是quelque chose指某物，quelquun指某人，Quelques就是複數，指某些某些。
-                        </p>
-                        <a href=""><i
-                                class="far fa-arrow-alt-circle-right text-center d-inline-block arrow ml-4"></i></a>
-                    </div>
-                </div>
 
             </div>
-            <div class="position-absolute bgc-yellow"
-                style="width: 85%;height: 100vh;top: 0;left: 50%;transform: translate(-50%,0);z-index: -5;"></div>
+            <div class="position-absolute bgc-yellow news-bg-block"></div>
 
         </section>
-        <section class="position-relative" style="z-index: -10;overflow-x: hidden;">
-            <div class="container-fluid row no-gutters"
-                style="padding: 10vh 0;margin: 0 -20px; width: calc(100% + 40px );">
+        <section class="position-relative section-product bgc-yellow-2">
+            <div class="container-fluid row no-gutters container-product">
                 <div class=" d-flex flex-column justify-content-center align-items-center col-12 mb-4">
                     <div class="title mb-3 ">
                         <h1 class="d-inline-block">Product</h1>
@@ -277,21 +265,19 @@
                                 class="far fa-arrow-alt-circle-right text-center d-inline-block arrow mb-4"></i></a>
                     </div>
                 </div>
-                <div class="col-4" style="padding: 0 20px;">
+                <div class="col-4 product-img " >
                     <div class="w-100" style="height: 60vh;">
-                        <img src="/img/frontpage/index/product01.jpg" alt=""
-                            style="width: 100%;height: 100%;margin-top: -93px;">
+                        <img  data-aos="flip-left" src="/img/frontpage/index/product01.jpg" alt="">
                     </div>
                 </div>
-                <div class="col-4" style="padding: 0 20px;">
+                <div class="col-4 product-img">
                     <div class="w-100" style="height: 60vh;">
-                        <img src="/img/frontpage/index/product03.jpg" alt="" style="width: 100%;height: 100%;">
+                        <img  data-aos="flip-right" src="/img/frontpage/index/product03.jpg" alt="">
                     </div>
                 </div>
-                <div class="col-4" style="padding: 0 20px;">
+                <div class="col-4 product-img">
                     <div class="w-100" style="height: 60vh;">
-                        <img src="/img/frontpage/index/product02.jpg" alt=""
-                            style="width: 100%;height: 100%;margin-top: -93px;">
+                        <img  data-aos="flip-left" src="/img/frontpage/index/product02.jpg" alt="">
                     </div>
                 </div>
 
@@ -301,29 +287,29 @@
 
 
         </section>
-        <section class="position-relative">
-            <div class="container-fluid row no-gutters bgc-gray" style="padding: 0;">
-                <div
-                    style="width: 20%;height: 80vh;background-color: white;position: absolute;bottom: 5vh;left: 10%;z-index: 5;">
+        <section class="position-relative section-store">
+            <div class="container-fluid bgc-gray container-store">
+                <div class="store-bg-white">
 
+                </div>
+                <div class="store-bg-yellow bgc-yellow-2">
                 </div>
                 <div class="w-100 row no-gutters " style="height:90vh;">
-                    <div style="background-color: white;height: 10vh;position: absolute;width: 100%;top: 0;left: 0;">
-                    </div>
+                    <div class="col-12 position-relative">
+                        <div>
+                            <h1 class="store-title">Our Store</h1>
 
-                    <div class="col-3 position-relative">
-                    </div>
-                    <div class="col-9">
-                        <div class="w-100" style="height: 100%;">
-                            <img src="/img/frontpage/index/ourstore.jpg" alt="" style="width: 100%;height: 100%;">
                         </div>
                     </div>
-                    <div>
-                        <h1 class="store-title">Our Store</h1>
-
+                    <div class="col-3"></div>
+                    <div class="col-9 position-relative store-img">
+                        <div class="w-100" style="height: 100%;">
+                            <img src="/img/frontpage/index/ourstore.jpg" alt="">
+                        </div>
                     </div>
+
                 </div>
-                <div class="col-12 row address position-relative" style="padding: 10vh 5%;z-index: 10;">
+                <div class="address position-relative">
                     <div class="col-4">
                         <p>106 臺北市安和路一段102巷23號
                         </p>
@@ -344,7 +330,7 @@
     </main>
 
     <footer>
-        <div class="container-fluid d-flex align-items-center justify-content-center p-0" style="height: 100%;"><span>
+        <div class="container-fluid d-flex align-items-center justify-content-center p-0 footer-container"><span>
                 Copyright © 2021 Quelques
                 Pâtisseries All Rights Reserved</span></div>
     </footer>
@@ -359,6 +345,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
         integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
         crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="/js/template.js"></script>
     <script src="/js/frontpage/index.js"></script>
 </body>
