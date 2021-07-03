@@ -5,6 +5,17 @@
 }
 
 body {
+    //以下是格式初始化
+    a {
+        color: unset;
+    }
+    a:hover {
+        color: unset;
+        text-decoration: unset;
+    }
+    a:visited {
+        color: unset;
+    }
     h1 {
         font-family: "Noto Serif JP", serif;
         font-family: "Noto Serif TC", serif;
@@ -16,6 +27,11 @@ body {
         list-style: none;
         margin: 0%;
     }
+    p {
+        font-size: 18px;
+        margin: 0%;
+    }
+    //以下nav內容
 
     nav {
         font-size: 16px;
@@ -46,11 +62,7 @@ body {
         min-height: calc(100vh - 108px);
     }
 
-    p {
-        font-size: 18px;
-        margin: 0%;
-    }
-
+    //以下footer
     footer {
         background-color: #000;
 

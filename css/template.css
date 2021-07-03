@@ -5,6 +5,19 @@
   font-family: "Noto Serif TC", serif;
 }
 
+body a {
+  color: unset;
+}
+
+body a:hover {
+  color: unset;
+  text-decoration: unset;
+}
+
+body a:visited {
+  color: unset;
+}
+
 body h1 {
   font-family: "Noto Serif JP", serif;
   font-family: "Noto Serif TC", serif;
@@ -15,6 +28,11 @@ body h1 {
 body ul,
 body ol {
   list-style: none;
+  margin: 0%;
+}
+
+body p {
+  font-size: 18px;
   margin: 0%;
 }
 
@@ -47,11 +65,6 @@ body nav li {
 
 body main {
   min-height: calc(100vh - 108px);
-}
-
-body p {
-  font-size: 18px;
-  margin: 0%;
 }
 
 body footer {
