@@ -18,7 +18,7 @@ body main.move-down .block-a .title-frame .title {
 }
 
 body main.move-down .block-a .title-frame .title .title-text {
-  font-size: 100px;
+  font-size: 150px;
   font-weight: bolder;
 }
 
@@ -61,6 +61,46 @@ body main.move-down .block-b .img-b {
   background-image: url("/img/frontpage/aboutUs/img-b.jpg");
   background-size: cover;
   background-position: center;
+}
+
+body main.move-down .block-b .img-b .content {
+  padding-top: 653px;
+  padding-right: 35px;
+  color: white;
+  font-size: 26px;
+  text-align: center;
+}
+
+body main.move-down .block-c {
+  width: 100vw;
+  height: 100vh;
+}
+
+body main.move-down .block-c .img-frame {
+  width: 80%;
+  padding-top: 190px;
+  padding-left: 100px;
+}
+
+body main.move-down .block-c .img-frame .img-c {
+  width: 810px;
+  height: 827px;
+  background-image: url("/img/frontpage/aboutUs/img-c.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+body main.move-down .block-c .title-frame {
+  padding-top: 450px;
+}
+
+body main.move-down .block-c .title-frame .title {
+  font-size: 150px;
+  font-weight: bolder;
+}
+
+body main.move-down .block-c .title-frame .content {
+  font-size: 26px;
 }
 
 body footer {

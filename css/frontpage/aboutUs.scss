@@ -13,7 +13,7 @@ body{
                     height: 420px;                
                     // background-color: yellow;
                     .title-text{
-                        font-size: 100px;
+                        font-size: 150px;
                         font-weight: bolder;
                     }
                     .text{
@@ -54,6 +54,41 @@ body{
                 background-image: url('/img/frontpage/aboutUs/img-b.jpg');
                 background-size: cover;
                 background-position: center;
+                .content{
+                    padding-top: 653px;
+                    padding-right: 35px;
+                    color: white;
+                    font-size: 26px;
+                    text-align: center;
+                }
+            }
+        }
+        .block-c{
+            width: 100vw;
+            height: 100vh;
+            .img-frame{
+                
+                padding-top: 190px;
+                padding-left: 100px;
+                .img-c{
+                    width: 810px;
+                    height: 827px;
+                    background-image: url('/img/frontpage/aboutUs/img-c.jpg');
+                    background-position: center;
+                    background-size: cover;
+                    
+                }
+            }
+            .title-frame{
+                
+                padding-top: 450px;
+                .title{
+                    font-size: 150px;
+                    font-weight: bolder;
+                }
+                .content{
+                    font-size: 26px;                
+                }
             }
         }
     }
