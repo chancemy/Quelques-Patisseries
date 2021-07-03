@@ -14,10 +14,19 @@ body nav.front-nav .logo {
   left: -100px;
 }
 
+body .top-btn {
+  position: fixed;
+  bottom: 65px;
+  right: 128px;
+  z-index: 20;
+  font-size: 55px;
+  color: #4d4d4d;
+}
+
 body .banner {
   height: 100vh;
   width: 100%;
-  background-image: url(/img/frontpage/frontpage-banner.jpg);
+  background-image: url(/img/frontpage/index/frontpage-banner.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
