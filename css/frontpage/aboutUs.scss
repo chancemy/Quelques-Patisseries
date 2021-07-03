@@ -1,0 +1,22 @@
+main{
+    position: relative;
+    .about_mian{
+        position: absolute;
+        top: 108px;
+        left: 0px;
+        .title-frame{
+            width: 520px;
+            height: 420px;
+            background-color: yellow;
+            .title-text{
+                font-size: 100px;
+            }
+            .text{
+                font-size: 26px;
+            }
+            .img-a{
+                background-image: url('');
+            }
+        }
+    }
+}

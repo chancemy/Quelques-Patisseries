@@ -36,6 +36,18 @@ body p {
   margin: 0%;
 }
 
+body .bgc-gray {
+  background-color: #f4f3ef;
+}
+
+body .bgc-yellow {
+  background-color: #e6e3e0;
+}
+
+body .bgc-gray-2 {
+  background-color: #f4f3ef;
+}
+
 body nav {
   font-size: 16px;
   letter-spacing: 2px;
@@ -79,16 +91,4 @@ body footer span {
   font-size: 16px;
   letter-spacing: 1px;
 }
-
-body .bgc-gray {
-  background-color: #f4f3ef;
-}
-
-body .bgc-yellow {
-  background-color: #e6e3e0;
-}
-
-body .bgc-gray-2 {
-  background-color: #f4f3ef;
-}
-/*# sourceMappingURL=template.css.map */
+/*# sourceMappingURL=news.css.map */
