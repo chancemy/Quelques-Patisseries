@@ -14,8 +14,8 @@ body{
                     .title-text{
                         font-size: 150px;
                         font-weight: bolder;
-                        @media (max-width:1500px){
-                            font-size: 100px;
+                        @media (max-width:576px){
+                            font-size: 50px;
                         }
                     }
                     .text{

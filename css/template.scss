@@ -2,11 +2,12 @@
     margin: 0;
     box-sizing: border-box;
     font-family: "Noto Serif TC", serif;
+    scroll-behavior: smooth;
 }
 
 body {
     //以下是格式初始化
-
+    
     a {
         color: unset;
     }
