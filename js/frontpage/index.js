@@ -21,10 +21,12 @@ function showPage() {
     var loadingPage = document.querySelector('.loading');
     var body = document.querySelector('body');
     loadingPage.classList.add('hidden');
-    
-    setTimeout(function(){
+
+    setTimeout(function () {
         loadingPage.classList.add('display-none');
         body.classList.remove('loading-animate');
-    },800);
+    }, 800);
 
 }
+var scene = document.getElementById('scene');
+var parallaxInstance = new Parallax(scene);

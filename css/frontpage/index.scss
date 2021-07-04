@@ -71,14 +71,25 @@ body {
     .banner {
         height: 100vh;
         width: 100%;
-        background-image: url(/img/frontpage/index/frontpage-banner.jpg);
+        position: relative;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
+        #scene {
+            overflow: hidden;
+            margin: auto;
+            div {
+                width: 100%;
+                height: 100vh;
+                img {
+                    width: 100%;
+                }
+            }
+        }
         .logo {
             width: 60%;
             max-width: 625px;
-            position: relative;
+            position: absolute;
             left: 105px;
             top: 50%;
             transform: translate(0, -50%);
@@ -179,18 +190,17 @@ body {
                     left: 0;
                     z-index: 5;
                 }
-               
-                   
-                    .store-title {
-                        transform: rotate(90deg);
-                        transform-origin: bottom left;
-                        position: absolute;
-                        top: 0;
-                        left: 5%;
-                        z-index: 10;
-                        white-space:nowrap;
-                    }
-                
+
+                .store-title {
+                    transform: rotate(90deg);
+                    transform-origin: bottom left;
+                    position: absolute;
+                    top: 0;
+                    left: 5%;
+                    z-index: 10;
+                    white-space: nowrap;
+                }
+
                 .store-img {
                     z-index: 5;
                     .img-area {

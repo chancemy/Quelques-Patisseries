@@ -95,16 +95,30 @@ body nav.front-nav .logo {
 body .banner {
   height: 100vh;
   width: 100%;
-  background-image: url(/img/frontpage/index/frontpage-banner.jpg);
+  position: relative;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
+body .banner #scene {
+  overflow: hidden;
+  margin: auto;
+}
+
+body .banner #scene div {
+  width: 100%;
+  height: 100vh;
+}
+
+body .banner #scene div img {
+  width: 100%;
+}
+
 body .banner .logo {
   width: 60%;
   max-width: 625px;
-  position: relative;
+  position: absolute;
   left: 105px;
   top: 50%;
   -webkit-transform: translate(0, -50%);
