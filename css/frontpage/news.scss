@@ -1,0 +1,214 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Noto Serif TC", serif;
+}
+
+body {
+    //以下是格式初始化
+    a {
+        color: unset;
+    }
+    a:hover {
+        color: unset;
+        text-decoration: unset;
+    }
+    a:visited {
+        color: unset;
+    }
+    h1 {
+        font-family: "Noto Serif JP", serif;
+        font-family: "Noto Serif TC", serif;
+        font-weight: 700;
+        font-size: 150px;
+    }
+    ul,
+    ol {
+        list-style: none;
+        margin: 0%;
+    }
+    p {
+        font-size: 18px;
+        margin: 0%;
+    }
+
+    //預設內容會用到的色塊顏色
+    .bgc-gray {
+        background-color: #f4f3ef;
+    }
+    .bgc-yellow {
+        background-color: #e6e3e0;
+    }
+    .bgc-gray-2 {
+        background-color: rgb(244, 243, 239);
+    }
+
+    //以下nav內容
+
+    nav {
+        font-size: 16px;
+        letter-spacing: 2px;
+
+        height: 108px;
+        width: 100%;
+        position: fixed;
+        transition: 0.4s ease-in-out;
+        top: 0;
+        .logo {
+            position: absolute;
+            left: 30px;
+            top: 16px;
+            width: 88px;
+            height: 88px;
+        }
+        //這個是把nav藏起來用的 不要放東西在裡面
+        .hide-up {
+            top: -127px;
+        }
+        li {
+            padding: 20px;
+        }
+    }
+
+    main {
+        min-height: calc(100vh - 108px);
+        // position: absolute;
+        // top: 108px;
+        // left: 0;
+        background-color: #f4f3ef;
+
+        #news {
+            position: relative;
+        }
+        h1 {
+            position: absolute;
+            top: 136px;
+            z-index: 3;
+        }
+        .content-bg::before {
+            content: "";
+            width: 1054px;
+            height: 150px;
+            background-color: #ffffff;
+            position: absolute;
+            top: -150px;
+            right: 0px;
+            z-index: 1;
+        }
+        .content-bg {
+            width: 100%;
+            // height: 1304px;
+            background-color: #e5e0e6;
+            margin-top: 230px;
+            z-index: 2;
+            padding: 144px 163px;
+            position: relative;
+
+            .left {
+                height: 834px;
+                .form-check-input {
+                    margin-right: 20px;
+                    margin-left: 0px;
+                }
+            }
+            .card {
+                width: 476px;
+                height: 401px;
+                // background-color: white;
+                position: relative;
+            }
+            .card::after {
+                content: "";
+                width: 3px;
+                height: 357px;
+                background-color: #603813;
+                position: absolute;
+                top: 22px;
+                left: -2px;
+            }
+
+            .card::before {
+                content: "";
+                width: 406px;
+                height: 3px;
+                background-color: #603813;
+                position: absolute;
+                bottom: 0px;
+                left: 22px;
+            }
+
+            // .card-outline::after {
+            //     content: "";
+            //     width: 3px;
+            //     height: 357px;
+            //     background-color: #603813;
+            //     position: absolute;
+            //     top: 22px;
+            //     right: 0px;
+            // }
+            .card-time {
+                width: 114px;
+                height: 33px;
+                font-size: 24px;
+                position: absolute;
+                top: 0;
+                right: calc(50% - 56px);
+            }
+            .card-time::after {
+                content: "";
+                width: 119px;
+                height: 3px;
+                position: absolute;
+                top: 0px;
+                right: 40.5px;
+            }
+            .card-time::before {
+                content: "";
+                width: 119px;
+                height: 33px;
+            }
+            .card-type {
+                width: 70px;
+                height: 20px;
+                font-family: serif;
+                margin-bottom: 14px;
+            }
+
+            .card-title {
+                width: 191px;
+                height: 26.5px;
+                font-size: 22px;
+                font-family: serif;
+                margin-bottom: 50px;
+            }
+
+            .card-content {
+                width: 293px;
+                height: 103px;
+                font-size: 18px;
+                font-family: serif;
+            }
+
+            .page-btn {
+                a {
+                    margin: 77px 2px 0 2px;
+                }
+            }
+        }
+    }
+
+    //以下footer
+    footer {
+        background-color: #000;
+
+        height: 108px;
+        width: 100%;
+
+        span {
+            color: #fff;
+            font-family: times, serif;
+            font-size: 16px;
+            letter-spacing: 1px;
+        }
+    }
+}
