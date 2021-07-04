@@ -214,6 +214,13 @@ body {
                         font-size: 24px;
                     }
                 }
+                .logo {
+                    width: 80%;
+                    position: absolute;
+                    bottom: 10vh;
+                    right: 5%;
+                    z-index: 50;
+                }
             }
         }
     }

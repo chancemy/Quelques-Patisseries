@@ -262,4 +262,12 @@ body main .section-store .container-store .address {
 body main .section-store .container-store .address p {
   font-size: 24px;
 }
+
+body main .section-store .container-store .logo {
+  width: 80%;
+  position: absolute;
+  bottom: 10vh;
+  right: 5%;
+  z-index: 50;
+}
 /*# sourceMappingURL=index.css.map */
