@@ -66,22 +66,22 @@ body{
         .block-c{
             width: 100vw;
             height: 100vh;
-            .img-frame{
-                
+            margin-bottom: 120px;
+            position: relative;
+            .img-frame{                
                 padding-top: 190px;
-                padding-left: 100px;
                 .img-c{
                     width: 810px;
                     height: 827px;
                     background-image: url('/img/frontpage/aboutUs/img-c.jpg');
                     background-position: center;
-                    background-size: cover;
-                    
+                    background-size: cover;                    
                 }
             }
-            .title-frame{
-                
+            .title-frame{                
                 padding-top: 450px;
+                padding-right: 132px;
+                padding-left: 125px;
                 .title{
                     font-size: 150px;
                     font-weight: bolder;
@@ -90,11 +90,57 @@ body{
                     font-size: 26px;                
                 }
             }
+            .back-group{
+                width: 100%;
+                height: 555px;
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: -1;
+                .gray-div{
+                    width: 100%;
+                    height: 100%;
+                    background-color: #E6E3E0;
+                    position: relative;
+                }
+                .white-div{
+                    position: absolute;
+                    top: 70px;
+                    left: 0;
+                    width: 0;
+                    height: 0;
+                    border-style: solid;
+                    border-width: 0 0 486px 100vw;
+                    border-color: transparent transparent #ffffff transparent;
+                }
+            }
         }
-    }
-    footer{
-        position: relative;
-        bottom: 0;
-        left: 0;
+        .block-d{
+            width: 100vw;
+            height: 100vh;
+            position: relative;
+            .img-d{
+                width: 1085px;
+                height: 730px;
+                background-image: url('/img/frontpage/aboutUs/img-d.jpg');
+                background-position: center;
+                background-size: cover;
+            }
+            .content{
+                margin-top: 109px;
+                font-size: 26px;
+                text-align: center;
+            }
+           .back-group{
+               position: absolute;
+               top: 0;
+               left: 0;
+               z-index: -1;
+               width: 100%;
+               height: 100%;
+               background-color: #E6E3E0;
+               clip-path: polygon(0 67.6%, 100% 17%, 100% 100%, 0% 100%);
+           }
+        }
     }
 }
