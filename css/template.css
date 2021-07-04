@@ -126,4 +126,10 @@ body .bgc-yellow-2 {
 body .bgc-gray-2 {
   background-color: #f4f3ef;
 }
+
+@media (max-width: 1500px) {
+  body h1 {
+    font-size: 100px;
+  }
+}
 /*# sourceMappingURL=template.css.map */

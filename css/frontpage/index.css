@@ -145,7 +145,7 @@ body main .section-about .container-about .about-img {
 
 body main .section-about .about-bg-block {
   width: 85%;
-  height: 30vh;
+  height: 30%;
   bottom: 0;
   left: 50%;
   -webkit-transform: translate(-50%, 0);
@@ -165,9 +165,13 @@ body main .section-news .text-area-news {
   z-index: 5;
 }
 
+body main .section-news .news-img {
+  height: 100vh;
+}
+
 body main .section-news .news-bg-block {
   width: 85%;
-  height: 100vh;
+  height: 80%;
   top: 0;
   left: 50%;
   -webkit-transform: translate(-50%, 0);
@@ -199,7 +203,7 @@ body main .section-store .container-store {
 
 body main .section-store .container-store .store-bg-white {
   width: 20%;
-  height: 80vh;
+  height: 60%;
   background-color: white;
   position: absolute;
   bottom: 5vh;
@@ -228,6 +232,10 @@ body main .section-store .container-store .store-title {
 
 body main .section-store .container-store .store-img {
   z-index: 5;
+}
+
+body main .section-store .container-store .store-img .img-area {
+  height: 850px;
 }
 
 body main .section-store .container-store .address {

@@ -120,4 +120,9 @@ body {
     .bgc-gray-2 {
         background-color: rgb(244, 243, 239);
     }
+    @media(max-width:1500px){
+        h1{
+            font-size: 100px;
+        }
+    }
 }

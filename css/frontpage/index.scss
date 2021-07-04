@@ -116,7 +116,7 @@ body {
             }
             .about-bg-block {
                 width: 85%;
-                height: 30vh;
+                height: 30%;
                 bottom: 0;
                 left: 50%;
                 transform: translate(-50%, 0);
@@ -133,9 +133,12 @@ body {
                 transform: translate(0, -50%);
                 z-index: 5;
             }
+            .news-img{
+                height: 100vh;
+            }
             .news-bg-block {
                 width: 85%;
-                height: 100vh;
+                height: 80%;
                 top: 0;
                 left: 50%;
                 transform: translate(-50%, 0);
@@ -161,7 +164,7 @@ body {
                 padding: 0;
                 .store-bg-white {
                     width: 20%;
-                    height: 80vh;
+                    height: 60%;
                     background-color: white;
                     position: absolute;
                     bottom: 5vh;
@@ -185,6 +188,9 @@ body {
                 }
                 .store-img {
                     z-index: 5;
+                    .img-area{
+                        height: 850px;;
+                    }
                 }
                 .address {
                     padding: 10vh 5%;
