@@ -18,8 +18,14 @@ body main.move-down .block-a .title-frame .title {
 }
 
 body main.move-down .block-a .title-frame .title .title-text {
-  font-size: 8.78vw;
+  font-size: 150px;
   font-weight: bolder;
+}
+
+@media (max-width: 1500px) {
+  body main.move-down .block-a .title-frame .title .title-text {
+    font-size: 100px;
+  }
 }
 
 body main.move-down .block-a .title-frame .title .text {

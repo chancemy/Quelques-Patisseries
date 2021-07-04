@@ -12,8 +12,11 @@ body{
                     height: 420px;                
                     // background-color: yellow;
                     .title-text{
-                        font-size: 8.78vw;
+                        font-size: 150px;
                         font-weight: bolder;
+                        @media (max-width:1500px){
+                            font-size: 100px;
+                        }
                     }
                     .text{
                         font-size: 1.625rem;
