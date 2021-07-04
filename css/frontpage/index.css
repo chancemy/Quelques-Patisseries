@@ -33,8 +33,8 @@ body .loading.display-none {
 }
 
 body .loading .logo {
-  height: 439px;
-  width: 625px;
+  width: 60%;
+  max-width: 625px;
   position: relative;
   left: 105px;
   top: 50%;
@@ -102,8 +102,8 @@ body .banner {
 }
 
 body .banner .logo {
-  height: 439px;
-  width: 625px;
+  width: 60%;
+  max-width: 625px;
   position: relative;
   left: 105px;
   top: 50%;
@@ -226,8 +226,10 @@ body main .section-store .container-store .store-title {
   -webkit-transform-origin: bottom left;
           transform-origin: bottom left;
   position: absolute;
+  top: 0;
   left: 5%;
   z-index: 10;
+  white-space: nowrap;
 }
 
 body main .section-store .container-store .store-img {
@@ -235,7 +237,7 @@ body main .section-store .container-store .store-img {
 }
 
 body main .section-store .container-store .store-img .img-area {
-  height: 850px;
+  height: 90vh;
 }
 
 body main .section-store .container-store .address {

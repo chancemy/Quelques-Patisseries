@@ -26,8 +26,8 @@ body {
             display: none;
         }
         .logo {
-            height: 439px;
-            width: 625px;
+            width: 60%;
+            max-width: 625px;
             position: relative;
             left: 105px;
             top: 50%;
@@ -76,8 +76,8 @@ body {
         background-repeat: no-repeat;
         background-size: cover;
         .logo {
-            height: 439px;
-            width: 625px;
+            width: 60%;
+            max-width: 625px;
             position: relative;
             left: 105px;
             top: 50%;
@@ -105,7 +105,7 @@ body {
 
         section {
             z-index: -10;
-            overflow-x:hidden ;
+            overflow-x: hidden;
         }
         .section-about {
             .container-about {
@@ -133,7 +133,7 @@ body {
                 transform: translate(0, -50%);
                 z-index: 5;
             }
-            .news-img{
+            .news-img {
                 height: 100vh;
             }
             .news-bg-block {
@@ -179,17 +179,22 @@ body {
                     left: 0;
                     z-index: 5;
                 }
-                .store-title {
-                    transform: rotate(90deg);
-                    transform-origin: bottom left;
-                    position: absolute;
-                    left: 5%;
-                    z-index: 10;
-                }
+               
+                   
+                    .store-title {
+                        transform: rotate(90deg);
+                        transform-origin: bottom left;
+                        position: absolute;
+                        top: 0;
+                        left: 5%;
+                        z-index: 10;
+                        white-space:nowrap;
+                    }
+                
                 .store-img {
                     z-index: 5;
-                    .img-area{
-                        height: 850px;;
+                    .img-area {
+                        height: 90vh;
                     }
                 }
                 .address {
