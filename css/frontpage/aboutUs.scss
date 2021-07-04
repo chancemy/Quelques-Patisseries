@@ -1,9 +1,8 @@
-body{
-    
+body{    
     main.move-down{
         margin-top: 108px;
         .block-a{
-            width: 100vw;
+            width: 100%;
             height: calc(100vh - 108px);
             .title-frame{
                 padding-top: 115px;
@@ -13,24 +12,24 @@ body{
                     height: 420px;                
                     // background-color: yellow;
                     .title-text{
-                        font-size: 150px;
+                        font-size: 8.78vw;
                         font-weight: bolder;
                     }
                     .text{
-                        font-size: 26px;
+                        font-size: 1.625rem;
                     }            
                 }
             }
-            .img-a{
-                width: 100%;
-                height: 712px;
+            .img-a{            
                 background-image: url('/img/frontpage/aboutUs/img-a.jpg');
                 background-position: center;
                 background-size: cover;
+                padding-top: 66.72%;
+                
             }
             .back-group{
                 z-index: -1;
-                width: 100vw;
+                width: 100%;
                 height: 100vh;
                 position: absolute;
                 top: 0;
@@ -48,8 +47,10 @@ body{
             }
         }
         .block-b{
+            width: 100%;
+            height: 100vh;
             .img-b{
-                width: 100vw;
+                width: 100%;
                 height: 100vh;
                 background-image: url('/img/frontpage/aboutUs/img-b.jpg');
                 background-size: cover;
@@ -58,15 +59,14 @@ body{
                     padding-top: 653px;
                     padding-right: 35px;
                     color: white;
-                    font-size: 26px;
+                    font-size: 1.625rem;
                     text-align: center;
                 }
             }
         }
         .block-c{
-            width: 100vw;
+            width: 100%;
             height: 100vh;
-            margin-bottom: 120px;
             position: relative;
             .img-frame{                
                 padding-top: 190px;
@@ -83,11 +83,11 @@ body{
                 padding-right: 132px;
                 padding-left: 125px;
                 .title{
-                    font-size: 150px;
+                    font-size: 8.78vw;
                     font-weight: bolder;
                 }
                 .content{
-                    font-size: 26px;                
+                    font-size: 1.625rem;                
                 }
             }
             .back-group{
@@ -110,14 +110,15 @@ body{
                     width: 0;
                     height: 0;
                     border-style: solid;
-                    border-width: 0 0 486px 100vw;
+                    border-width: 0 0 486px 100%;
                     border-color: transparent transparent #ffffff transparent;
                 }
             }
         }
         .block-d{
-            width: 100vw;
+            width: 100%;
             height: 100vh;
+            margin-top: 120px;            
             position: relative;
             .img-d{
                 width: 1085px;
@@ -127,11 +128,12 @@ body{
                 background-size: cover;
             }
             .content{
-                margin-top: 109px;
-                font-size: 26px;
-                text-align: center;
+                // margin-top: 109px;
+                font-size: 1.625rem;
+                text-align: center;    
             }
            .back-group{
+               overflow: hidden;
                position: absolute;
                top: 0;
                left: 0;
