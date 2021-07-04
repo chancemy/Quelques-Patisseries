@@ -15,7 +15,7 @@ window.addEventListener('scroll', function (e) {
 });
 
 
-setTimeout(showPage, 4000);
+setTimeout(showPage, 1700);
 
 function showPage() {
     var loadingPage = document.querySelector('.loading');
@@ -25,7 +25,7 @@ function showPage() {
     setTimeout(function () {
         loadingPage.classList.add('display-none');
         body.classList.remove('loading-animate');
-    }, 800);
+    }, 500);
 
 }
 var scene = document.getElementById('scene');

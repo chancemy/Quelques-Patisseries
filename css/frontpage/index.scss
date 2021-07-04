@@ -35,7 +35,7 @@ body {
             .path {
                 stroke-dasharray: 1000;
                 stroke-dashoffset: 1000;
-                animation: dash 4s ease-in-out;
+                animation: dash 3s ease-in-out;
             }
 
             //開場logo動畫
@@ -45,7 +45,7 @@ body {
                 }
             }
             .a {
-                animation: fade-in 4s;
+                animation: fade-in 3s;
             }
             @keyframes fade-in {
                 0% {
@@ -117,6 +117,7 @@ body {
         section {
             z-index: -10;
             overflow-x: hidden;
+            overflow-y: hidden;
         }
         .section-about {
             .container-about {

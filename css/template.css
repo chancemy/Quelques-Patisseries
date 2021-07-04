@@ -6,6 +6,10 @@
   scroll-behavior: smooth;
 }
 
+body::-webkit-scrollbar {
+  display: none;
+}
+
 body a {
   color: unset;
 }
@@ -77,9 +81,9 @@ body nav li {
 }
 
 body nav .icon-group {
-  width: 80px;
+  width: 120px;
   margin-left: 10px;
-  font-size: 35px;
+  font-size: 30px;
 }
 
 body .top-btn {

@@ -45,8 +45,8 @@ body .loading .logo {
 body .loading .logo .path {
   stroke-dasharray: 1000;
   stroke-dashoffset: 1000;
-  -webkit-animation: dash 4s ease-in-out;
-          animation: dash 4s ease-in-out;
+  -webkit-animation: dash 3s ease-in-out;
+          animation: dash 3s ease-in-out;
 }
 
 @-webkit-keyframes dash {
@@ -62,8 +62,8 @@ body .loading .logo .path {
 }
 
 body .loading .logo .a {
-  -webkit-animation: fade-in 4s;
-          animation: fade-in 4s;
+  -webkit-animation: fade-in 3s;
+          animation: fade-in 3s;
 }
 
 @-webkit-keyframes fade-in {
@@ -147,6 +147,7 @@ body main .text-area {
 body main section {
   z-index: -10;
   overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 body main .section-about .container-about {
