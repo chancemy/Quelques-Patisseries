@@ -20,7 +20,7 @@ body {
         font-family: "Noto Serif JP", serif;
         font-family: "Noto Serif TC", serif;
         font-weight: 700;
-        font-size: 150px;
+        font-size: 80px;
     }
     ul,
     ol {
@@ -72,9 +72,82 @@ body {
 
     main {
         min-height: calc(100vh - 108px);
-        // position: absolute;
-        // top: 108px;
-        // left: 0;
+        position: absolute;
+        top: 108px;
+        left: 0;
+        background-color: #f4f3ef;
+
+        #news.contanier {
+            margin: 108px;
+            padding: 80px;
+            .content-bg {
+                background-color: #e6e3e0;
+            }
+            .left {
+                height: 834px;
+                background-color: rgb(255, 255, 255);
+            }
+            .card-group {
+                position: relative;
+            }
+            .card {
+                width: 325px;
+                height: 274px;
+            }
+            .card::before {
+                content: "";
+                width: 3px;
+                height: 230px;
+                background-color: saddlebrown;
+                position: absolute;
+                top: 22px;
+                left: 0px;
+            }
+            .card::after {
+                content: "";
+                width: 281px;
+                height: 3px;
+                background-color: saddlebrown;
+                position: absolute;
+                top: 0px;
+                left: 22px;
+            }
+            .card-outline {
+                width: 121px;
+                height: 131px;
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+            .card-outline::before {
+                content: "";
+                width: 3px;
+                height: 230px;
+                background-color: saddlebrown;
+                
+            }
+            .card-outline::after {
+                content: "";
+                width: 281px;
+                height: 3px;
+                background-color: saddlebrown;
+                
+            }
+
+            .page-btn.page-link {
+                color: saddlebrown;
+            }
+            .page-btn.page-item.active .page-link {
+                background-color: saddlebrown;
+                border-color: saddlebrown;
+            }
+        }
+        .contanier::after {
+            content: "";
+            width: 1487%;
+            height: 150px;
+            background-color: white;
+        }
     }
 
     //以下footer
@@ -91,5 +164,4 @@ body {
             letter-spacing: 1px;
         }
     }
-
 }

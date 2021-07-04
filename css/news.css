@@ -22,7 +22,7 @@ body h1 {
   font-family: "Noto Serif JP", serif;
   font-family: "Noto Serif TC", serif;
   font-weight: 700;
-  font-size: 150px;
+  font-size: 80px;
 }
 
 body ul,
@@ -77,6 +77,91 @@ body nav li {
 
 body main {
   min-height: calc(100vh - 108px);
+  position: absolute;
+  top: 108px;
+  left: 0;
+  background-color: #f4f3ef;
+}
+
+body main #news.contanier {
+  margin: 108px;
+  padding: 80px;
+}
+
+body main #news.contanier .content-bg {
+  background-color: #e6e3e0;
+}
+
+body main #news.contanier .left {
+  height: 834px;
+  background-color: white;
+}
+
+body main #news.contanier .card-group {
+  position: relative;
+}
+
+body main #news.contanier .card {
+  width: 325px;
+  height: 274px;
+}
+
+body main #news.contanier .card::before {
+  content: "";
+  width: 3px;
+  height: 230px;
+  background-color: saddlebrown;
+  position: absolute;
+  top: 22px;
+  left: 0px;
+}
+
+body main #news.contanier .card::after {
+  content: "";
+  width: 281px;
+  height: 3px;
+  background-color: saddlebrown;
+  position: absolute;
+  top: 0px;
+  left: 22px;
+}
+
+body main #news.contanier .card-outline {
+  width: 121px;
+  height: 131px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+body main #news.contanier .card-outline::before {
+  content: "";
+  width: 3px;
+  height: 230px;
+  background-color: saddlebrown;
+}
+
+body main #news.contanier .card-outline::after {
+  content: "";
+  width: 281px;
+  height: 3px;
+  background-color: saddlebrown;
+}
+
+body main #news.contanier .page-btn.page-link {
+  color: saddlebrown;
+}
+
+body main #news.contanier .page-btn.page-item.active .page-link {
+  background-color: saddlebrown;
+  border-color: saddlebrown;
+}
+
+body main .contanier::after {
+  content: "";
+  width: 1487%;
+  height: 150px;
+  background-color: white;
 }
 
 body footer {
