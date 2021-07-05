@@ -1,8 +1,13 @@
-main {
+body {
+  background-color: #F4F3EF;
+}
+
+body main .block-a {
+  background-color: #E6E3E0;
   margin-top: 108px;
 }
 
-main .news {
+body main .block-a .news {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -12,5 +17,56 @@ main .news {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-bottom: 10vh;
+}
+
+body main .block-a .news-type {
+  width: 100%;
+  height: 810px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+body main .block-a .news-type .type {
+  width: 105px;
+  font-size: 17px;
+  margin: 68px auto 0 auto;
+}
+
+body main .block-a .news-type .type::before {
+  content: '';
+  display: inline-block;
+  margin-right: 1.3125rem;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  border: #42210B solid 0.33rem;
+}
+
+body main .block-a .news-type .checked::before {
+  content: '';
+  display: inline-block;
+  margin-right: 1.3125rem;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background-color: #42210B;
+}
+
+body main .block-a .swiper-container {
+  height: 850px;
+}
+
+body main .block-a .swiper-container .box {
+  height: 395px;
+  background-color: yellow;
 }
 /*# sourceMappingURL=news.css.map */
