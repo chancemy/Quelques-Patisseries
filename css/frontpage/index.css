@@ -1,0 +1,274 @@
+body img {
+  display: block;
+  -o-object-position: center;
+     object-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+body.loading-animate {
+  height: 100vh;
+  overflow-y: hidden;
+}
+
+body .loading {
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+  z-index: 500;
+  position: fixed;
+  top: 0%;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+
+body .loading.hidden {
+  opacity: 0;
+}
+
+body .loading.display-none {
+  display: none;
+}
+
+body .loading .logo {
+  width: 60%;
+  max-width: 625px;
+  position: relative;
+  left: 105px;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+}
+
+body .loading .logo .path {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  -webkit-animation: dash 3s ease-in-out;
+          animation: dash 3s ease-in-out;
+}
+
+@-webkit-keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+body .loading .logo .a {
+  -webkit-animation: fade-in 3s;
+          animation: fade-in 3s;
+}
+
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+}
+
+body nav.front-nav {
+  background-color: transparent;
+}
+
+body nav.front-nav .logo {
+  left: -100px;
+}
+
+body .banner {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body .banner #scene {
+  overflow: hidden;
+  margin: auto;
+}
+
+body .banner #scene div {
+  width: 100%;
+  height: 100vh;
+}
+
+body .banner #scene div img {
+  width: 100%;
+}
+
+body .banner .logo {
+  width: 60%;
+  max-width: 625px;
+  position: absolute;
+  left: 105px;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+}
+
+body .banner .logo .a {
+  fill: white;
+}
+
+body .banner .logo .b {
+  fill: none;
+  stroke: white;
+  stroke-miterlimit: 10;
+  stroke-width: 2px;
+}
+
+body main .arrow {
+  font-size: 40px;
+}
+
+body main .text-area {
+  max-width: 517px;
+}
+
+body main section {
+  z-index: -10;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+body main .section-about .container-about {
+  padding: 10vh 0;
+}
+
+body main .section-about .container-about .about-img {
+  height: 80vh;
+}
+
+body main .section-about .about-bg-block {
+  width: 85%;
+  height: 30%;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  z-index: -5;
+}
+
+body main .section-news .container-news {
+  padding: 10vh 0;
+}
+
+body main .section-news .text-area-news {
+  top: 50%;
+  left: 35%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  z-index: 5;
+}
+
+body main .section-news .news-img {
+  height: 100vh;
+}
+
+body main .section-news .news-bg-block {
+  width: 85%;
+  height: 80%;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  z-index: -5;
+}
+
+body main .section-product {
+  overflow-x: hidden;
+}
+
+body main .section-product .container-product {
+  padding: 10vh 0;
+  margin: 0 -20px;
+  width: calc(100% + 40px);
+}
+
+body main .section-product .container-product .product-img {
+  padding: 0 20px;
+}
+
+body main .section-product .container-product .product-img:nth-child(2n) {
+  margin-top: -93px;
+}
+
+body main .section-store .container-store {
+  padding: 0;
+}
+
+body main .section-store .container-store .store-bg-white {
+  width: 20%;
+  height: 60%;
+  background-color: white;
+  position: absolute;
+  bottom: 5vh;
+  left: 10%;
+  z-index: 8;
+}
+
+body main .section-store .container-store .store-bg-yellow {
+  height: 10vh;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 5;
+}
+
+body main .section-store .container-store .store-title {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  -webkit-transform-origin: bottom left;
+          transform-origin: bottom left;
+  position: absolute;
+  top: 0;
+  left: 5%;
+  z-index: 10;
+  white-space: nowrap;
+}
+
+body main .section-store .container-store .store-img {
+  z-index: 5;
+}
+
+body main .section-store .container-store .store-img .img-area {
+  height: 90vh;
+}
+
+body main .section-store .container-store .address {
+  padding: 10vh 5%;
+  z-index: 10;
+}
+
+body main .section-store .container-store .address p {
+  font-size: 24px;
+}
+
+body main .section-store .container-store .logo {
+  width: 80%;
+  position: absolute;
+  bottom: 10vh;
+  right: 5%;
+  z-index: 50;
+}
+/*# sourceMappingURL=index.css.map */

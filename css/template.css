@@ -128,8 +128,16 @@ body .bgc-yellow-2 {
   background-color: #FFFBEF;
 }
 
+body .bgc-cart {
+  background-color: #FFFBF6;
+}
+
 body .bgc-gray-2 {
   background-color: #f4f3ef;
+}
+
+body .bgc-gray-3 {
+  background-color: #54594D;
 }
 
 @media (max-width: 1500px) {
