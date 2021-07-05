@@ -27,12 +27,17 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <link rel="stylesheet" href="/css/template.css">
+<<<<<<< Updated upstream:cart/step2.html
     <link rel="stylesheet" href="/css/frontpage/cart/cart-2.css">
+=======
+    <link rel="stylesheet" href="/css/frontpage/cart/cart.css">
+
+    <link rel="stylesheet" href="/css/frontpage/cart/cart_step2.css">
+>>>>>>> Stashed changes:frontpage/cart/step2.html
     <title>Document</title>
 </head>
 
 <body>
-    <div id="top"></div>
     <nav class="d-flex bgc-gray-2">
         <div class="container-fluid d-flex align-items-center justify-content-end"
             style="height: 100%;padding: 0 70px 0 0;">
@@ -97,6 +102,7 @@
         </div>
     </nav>
 
+<<<<<<< Updated upstream:cart/step2.html
     <!-- <div class="top-btn">
         <a href="#top">
             <i class="far fa-arrow-alt-circle-up"></i>
@@ -230,6 +236,101 @@
                 </div>
             </div>
         </div>
+=======
+
+
+
+    <main class="bgc-gray">
+        <section style="height: 338px;"></section>
+        <section class="bgc-yellow py-5">
+            <div class="container">
+                <form action="" class="bgc-yellow-2 w-100 cart-form">
+                    <div class="w-100 bgc-gray-3 cart-title d-flex justify-content-center align-items-center">
+                        付款方式
+                    </div>
+                    <div class="py-2">
+                        <div class="input-area position-relative d-flex justify-content-start align-items-center"><input
+                                type="radio" name="payment" id="ATM" value="ATM"><label for="ATM">實體／網路ATM</label></div>
+                        <div class="input-area position-relative  d-flex justify-content-start align-items-center">
+                            <input type="radio" name="payment" id="on-delivery" value="on-delivery"><label
+                                for="on-delivery">貨到付款</label>
+                        </div>
+                        <div class="input-area position-relative  d-flex justify-content-start align-items-center">
+                            <input type="radio" name="payment" id="credit-card" value="credit-card"><label
+                                for="credit-card">信用卡</label>
+                        </div>
+                    </div>
+                    <div class="w-100 bgc-gray-3 cart-title d-flex justify-content-center align-items-center">
+                        運送方式
+                    </div>
+                    <div class="py-2">
+                        <div class="input-area position-relative d-flex justify-content-between align-items-center">
+                            <div><input type="radio" name="shipment" id="store" value="store" data-price="60"><label
+                                    for="store">超商配送</label></div>
+                            <div>60 元</div>
+
+                        </div>
+                        <div class="input-area position-relative  d-flex justify-content-between align-items-center">
+                            <div>
+                                <input type="radio" name="shipment" id="blackcat" value="blackcat"
+                                    data-price="80"><label for="blackcat">黑貓宅配</label>
+                            </div>
+                            <div>80 元</div>
+                        </div>
+                        <div class="input-area position-relative  d-flex justify-content-between align-items-center">
+                            <div>
+                                <input type="radio" name="shipment" id="fedex" value="fedex" data-price="80"><label
+                                    for="fedex">順豐快遞</label>
+                            </div>
+                            <div>100 元</div>
+                        </div>
+                    </div>
+                    <button type="submit" hidden id="form-submit"></button>
+                </form>
+                <div
+                    class="d-flex flex-column align-items-end justify-content-end  bgc-yellow-2 cart-bottom ">
+                    <div style="width: 328px;">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class=" mr-2 ">數量</span>
+                            <span id="qty-total">3</span>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class=" mr-2 ">運費</span>
+                            <span id="shipping">NT$ 31.5</span>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class=" mr-2 ">小計</span>
+                            <span id="sub-total">NT$ 31.5</span>
+                        </div>
+                        <div class="w-100 py-2">
+                            <div style="background-color: black;height:1px;"></div>
+                        </div>
+
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="">訂單總計</span>
+                            <span id="total">NT$ 56.4</span>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="bgc-gray-3"
+                    style="height: 40px;border-bottom-left-radius: 10px;border-bottom-right-radius: 10px;"></div>
+
+
+
+                <div class="d-flex justify-content-between pt-4 pb-3 px-4">
+                    <a href="">
+                        <div class="back-btn px-3 py-2">上一步</div>
+                    </a>
+
+                    <label for="form-submit">
+                        <div class="next-btn px-3 py-2 ">下一步<i class="fas fa-chevron-right ml-2"></i></div>
+                    </label>
+
+                </div>
+            </div>
+        </section>
+>>>>>>> Stashed changes:frontpage/cart/step2.html
     </main>
 
     <footer>
@@ -257,7 +358,6 @@
     <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
 
     <script src="/js/template.js"></script>
-    <script src="/js/frontpage/cart.js"></script>
 
 </body>
 

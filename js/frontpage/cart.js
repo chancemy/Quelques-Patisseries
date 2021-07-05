@@ -23,7 +23,7 @@ function sumUp() {
         itemTotal = parseInt(product.querySelector('.qty-select').value)*parseInt(product.querySelector('.item-price').dataset.price)
         subTotal += itemTotal;
         qty_total.innerHTML = qty;
-        sub_total.innerHTML ='NT$'+subTotal;
-        total.innerHTML ='NT$'+subTotal;
+        sub_total.innerHTML ='NT$ '+subTotal;
+        total.innerHTML ='NT$ '+subTotal;
     });
 }

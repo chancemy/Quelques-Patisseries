@@ -41,6 +41,10 @@ body p {
   margin: 0%;
 }
 
+body label {
+  margin: 0;
+}
+
 body nav {
   font-size: 16px;
   letter-spacing: 2px;

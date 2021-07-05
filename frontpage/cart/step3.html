@@ -27,12 +27,12 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <link rel="stylesheet" href="/css/template.css">
-    <link rel="stylesheet" href="/css/frontpage/cart.css">
+    <link rel="stylesheet" href="/css/frontpage/cart/cart.css">
+    <link rel="stylesheet" href="/css/frontpage/cart/cart_step3.css">
     <title>Document</title>
 </head>
 
 <body>
-    <div id="top"></div>
     <nav class="d-flex bgc-gray-2">
         <div class="container-fluid d-flex align-items-center justify-content-end"
             style="height: 100%;padding: 0 70px 0 0;">
@@ -97,59 +97,109 @@
         </div>
     </nav>
 
-    <div class="top-btn">
-        <a href="#top">
-            <i class="far fa-arrow-alt-circle-up"></i>
-        </a>
-
-    </div>
 
 
-    <main>
-        <div class="container" style="padding: 108px 0 100px 0;">
-            <form action="" class="d-flex flex-column">
-                <div>
-                    <label for="name">姓名：</label>
-                    <input id="name" type="text" name="name" placeholder="請輸入訂購人姓名">
-                </div>
-                <div>
-                    <label for="phone">電話：</label>
-                    <input id="phone" type="text" name="phone" placeholder="請輸入訂購人電話">
-                </div>
-                <div>
-                    <label for="address">地址：</label>
-                    <input id="address" type="text" name="address" placeholder="請輸入訂購人地址">
-                </div>
-                <div><span>務必正確輸入訂購人姓名電話及地址以確保正確送達</span></div>
-                <div>
-                    <label for="email">地址：</label>
-                    <input id="email" type="email" name="email" placeholder="請輸入電子郵件">
-                </div>
-                <div><span>我們會將您的通知信寄送至此</span></div>
-                <button type="submit" hidden id="form-submit"></button>
 
-            </form>
-            <div class="d-flex flex-column align-items-end">
-                <div class="d-flex justify-content-between align-items-center">
-                    <span class="text-sm text-gray-400 mr-2 ">運費：</span>
-                    <span id="ship-total" class="text-lg font-weight-bold text-gray-800 ">NT 31.5</span>
+    <main class="bgc-gray">
+        <section style="height: 338px;"></section>
+        <section class="bgc-yellow py-5">
+            <div class="container" style="padding: 108px 0 100px 0;">
+                <form action="" class="bgc-yellow-2 w-100 cart-form">
+                    <div class="w-100 bgc-gray-3 cart-title d-flex justify-content-center align-items-center ">
+                        訂購人資訊
+                    </div>
+                    <div class="w-100 text-center py-3"><span> * 務必正確輸入訂購人姓名電話及地址以確保正確送達</span></div>
+                    <div class="row w-75 mx-auto py-3">
+                        <div class="col-6   d-flex flex-column">
+                            <label for="name">姓名</label>
+                            <input required id="name" type="text" name="name" placeholder="請輸入訂購人姓名">
+                        </div>
+                        <div class="col-6  d-flex flex-column">
+                            <label for="phone">電話</label>
+                            <input required id="phone" type="text" name="phone" placeholder="請輸入訂購人電話">
+                        </div>
+                    </div>
+                    <div class="row w-75 mx-auto py-3">
+                        <div class="col-12 d-flex flex-column">
+                            <label for="address">地址</label>
+                            <div class="city-selector-set row">
+                                <div class="col-2 d-flex">
+                                    <!-- 郵遞區號欄位 (建議加入 readonly 屬性，防止修改) -->
+                                    <input class="zipcode w-100" name="zipcode" type="text" size="3" readonly placeholder="郵遞區號">
+                                </div>
+                                <div class="col-2 d-flex">
+                                    <!-- 縣市選單 -->
+                                    <select name="county" class="county w-100"></select>
+                                </div>
+                                <div class="col-2 d-flex">
+                                    <!-- 區域選單 -->
+                                    <select class="district w-100" name="district"></select>
+                                </div>
+                                <div class="col-6 d-flex ">
+                                    <!-- 區域選單 -->
+                                    <input class="w-100" type="text" name="address" placeholder="地址">
+                                </div>
+                                
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="row w-75 mx-auto py-3">
+                        <div class="col-12 d-flex flex-column">
+                            <label for="email">信箱</label>
+                            <input id="email" type="email" required name="email" placeholder="請輸入電子郵件">
+                        </div>
+                        <div class="col-12"><span>*我們會將您的通知信寄送至此</span></div>
+                    </div>
+
+
+                    <button type="submit" hidden id="form-submit"></button>
+                </form>
+                <div
+                    class="d-flex flex-column align-items-end justify-content-end  bgc-yellow-2  cart-bottom  ">
+                    <div style="width: 328px;">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class=" mr-2 ">數量</span>
+                            <span id="qty-total">3</span>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class=" mr-2 ">運費</span>
+                            <span id="shipping">NT$ 31.5</span>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class=" mr-2 ">小計</span>
+                            <span id="sub-total">NT$ 31.5</span>
+                        </div>
+                        <div class="w-100 py-2">
+                            <div style="background-color: black;height:1px;"></div>
+                        </div>
+
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="">訂單總計</span>
+                            <span id="total">NT$ 56.4</span>
+                        </div>
+
+                    </div>
                 </div>
-                <div class="d-flex justify-content-between align-items-center">
-                    <span class="text-sm text-gray-400 mr-2 ">小計：</span>
-                    <span id="sub-total" class="text-lg font-weight-bold text-gray-800 ">NT 31.5</span>
+                <div class="bgc-gray-3"
+                    style="height: 40px;border-bottom-left-radius: 10px;border-bottom-right-radius: 10px;"></div>
+
+
+
+                <div class="d-flex justify-content-between pt-4 pb-3 px-4">
+                    <a href="">
+                        <div class="back-btn px-3 py-2"><i class="fas fa-chevron-left mr-2"></i>上一步</div>
+                    </a>
+
+                    <label for="form-submit">
+                        <div class="next-btn  px-3 py-2 ">下一步<i class="fas fa-chevron-right ml-2"></i></div>
+                    </label>
+
                 </div>
 
-                <div class="d-flex justify-content-between align-items-center">
-                    <span class="">訂單總計：</span>
-                    <span id="total" class="text-lg font-weight-bold text-gray-800 ">NT 56.4</span>
-                </div>
+
             </div>
-            <div class="d-flex justify-content-between">
-                <button>上一頁</button>
-                <label for="form-submit"><button>下一頁</button></label>
-            </div>
-        </div>
-
+        </section>
     </main>
 
     <footer>
@@ -177,7 +227,16 @@
     <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
 
     <script src="/js/template.js"></script>
-    <script src="/js/frontpage/cart.js"></script>
+    <script src="/js/frontpage/tw-city-selector.js"></script>
+    <script>
+        new TwCitySelector({
+            el: '.city-selector-set',
+            elCounty: '.county', // 在 el 裡查找 element
+            elDistrict: '.district', // 在 el 裡查找 element
+            elZipcode: '.zipcode' // 在 el 裡查找 element
+        });
+    </script>
+
 
 </body>
 

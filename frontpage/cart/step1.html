@@ -27,12 +27,12 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <link rel="stylesheet" href="/css/template.css">
-    <link rel="stylesheet" href="/css/frontpage/cart.css">
+    <link rel="stylesheet" href="/css/frontpage/cart/cart.css">
+    <link rel="stylesheet" href="/css/frontpage/cart/cart_step1.css">
     <title>Document</title>
 </head>
 
 <body>
-    <div id="top"></div>
     <nav class="d-flex bgc-gray-2">
         <div class="container-fluid d-flex align-items-center justify-content-end"
             style="height: 100%;padding: 0 70px 0 0;">
@@ -97,13 +97,7 @@
         </div>
     </nav>
 
-    <div class="top-btn">
-        <a href="#top">
-            <i class="far fa-arrow-alt-circle-up"></i>
-        </a>
-
-    </div>
-
+    
 
     <main class="bgc-gray">
 
@@ -113,7 +107,7 @@
             <div class="container">
                 <table class="cart-table bgc-yellow-2 w-100 ">
                     <thead class="bgc-gray-3 px-4" style="color: white;height: 70px;">
-                        <tr style="">
+                        <tr >
                             <th scope="col" style="width:180px;border-top-left-radius:10px ;"></th>
                             <th scope="col">品名</th>
                             <th scope="col">數量</th>
@@ -166,15 +160,15 @@
                     </tbody>
 
                 </table>
-                <div class="d-flex flex-column align-items-end justify-content-end  bgc-yellow-2 px-4 cart-bottom">
-                    <div style="width: 328px;height: 112px;">
+                <div class="d-flex flex-column align-items-end justify-content-end  bgc-yellow-2 cart-bottom ">
+                    <div style="width: 328px;">
                         <div class="d-flex justify-content-between align-items-center">
-                            <span class="text-sm text-gray-400 mr-2 ">數量</span>
-                            <span id="qty-total" class="text-lg font-weight-bold text-gray-800 ">3</span>
+                            <span class=" mr-2 ">數量</span>
+                            <span id="qty-total">3</span>
                         </div>
                         <div class="d-flex justify-content-between align-items-center">
-                            <span class="text-sm text-gray-400 mr-2 ">小計</span>
-                            <span id="sub-total" class="text-lg font-weight-bold text-gray-800 ">NT$31.5</span>
+                            <span class=" mr-2 ">小計</span>
+                            <span id="sub-total">NT$ 31.5</span>
                         </div>
                         <div class="w-100 py-2">
                             <div style="background-color: black;height:1px;"></div>
@@ -182,7 +176,11 @@
 
                         <div class="d-flex justify-content-between align-items-center">
                             <span class="">訂單總計</span>
-                            <span id="total" class="text-lg font-weight-bold text-gray-800 ">NT$56.4</span>
+                            <span id="total" class="position-relative">NT$ 56.4</span>
+                        </div>
+                        <div class="d-flex justify-content-end align-items-center">
+                            
+                            <span>（不含運）</span>
                         </div>
                     </div>
                 </div>
@@ -226,6 +224,7 @@
 
     <script src="/js/template.js"></script>
     <script src="/js/frontpage/cart.js"></script>
+    
 
 </body>
 
