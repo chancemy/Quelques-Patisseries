@@ -61,13 +61,13 @@ body main .progress-style .quarter-round .round .active {
 }
 
 body main .progress-style .quarter-round .round .roundcircle-style::before {
-  width: 110px;
+  width: 60%;
   height: 3px;
   background-color: #54594d;
   border-radius: 30px;
   content: "";
   position: absolute;
-  right: 72%;
+  right: 70%;
   top: 50%;
 }
 
