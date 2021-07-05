@@ -112,53 +112,53 @@
         <section class="bgc-yellow py-5">
             <div class="container">
                 <table class="cart-table bgc-yellow-2 w-100 ">
-                    <thead class="bgc-gray-3 px-4" style="color: white;height: 70px;border-top-right-radius:10px ;">
-                        <tr>
-                            <th scope="col" style="width:180px;"></th>
+                    <thead class="bgc-gray-3 px-4" style="color: white;height: 70px;">
+                        <tr style="">
+                            <th scope="col" style="width:180px;border-top-left-radius:10px ;"></th>
                             <th scope="col">品名</th>
                             <th scope="col">數量</th>
                             <th scope="col">單價</th>
                             <th scope="col">小計</th>
-                            <th scope="col"></th>
+                            <th scope="col" style="border-top-right-radius:10px ;"></th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr style="height: 130px;position: relative;">
+                        <tr style="height: 130px;position: relative;" class="cart-products">
                             <td scope="row d-flex justify-content-center">
                                 <div class="mx-auto" style="width: 120px;height: 72px;"><img
                                         src="/img/frontpage/cart/sample.jpg" alt="">
                                 </div>
                             </td>
                             <td class="text-center">十四松</td>
-                            <td><select>
+                            <td><select class="qty-select">
                                     <option value="1">1</option>
                                     <option value="2">2</option>
                                     <option value="3">3</option>
-                                    <option value="3">4</option>
-                                    <option value="3">5</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
                                 </select></td>
-                            <td class="text-center">NT <span class="item-price">100</span></td>
-                            <td class="text-center">NT <span class="item-total">100</span></td>
+                            <td class="text-center">NT$ <span class="item-price" data-price="200">200</span></td>
+                            <td class="text-center">NT$ <span class="item-total">100</span></td>
                             <td class="text-center">
                                 <div class="delete-btn"><i class="far fa-trash-alt"></i></div>
                             </td>
                         </tr>
-                        <tr style="height: 130px;position: relative;">
+                        <tr style="height: 130px;position: relative;" class="cart-products">
                             <td scope="row d-flex justify-content-center">
                                 <div class="mx-auto" style="width: 120px;height: 72px;"><img
                                         src="/img/frontpage/cart/sample.jpg" alt="">
                                 </div>
                             </td>
                             <td class="text-center">十四松</td>
-                            <td><select>
+                            <td><select  class="qty-select">
                                     <option value="1">1</option>
                                     <option value="2">2</option>
                                     <option value="3">3</option>
-                                    <option value="3">4</option>
-                                    <option value="3">5</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
                                 </select></td>
-                            <td class="text-center">NT <span class="item-price">100</span></td>
-                            <td class="text-center">NT <span class="item-total">100</span></td>
+                            <td class="text-center">NT$<span class="item-price" data-price="100">100</span></td>
+                            <td class="text-center">NT$<span class="item-total">100</span></td>
                             <td class="text-center">
                                 <div class="delete-btn"><i class="far fa-trash-alt"></i></div>
                             </td>
@@ -166,19 +166,19 @@
                     </tbody>
 
                 </table>
-                <div class="d-flex flex-column align-items-end justify-content-end  bgc-yellow-2 px-4"
-                    style="height: 265px;">
+                <div class="d-flex flex-column align-items-end justify-content-end  bgc-yellow-2 px-4 cart-bottom">
                     <div style="width: 328px;height: 112px;">
                         <div class="d-flex justify-content-between align-items-center">
                             <span class="text-sm text-gray-400 mr-2 ">數量</span>
-                            <span id="sub-total" class="text-lg font-weight-bold text-gray-800 ">3</span>
+                            <span id="qty-total" class="text-lg font-weight-bold text-gray-800 ">3</span>
                         </div>
                         <div class="d-flex justify-content-between align-items-center">
                             <span class="text-sm text-gray-400 mr-2 ">小計</span>
                             <span id="sub-total" class="text-lg font-weight-bold text-gray-800 ">NT$31.5</span>
                         </div>
                         <div class="w-100 py-2">
-                        <div style="background-color: black;height:1px;"></div></div>
+                            <div style="background-color: black;height:1px;"></div>
+                        </div>
 
                         <div class="d-flex justify-content-between align-items-center">
                             <span class="">訂單總計</span>
@@ -186,10 +186,15 @@
                         </div>
                     </div>
                 </div>
-                <div class="bgc-gray-3" style="height: 40px;"></div>
-                <div class="d-flex justify-content-between">
-                    <button>上一頁</button>
-                    <button>下一頁</button>
+                <div class="bgc-gray-3"
+                    style="height: 40px;border-bottom-left-radius: 10px;border-bottom-right-radius: 10px;"></div>
+                <div class="d-flex justify-content-between pt-4 pb-3 px-4">
+                    <a href="" >
+                        <div class="back-btn px-3 py-2">繼續選購</div>
+                    </a>
+                    <a href="">
+                        <div class="next-btn  px-3 py-2 ">下一步<i class="fas fa-chevron-right ml-2"></i></div>
+                    </a>
                 </div>
             </div>
         </section>

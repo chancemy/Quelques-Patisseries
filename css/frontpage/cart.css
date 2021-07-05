@@ -5,24 +5,36 @@ img {
     width: 100%;
     height: 100%;
 }
-.cart-table{
+.cart-table {
     text-align: center;
     border-radius: 10px;
-    
+    font-size: 18px;
 }
-.cart-table tbody tr::after{
+.cart-table thead {
+    font-size: 26px;
+    font-weight: 200;
+}
+.cart-table tbody tr::after {
     content: "";
     width: 95%;
     height: 2px;
-    background-color: #CBCBCB;
+    background-color: #cbcbcb;
     position: absolute;
     bottom: 0%;
     left: 2.5%;
-
 }
 
-
-
-.delete-btn{
+.delete-btn {
     font-size: 25px;
+}
+.cart-bottom {
+    height: 265px;
+    font-size: 18px;
+}
+.back-btn {
+    border: #54594d 1px solid;
+}
+.next-btn {
+    background-color: #54594d;
+    color: white;
 }
