@@ -27,12 +27,12 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <link rel="stylesheet" href="/css/template.css">
-    <link rel="stylesheet" href="/css/frontpage/cart.css">
+    <link rel="stylesheet" href="/css/frontpage/cart/cart.css">
+    <link rel="stylesheet" href="/css/frontpage/cart/cart_step4.css">
     <title>Document</title>
 </head>
 
 <body>
-    <div id="top"></div>
     <nav class="d-flex bgc-gray-2">
         <div class="container-fluid d-flex align-items-center justify-content-end"
             style="height: 100%;padding: 0 70px 0 0;">
@@ -97,72 +97,112 @@
         </div>
     </nav>
 
-    <div class="top-btn">
-        <a href="#top">
-            <i class="far fa-arrow-alt-circle-up"></i>
-        </a>
-
-    </div>
 
 
-    <main>
-        <div class="container" style="padding: 108px 0 100px 0;">
-            <table class="table">
-                <thead class="thead-dark">
-                    <tr>
-                        <th scope="col"></th>
-                        <th scope="col">品名</th>
-                        <th scope="col">數量</th>
-                        <th scope="col">單價</th>
-                        <th scope="col">小計</th>
-                        
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td scope="row">
-                            <div style="width: 50px;height: 50px;"><img src="/img/frontpage/cart/sample.jpg" alt="">
-                            </div>
-                        </td >
-                        <td>十四松</td>
-                        <td>1</td>
-                        <td>NT <span class="item-price">100</span></td>
-                        <td>NT <span class="item-total">100</span></td>
-                        
-                    </tr>
-                    <tr>
-                        <td scope="row">
-                            <div style="width: 50px;height: 50px;"><img src="/img/frontpage/cart/sample.jpg" alt="">
-                            </div>
-                        </td>
-                        <td>十四松</td>
-                        <td>1</td>
-                        <td>NT <span class="item-price">100</span></td>
-                        <td>NT <span class="item-total">100</span></td>
-                       
-                    </tr>
-                </tbody>
-            </table>
-            <div class="d-flex flex-column align-items-end">
-                <div class="d-flex justify-content-between align-items-center">
-                    <span class="text-sm text-gray-400 mr-2 ">運費：</span>
-                    <span id="ship-total" class="text-lg font-weight-bold text-gray-800 ">NT 31.5</span>
+
+    <main class="bgc-gray">
+        <section style="height: 338px;"></section>
+        <section class="bgc-yellow py-5">
+            <div class="container ">
+                <div class="w-100 bgc-gray-3 cart-title d-flex justify-content-center align-items-center">
+                    您的訂單已成立！
                 </div>
-                <div class="d-flex justify-content-between align-items-center">
-                    <span class="text-sm text-gray-400 mr-2 ">小計：</span>
-                    <span id="sub-total" class="text-lg font-weight-bold text-gray-800 ">NT 31.5</span>
+                <table class="cart-table bgc-yellow-2 w-100 ">
+                    <thead class="px-4" style="height: 70px;">
+                        <tr class="position-relative">
+                            <th scope="col" style="width:180px;border-top-left-radius:10px ;"></th>
+                            <th scope="col">品名</th>
+                            <th scope="col">數量</th>
+                            <th scope="col">單價</th>
+                            <th scope="col">小計</th>
+                            <th scope="col" style="border-top-right-radius:10px ;"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr style="height: 130px;position: relative;" class="cart-products">
+                            <td scope="row d-flex justify-content-center">
+                                <div class="mx-auto" style="width: 120px;height: 72px;"><img
+                                        src="/img/frontpage/cart/sample.jpg" alt="">
+                                </div>
+                            </td>
+                            <td class="text-center">十四松</td>
+                            <td>1</td>
+                            <td class="text-center">NT$ <span class="item-price" data-price="200">200</span></td>
+                            <td class="text-center">NT$ <span class="item-total">100</span></td>
+                            <td class="text-center">
+                                <div class="delete-btn"><i class="far fa-trash-alt"></i></div>
+                            </td>
+                        </tr>
+                        <tr style="height: 130px;position: relative;" class="cart-products">
+                            <td scope="row d-flex justify-content-center">
+                                <div class="mx-auto" style="width: 120px;height: 72px;"><img
+                                        src="/img/frontpage/cart/sample.jpg" alt="">
+                                </div>
+                            </td>
+                            <td class="text-center">十四松</td>
+                            <td>1</td>
+                            <td class="text-center">NT$<span class="item-price" data-price="100">100</span></td>
+                            <td class="text-center">NT$<span class="item-total">100</span></td>
+                            <td class="text-center">
+                                <div class="delete-btn"><i class="far fa-trash-alt"></i></div>
+                            </td>
+                        </tr>
+                    </tbody>
+
+                </table>
+                <div class="w-100 bgc-gray-3 cart-title d-flex justify-content-center align-items-center">
+                    訂購人資訊
+                </div>
+                <div class="bgc-yellow-2 info-area">
+                    <div class="row">
+                        <div class="col-2">購買姓名</div>
+                        <div class="col-10">王曉明</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-2">連絡電話</div>
+                        <div class="col-10">123456789</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-2">連絡地址</div>
+                        <div class="col-10">420 台中市小鎮村英雄路一號</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-2">電子郵件</div>
+                        <div class="col-10">123456789@gmail.com</div>
+                    </div>
+                </div>
+                <div class="w-100 bgc-gray-3 cart-title d-flex justify-content-center align-items-center">
+                    訂單明細
+                </div>
+                <div class="bgc-yellow-2 info-area">
+                    <div class="row">
+                        <div class="col-2">數量</div>
+                        <div class="col-10">3</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-2">運費</div>
+                        <div class="col-10">NT$ 60</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-2">小計</div>
+                        <div class="col-10">NT$ 60</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-2">總計</div>
+                        <div class="col-10">NT$ 60</div>
+                    </div>
+                </div>
+                <div class="bgc-gray-3"
+                    style="height: 40px;border-bottom-left-radius: 10px;border-bottom-right-radius: 10px;"></div>
+                <div class="d-flex justify-content-end pt-4 pb-3 px-4">
+                    
+                    <a href="">
+                        <div class="next-btn  px-3 py-2 ">回首頁<i class="fas fa-chevron-right ml-2"></i></div>
+                    </a>
                 </div>
 
-                <div class="d-flex justify-content-between align-items-center">
-                    <span class="">訂單總計：</span>
-                    <span id="total" class="text-lg font-weight-bold text-gray-800 ">NT 56.4</span>
-                </div>
             </div>
-            <div class="d-flex justify-content-between">
-                <button>上一頁</button>
-                <button>下一頁</button>
-            </div>
-        </div>
+        </section>
 
     </main>
 
