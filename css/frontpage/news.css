@@ -195,6 +195,14 @@ body main .content-bg .page-btn a {
   margin: 77px 2px 0 2px;
 }
 
+body main .content-bg .top-btn {
+  font-size: 55px;
+  position: fixed;
+  bottom: 65px;
+  right: 128px;
+  z-index: 99;
+}
+
 body footer {
   background-color: #000;
   height: 108px;
