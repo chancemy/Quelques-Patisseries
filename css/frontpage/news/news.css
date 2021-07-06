@@ -67,16 +67,19 @@ body main .block-a .swiper-frame {
 
 body main .block-a .swiper-frame .swiper-container {
   width: 100%;
-  height: 860px;
 }
 
 body main .block-a .swiper-frame .swiper-container .swiper-slide {
   margin-top: 20px;
 }
 
+body main .block-a .swiper-frame .swiper-container .swiper-slide .news-frame {
+  width: 100%;
+}
+
 body main .block-a .swiper-frame .swiper-container .swiper-slide .news-frame .line-frame {
-  width: 476px;
-  height: 417px;
+  width: 100%;
+  padding-bottom: 87.6%;
   position: relative;
   margin: 0;
 }
@@ -132,8 +135,8 @@ body main .block-a .swiper-frame .swiper-container .swiper-slide .news-frame .li
 }
 
 body main .block-a .swiper-frame .swiper-container .swiper-slide .news-frame-2 .line-frame {
-  width: 476px;
-  height: 417px;
+  width: 100%;
+  padding-bottom: 87.6%;
   position: relative;
   margin: 0;
 }
