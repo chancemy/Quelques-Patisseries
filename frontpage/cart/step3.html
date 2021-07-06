@@ -27,6 +27,8 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <link rel="stylesheet" href="/css/template.css">
+    <link rel="stylesheet" href="/css/frontpage/cart/cart-template.css">
+
     <link rel="stylesheet" href="/css/frontpage/cart/cart.css">
     <link rel="stylesheet" href="/css/frontpage/cart/cart_step3.css">
     <title>Document</title>
@@ -101,7 +103,48 @@
 
 
     <main class="bgc-gray">
-        <section style="height: 338px;"></section>
+        <section class="d-flex justify-content-center align-items-end pb-4" style="height: 338px;">
+            <div class="container">
+
+                <!-- 以下結帳進度條 -->
+                <div class="col-lg-12 progress-style d-flex flex-column justify-content-between">
+                    <div class="d-flex">
+                        <div class="quarter-round">
+                            <div class="round">
+                                <div class="roundcircle-style-line active">
+                                    01</div>
+                            </div>
+                        </div>
+                        <div class="quarter-round">
+                            <div class="round">
+                                <div class="roundcircle-style active">
+                                    02</div>
+                            </div>
+                        </div>
+                        <div class="quarter-round">
+                            <div class="round">
+                                <div class="roundcircle-style">
+                                    03</div>
+                            </div>
+                        </div>
+                        <div class="quarter-round">
+                            <div class="round">
+                                <div class="roundcircle-style">
+                                    04</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 d-flex p-0">
+                        <div class="w-100 mt-2 d-flex justify-content-around">
+                            <p class="quarterround-text-pd mr_1 active">確認購物車</p>
+                            <p class="quarterround-text-pd mr_2 active">付款與運送方式</p>
+                            <p class="quarterround-text-pd mr_3">填寫資料</p>
+                            <p class="quarterround-text-pd mr_4">完成訂購</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <section class="bgc-yellow py-5">
             <div class="container" style="padding: 108px 0 100px 0;">
                 <form action="" class="bgc-yellow-2 w-100 cart-form">
@@ -125,7 +168,8 @@
                             <div class="city-selector-set row">
                                 <div class="col-2 d-flex">
                                     <!-- 郵遞區號欄位 (建議加入 readonly 屬性，防止修改) -->
-                                    <input class="zipcode w-100" name="zipcode" type="text" size="3" readonly placeholder="郵遞區號">
+                                    <input class="zipcode w-100" name="zipcode" type="text" size="3" readonly
+                                        placeholder="郵遞區號">
                                 </div>
                                 <div class="col-2 d-flex">
                                     <!-- 縣市選單 -->
@@ -139,7 +183,7 @@
                                     <!-- 區域選單 -->
                                     <input class="w-100" type="text" name="address" placeholder="地址">
                                 </div>
-                                
+
                             </div>
                         </div>
 
@@ -155,8 +199,7 @@
 
                     <button type="submit" hidden id="form-submit"></button>
                 </form>
-                <div
-                    class="d-flex flex-column align-items-end justify-content-end  bgc-yellow-2  cart-bottom  ">
+                <div class="d-flex flex-column align-items-end justify-content-end  bgc-yellow-2  cart-bottom  ">
                     <div style="width: 328px;">
                         <div class="d-flex justify-content-between align-items-center">
                             <span class=" mr-2 ">數量</span>

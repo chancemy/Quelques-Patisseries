@@ -1,33 +1,13 @@
-body img {
-  display: block;
-  -o-object-position: center;
-     object-position: center;
-  -o-object-fit: cover;
-     object-fit: cover;
-  width: 100%;
-  height: 100%;
-}
-
 body main {
   background-color: white;
   margin-top: 86px;
 }
 
-body main .container-fuild {
-  margin: 148px 0px 0px 0px;
-  padding: 148.5px 320px;
-  position: relative;
-  background-color: #e6e3e0;
+body main .progress-style {
+  padding: 91px 0px 28px 0px;
 }
 
-body main .container-fuild .progress-style {
-  padding: 0px 79px;
-  position: absolute;
-  top: -29px;
-  left: 240px;
-}
-
-body main .container-fuild .progress-style .quarter-round {
+body main .progress-style .quarter-round {
   width: 25%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -35,9 +15,10 @@ body main .container-fuild .progress-style .quarter-round {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 0% 6%;
 }
 
-body main .container-fuild .progress-style .quarter-round .round {
+body main .progress-style .quarter-round .round {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -51,86 +32,177 @@ body main .container-fuild .progress-style .quarter-round .round {
   position: relative;
 }
 
-body main .container-fuild .progress-style .quarter-round .round .roundcircle-style {
-  width: 51px;
-  height: 51px;
+body main .progress-style .quarter-round .round .roundcircle-style {
+  width: 69.5px;
+  height: 69.5px;
   background-color: #e5e5e5;
   border-radius: 50%;
   border-color: #b2b2b2;
-  border-width: 2px;
+  border-width: 3px;
   border-style: solid;
   color: #b2b2b2;
-  font-size: 18px;
+  font-size: 26px;
   text-align: center;
-  line-height: 47px;
+  line-height: 60px;
 }
 
-body main .container-fuild .progress-style .quarter-round .round .active {
-  background-color: #cbcbcb;
-  color: #54594d;
+body main .progress-style .quarter-round .round .active {
+  background-color: #666666;
+  color: whitesmoke;
+  border-color: #54594d;
 }
 
-body main .container-fuild .progress-style .quarter-round .round .roundcircle-style::before {
-  width: 110px;
-  height: 3px;
+body main .progress-style .quarter-round .round .roundcircle-style::before {
+  width: 75%;
+  height: 4px;
   background-color: #54594d;
   border-radius: 30px;
   content: "";
   position: absolute;
-  right: 72%;
+  right: 110%;
   top: 50%;
 }
 
-body main .container-fuild .progress-style .quarter-round .round .roundcircle-style-line {
-  width: 51px;
-  height: 51px;
+body main .progress-style .quarter-round .round .roundcircle-style-line {
+  width: 69.5px;
+  height: 69.5px;
   background-color: #e5e5e5;
   border-radius: 50%;
   border-color: #b2b2b2;
   border-width: 2px;
   border-style: solid;
   color: #b2b2b2;
-  font-size: 18px;
+  font-size: 26px;
   text-align: center;
-  line-height: 47px;
+  line-height: 60px;
 }
 
-body main .container-fuild .progress-style .quarterround-text-pd {
+body main .progress-style .quarterround-text-pd {
   color: #b2b2b2;
+  padding: 0px 3%;
 }
 
-body main .container-fuild .progress-style .mr_1 {
+body main .progress-style .mr_1 {
   margin-left: 8px;
 }
 
-body main .container-fuild .progress-style .mr_2 {
+body main .progress-style .mr_2 {
   margin-right: 12px;
 }
 
-body main .container-fuild .progress-style .mr_3 {
+body main .progress-style .mr_3 {
   margin-right: 22px;
 }
 
-body main .container-fuild .progress-style .mr_4 {
+body main .progress-style .mr_4 {
   margin-left: 12px;
   margin-right: 18px;
 }
 
-body main .container-fuild .thead-style {
-  height: 106px;
-  background-color: #54594d;
-  color: #f2efeb;
+body main .input-area {
+  height: 70px;
+  padding: 0 2.5%;
 }
 
-body main .container-fuild .btn-style {
-  width: 217px;
-  height: 83px;
-  font-size: 36px;
-  color: #54594d;
+body main .input-area input {
+  margin-right: 10px;
 }
 
-body main .container-fuild .btn-next {
+body main .input-area::after {
+  content: "";
+  width: 95%;
+  height: 2px;
+  background-color: #cbcbcb;
+  position: absolute;
+  bottom: 0%;
+  left: 2.5%;
+}
+
+body main .input-area:last-child::after {
+  content: "";
+  width: 95%;
+  height: 2px;
+  background-color: transparent;
+  position: absolute;
+  bottom: 0%;
+  left: 2.5%;
+}
+
+body main img {
+  display: block;
+  -o-object-position: center;
+     object-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+body main .cart-title {
+  color: white;
+  height: 70px;
+  font-size: 26px;
+  font-weight: 200;
+}
+
+body main .cart-title:first-child {
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+body main .cart-form {
+  border-radius: 10px;
+  font-size: 18px;
+}
+
+body main .cart-bottom {
+  height: 265px;
+  font-size: 18px;
+  padding: 30px 2.5%;
+}
+
+body main .back-btn {
+  border: #54594d 1px solid;
+}
+
+body main .next-btn {
   background-color: #54594d;
-  color: #f1f1f1;
+  color: white;
+}
+
+body .bgc-gray {
+  background-color: #f4f3ef;
+}
+
+body .bgc-yellow {
+  background-color: #e6e3e0;
+}
+
+body .bgc-yellow-2 {
+  background-color: #fffbef;
+}
+
+body .bgc-cart {
+  background-color: #fffbf6;
+}
+
+body .bgc-gray-2 {
+  background-color: #f4f3ef;
+}
+
+body .bgc-gray-3 {
+  background-color: #54594d;
+}
+
+body .bgc-light-green {
+  background-color: #54594d;
+}
+
+body .bgc-light-gray {
+  background-color: #e5e5e5;
+}
+
+body .bgc-drak-gray {
+  background-color: #b2b2b2;
 }
 /*# sourceMappingURL=cart-template.css.map */

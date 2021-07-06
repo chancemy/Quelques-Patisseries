@@ -1,108 +1,29 @@
-body img {
-  display: block;
-  -o-object-position: center;
-     object-position: center;
-  -o-object-fit: cover;
-     object-fit: cover;
-  width: 100%;
-  height: 100%;
+.input-area {
+  height: 70px;
+  padding: 0 2.5%;
 }
 
-body main {
-  background-color: white;
+.input-area input {
+  margin-right: 10px;
 }
 
-body main .progress-style {
-  padding: 0px 79px;
-  width: 80%;
-}
-
-body main .progress-style .quarter-round {
-  width: 25%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-body main .progress-style .quarter-round .round {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: relative;
-}
-
-body main .progress-style .quarter-round .round .roundcircle-style {
-  width: 51px;
-  height: 51px;
-  background-color: #e5e5e5;
-  border-radius: 50%;
-  border-color: #b2b2b2;
-  border-width: 2px;
-  border-style: solid;
-  color: #b2b2b2;
-  font-size: 18px;
-  text-align: center;
-  line-height: 47px;
-}
-
-body main .progress-style .quarter-round .round .active {
-  background-color: #cbcbcb;
-  color: #54594d;
-}
-
-body main .progress-style .quarter-round .round .roundcircle-style::before {
-  width: 60%;
-  height: 3px;
-  background-color: #54594d;
-  border-radius: 30px;
+.input-area::after {
   content: "";
+  width: 95%;
+  height: 2px;
+  background-color: #cbcbcb;
   position: absolute;
-  right: 70%;
-  top: 50%;
+  bottom: 0%;
+  left: 2.5%;
 }
 
-body main .progress-style .quarter-round .round .roundcircle-style-line {
-  width: 51px;
-  height: 51px;
-  background-color: #e5e5e5;
-  border-radius: 50%;
-  border-color: #b2b2b2;
-  border-width: 2px;
-  border-style: solid;
-  color: #b2b2b2;
-  font-size: 18px;
-  text-align: center;
-  line-height: 47px;
-}
-
-body main .progress-style .quarterround-text-pd {
-  color: #b2b2b2;
-}
-
-body main .progress-style .mr_1 {
-  margin-left: 8px;
-}
-
-body main .progress-style .mr_2 {
-  margin-right: 12px;
-}
-
-body main .progress-style .mr_3 {
-  margin-right: 22px;
-}
-
-body main .progress-style .mr_4 {
-  margin-left: 12px;
-  margin-right: 18px;
+.input-area:last-child::after {
+  content: "";
+  width: 95%;
+  height: 2px;
+  background-color: transparent;
+  position: absolute;
+  bottom: 0%;
+  left: 2.5%;
 }
 /*# sourceMappingURL=cart-2.css.map */

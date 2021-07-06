@@ -1,117 +1,179 @@
 body {
-    img {
-        display: block;
-        object-position: center;
-        object-fit: cover;
-        width: 100%;
-        height: 100%;
-    }
     main {
         background-color: white;
         margin-top: 86px;
-        .container-fuild {
-            margin: 148px 0px 0px 0px;
-            padding: 148.5px 320px;
-            position: relative;
-            background-color: #e6e3e0;
 
-            .progress-style {
-                padding: 0px 79px;
-                position: absolute;
-                top: -29px;
-                left: 240px;
+        //結帳進度條樣式
+        .progress-style {
+            padding: 91px 0px 28px 0px;
 
-                .quarter-round {
-                    width: 25%;
+            .quarter-round {
+                width: 25%;
+                display: flex;
+                align-items: center;
+                padding: 0% 6%;
+
+                .round {
+                    width: 100%;
                     display: flex;
+                    justify-content: center;
                     align-items: center;
+                    position: relative;
 
-                    .round {
-                        width: 100%;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        // padding-right: 10px;
-                        position: relative;
+                    .roundcircle-style {
+                        width: 69.5px;
+                        height: 69.5px;
+                        background-color: #e5e5e5;
+                        border-radius: 50%;
+                        border-color: #b2b2b2;
+                        border-width: 3px;
+                        border-style: solid;
+                        color: #b2b2b2;
+                        font-size: 26px;
+                        text-align: center;
+                        line-height: 60px;
+                    }
 
-                        .roundcircle-style {
-                            width: 51px;
-                            height: 51px;
-                            background-color: #e5e5e5;
-                            border-radius: 50%;
-                            border-color: #b2b2b2;
-                            border-width: 2px;
-                            border-style: solid;
-                            color: #b2b2b2;
-                            font-size: 18px;
-                            text-align: center;
-                            line-height: 47px;
-                        }
+                    .active {
+                        background-color: #666666;
+                        color: whitesmoke;
+                        border-color: #54594d;
+                    }
 
-                        .active {
-                            background-color: #cbcbcb;
-                            color: #54594d;
-                        }
+                    .roundcircle-style::before {
+                        width: 75%;
+                        height: 4px;
+                        background-color: #54594d;
+                        border-radius: 30px;
+                        content: "";
+                        position: absolute;
+                        right: 110%;
+                        top: 50%;
+                    }
 
-                        .roundcircle-style::before {
-                            width: 110px;
-                            height: 3px;
-                            background-color: #54594d;
-                            border-radius: 30px;
-                            content: "";
-                            position: absolute;
-                            right: 72%;
-                            top: 50%;
-                        }
-
-                        .roundcircle-style-line {
-                            width: 51px;
-                            height: 51px;
-                            background-color: #e5e5e5;
-                            border-radius: 50%;
-                            border-color: #b2b2b2;
-                            border-width: 2px;
-                            border-style: solid;
-                            color: #b2b2b2;
-                            font-size: 18px;
-                            text-align: center;
-                            line-height: 47px;
-                        }
+                    .roundcircle-style-line {
+                        width: 69.5px;
+                        height: 69.5px;
+                        background-color: #e5e5e5;
+                        border-radius: 50%;
+                        border-color: #b2b2b2;
+                        border-width: 2px;
+                        border-style: solid;
+                        color: #b2b2b2;
+                        font-size: 26px;
+                        text-align: center;
+                        line-height: 60px;
                     }
                 }
-                .quarterround-text-pd {
-                    color: #b2b2b2;
-                }
-                .mr_1 {
-                    margin-left: 8px;
-                }
-                .mr_2 {
-                    margin-right: 12px;
-                }
-                .mr_3 {
-                    margin-right: 22px;
-                }
-                .mr_4 {
-                    margin-left: 12px;
-                    margin-right: 18px;
-                }
             }
-
-            .thead-style {
-                height: 106px;
-                background-color: #54594d;
-                color: #f2efeb;
+            .quarterround-text-pd {
+                color: #b2b2b2;
+                padding: 0px 3%;
             }
-            .btn-style{
-                width: 217px;
-                height: 83px;
-                font-size: 36px;
-                color: #54594d;
+            .mr_1 {
+                margin-left: 8px;
             }
-            .btn-next{
-                background-color: #54594d;
-                color: #f1f1f1;
+            .mr_2 {
+                margin-right: 12px;
+            }
+            .mr_3 {
+                margin-right: 22px;
+            }
+            .mr_4 {
+                margin-left: 12px;
+                margin-right: 18px;
             }
         }
+
+        //表單樣式
+        .input-area {
+            height: 70px;
+            padding: 0 2.5%;
+            input {
+                margin-right: 10px;
+            }
+        }
+        .input-area::after {
+            content: "";
+            width: 95%;
+            height: 2px;
+            background-color: #cbcbcb;
+            position: absolute;
+            bottom: 0%;
+            left: 2.5%;
+        }
+        .input-area:last-child::after {
+            content: "";
+            width: 95%;
+            height: 2px;
+            background-color: transparent;
+            position: absolute;
+            bottom: 0%;
+            left: 2.5%;
+        }
+        img {
+            display: block;
+            object-position: center;
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+        .cart-title {
+            color: white;
+            height: 70px;
+
+            font-size: 26px;
+            font-weight: 200;
+        }
+        .cart-title:first-child {
+            border-top-right-radius: 10px;
+            border-top-left-radius: 10px;
+        }
+        .cart-form {
+            border-radius: 10px;
+            font-size: 18px;
+        }
+        .cart-bottom {
+            height: 265px;
+            font-size: 18px;
+            padding: 30px 2.5%;
+        }
+
+        // 按鈕樣式
+        .back-btn {
+            border: #54594d 1px solid;
+        }
+        .next-btn {
+            background-color: #54594d;
+            color: white;
+        }
+    }
+    //預設內容會用到的色塊顏色
+    .bgc-gray {
+        background-color: #f4f3ef;
+    }
+    .bgc-yellow {
+        background-color: #e6e3e0;
+    }
+    .bgc-yellow-2 {
+        background-color: #fffbef;
+    }
+    .bgc-cart {
+        background-color: #fffbf6;
+    }
+    .bgc-gray-2 {
+        background-color: rgb(244, 243, 239);
+    }
+    .bgc-gray-3 {
+        background-color: #54594d;
+    }
+    .bgc-light-green {
+        background-color: rgba(84, 89, 77, 53);
+    }
+    .bgc-light-gray {
+        background-color: #e5e5e5;
+    }
+    .bgc-drak-gray {
+        background-color: #b2b2b2;
     }
 }
