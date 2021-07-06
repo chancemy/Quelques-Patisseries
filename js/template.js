@@ -11,5 +11,10 @@ window.addEventListener('scroll', function (e) {
     }
     lastScrollY = st;
 });
+var navGroup = document.querySelector('.nav-group')
+function toggleThis(e) {
+    e.classList.toggle("change");
+    navGroup.classList.toggle('show')
+  }
 //滾輪效果套件初始化
 AOS.init();

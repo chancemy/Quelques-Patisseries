@@ -122,8 +122,19 @@ body {
         .section-about {
             .container-about {
                 padding: 10vh 0;
+                @media(max-width:992px){
+                    padding: 0%;
+                }
                 .about-img {
                     height: 80vh;
+                    @media(max-width:992px){
+                        height: 60vh;
+                    }
+                }
+                .content{
+                    @media(max-width:992px){
+                        height: 40vh;
+                    }
                 }
             }
             .about-bg-block {

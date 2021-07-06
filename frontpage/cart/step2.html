@@ -39,8 +39,8 @@
 
 <body>
     <nav class="d-flex bgc-gray-2">
-        <div class="container-fluid d-flex align-items-center justify-content-end"
-            style="height: 100%;padding: 0 70px 0 0;">
+        <div class="container-fluid d-flex align-items-center justify-content-end nav-container"
+            style="height: 100%;padding: 0 5% 0 0;">
             <div class="logo front-logo"><a href="">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 248 178.99">
 
@@ -83,14 +83,19 @@
                             points="246 175.8 123.75 175.8 1.51 175.8 100.72 37.39 111.48 43.43 139.84 3.25" />
                     </svg></a>
             </div>
-            <div class="d-flex align-items-center">
+            <div class="burger-icon" onclick="toggleThis(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+            <div class="nav-group d-md-flex align-items-center">
                 <ul class="d-flex align-items-center">
                     <li><a href="">關於我們</a></li>
                     <li><a href="">最新消息</a></li>
                     <li><a href="">線上商城</a></li>
                     <li><a href="">聯絡我們</a></li>
                 </ul>
-                <div class="d-flex  align-items-center justify-content-between icon-group">
+                <div class="d-md-flex  align-items-center justify-content-between icon-group">
                     <a href="">
                         <i class="fas fa-shopping-cart"></i>
                     </a>

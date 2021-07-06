@@ -34,11 +34,7 @@ body {
                         line-height: 60px;
                     }
 
-                    .active {
-                        background-color: #666666;
-                        color: whitesmoke;
-                        border-color: #54594d;
-                    }
+                   
 
                     .roundcircle-style::before {
                         width: 75%;
@@ -63,6 +59,11 @@ body {
                         font-size: 26px;
                         text-align: center;
                         line-height: 60px;
+                    }
+                    .active {
+                        background-color: #666666;
+                        color: whitesmoke;
+                        border-color: #54594d;
                     }
                 }
             }
