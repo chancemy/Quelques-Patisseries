@@ -43,7 +43,7 @@ body {
                     .roundcircle-style::before {
                         width: 75%;
                         height: 4px;
-                        background-color: #54594d;
+                        background-color: rgba(6, 38, 221, 0.5);
                         border-radius: 30px;
                         content: "";
                         position: absolute;
@@ -168,7 +168,7 @@ body {
         background-color: #54594d;
     }
     .bgc-light-green {
-        background-color: rgba(84, 89, 77, 53);
+        background-color: rgba(84, 89, 77, 0.5);
     }
     .bgc-light-gray {
         background-color: #e5e5e5;
