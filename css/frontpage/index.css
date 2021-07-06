@@ -42,6 +42,15 @@ body .loading .logo {
           transform: translate(0, -50%);
 }
 
+@media (max-width: 576px) {
+  body .loading .logo {
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+}
+
 body .loading .logo .path {
   stroke-dasharray: 1000;
   stroke-dashoffset: 1000;
@@ -125,6 +134,15 @@ body .banner .logo {
           transform: translate(0, -50%);
 }
 
+@media (max-width: 576px) {
+  body .banner .logo {
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+}
+
 body .banner .logo .a {
   fill: white;
 }
@@ -173,6 +191,7 @@ body main .section-about .container-about .about-img {
 @media (max-width: 992px) {
   body main .section-about .container-about .content {
     height: 40vh;
+    min-height: 400px;
   }
 }
 
@@ -190,7 +209,14 @@ body main .section-news .container-news {
   padding: 10vh 0;
 }
 
+@media (max-width: 576px) {
+  body main .section-news .container-news {
+    padding: 0;
+  }
+}
+
 body main .section-news .text-area-news {
+  position: absolute;
   top: 50%;
   left: 35%;
   -webkit-transform: translate(0, -50%);
@@ -198,8 +224,27 @@ body main .section-news .text-area-news {
   z-index: 5;
 }
 
+@media (max-width: 576px) {
+  body main .section-news .text-area-news {
+    position: static;
+    top: unset;
+    left: 25%;
+    width: 80%;
+    -webkit-transform: unset;
+            transform: unset;
+    height: 40vh;
+    min-height: 400px;
+  }
+}
+
 body main .section-news .news-img {
   height: 100vh;
+}
+
+@media (max-width: 576px) {
+  body main .section-news .news-img {
+    height: 60vh;
+  }
 }
 
 body main .section-news .news-bg-block {
@@ -212,14 +257,39 @@ body main .section-news .news-bg-block {
   z-index: -5;
 }
 
+@media (max-width: 576px) {
+  body main .section-news .news-bg-block {
+    width: 80%;
+    height: 20%;
+    top: 0;
+    right: 0;
+    left: unset;
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+}
+
 body main .section-product {
   overflow-x: hidden;
+}
+
+@media (max-width: 576px) {
+  body main .section-product .product-title {
+    height: 40vh;
+    min-height: 400px;
+  }
 }
 
 body main .section-product .container-product {
   padding: 10vh 0;
   margin: 0 -20px;
   width: calc(100% + 40px);
+}
+
+@media (max-width: 576px) {
+  body main .section-product .container-product {
+    padding: 0;
+  }
 }
 
 body main .section-product .container-product .product-img {
@@ -230,8 +300,27 @@ body main .section-product .container-product .product-img:nth-child(2n) {
   margin-top: -93px;
 }
 
+@media (max-width: 576px) {
+  body main .section-product .container-product .product-img:nth-child(2) {
+    margin-top: 0;
+    height: 60vh;
+  }
+  body main .section-product .container-product .product-img:nth-child(2) {
+    display: none;
+  }
+  body main .section-product .container-product .product-img:nth-child(3) {
+    display: none;
+  }
+}
+
 body main .section-store .container-store {
   padding: 0;
+}
+
+@media (max-width: 576px) {
+  body main .section-store .container-store {
+    padding: 10vh 0;
+  }
 }
 
 body main .section-store .container-store .store-bg-white {
@@ -273,6 +362,13 @@ body main .section-store .container-store .store-img .img-area {
   height: 90vh;
 }
 
+@media (max-width: 576px) {
+  body main .section-store .container-store .store-img .img-area {
+    height: 40vh;
+    margin-top: 8vh;
+  }
+}
+
 body main .section-store .container-store .address {
   padding: 10vh 5%;
   z-index: 10;
@@ -282,11 +378,24 @@ body main .section-store .container-store .address p {
   font-size: 24px;
 }
 
+@media (max-width: 576px) {
+  body main .section-store .container-store .address p {
+    font-size: 14px;
+  }
+}
+
 body main .section-store .container-store .logo {
   width: 80%;
   position: absolute;
   bottom: 10vh;
   right: 5%;
   z-index: 50;
+}
+
+@media (max-width: 576px) {
+  body main .section-store .container-store .logo {
+    top: 2%;
+    right: 5%;
+  }
 }
 /*# sourceMappingURL=index.css.map */
