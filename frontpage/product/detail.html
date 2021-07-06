@@ -27,6 +27,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <link rel="stylesheet" href="/css/template.css">
+    <link rel="stylesheet" href="/css/frontpage/product/detail.css">
     <title>Document</title>
 </head>
 
@@ -109,9 +110,91 @@
     </div>
 
 
-    <main>
-        <section class="bgc-gray w-100">
-            <div class="container-fluid"></div>
+    <main class="bgc-gray position-relative">
+        <section class="w-100 product-detail">
+            <div class="bgc-white-block" ></div>
+            <div class="bgc-white-block-down"></div>
+            <div class="container-fluid row no-gutters" style="padding: 10px 10%;">
+                <div class="col-6 p-4 d-flex flex-column ">
+                    <div class="w-100 mb-3 product-title d-flex align-items-end justify-content-start">年年有甜</div>
+                    <div class="w-100 row no-gutters product-img ">
+                        <div class="col-2 w-100 d-flex flex-column-reverse overflow-auto img-small">
+                            <div class="img-container mt-4">
+                                <img data-src="/img/frontpage/product/detail/sample_1.png" src="/img/frontpage/product/detail/sample_1.png" alt="">
+                            </div>
+                            <div class="img-container mt-4">
+                                <img data-src="/img/frontpage/product/detail/sample_2.png" src="/img/frontpage/product/detail/sample_2.png" alt="">
+                            </div>
+                            <div class="img-container mt-4">
+                                <img data-src="/img/frontpage/product/detail/sample_3.png" src="/img/frontpage/product/detail/sample_3.png" alt="">
+                            </div>
+                            <div class="img-container mt-4">
+                                <img data-src="/img/frontpage/product/detail/sample_1.png" src="/img/frontpage/product/detail/sample_1.png" alt="">
+                            </div>
+                            <div class="img-container mt-4">
+                                <img data-src="/img/frontpage/product/detail/sample_2.png" src="/img/frontpage/product/detail/sample_2.png" alt="">
+                            </div>
+                            <div class="img-container mt-4">
+                                <img data-src="/img/frontpage/product/detail/sample_3.png" src="/img/frontpage/product/detail/sample_3.png" alt="">
+                            </div>
+                        </div>
+                        <div class="col-10 w-100 pl-4 img-big">
+                            <img src="/img/frontpage/product/detail/sample_1.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 p-4 d-flex flex-column">
+                    <div class="product-type pb-2">期間限定商品</div>
+                    <div>
+                        <div class="title-area d-flex justify-content-center align-items-center">
+
+                            NT$ <span>550 </span>／<span> 盒</span>
+                        </div>
+                        <div class="bgc-yellow-2 p-5">
+                            <p style="color: #333333;">
+                                2021春節限定禮盒開始預購了唷～今年的春節限定禮盒超可愛！家裡有養狗兒的朋友，有沒有在封面春聯上找到自己的狗兒呢?</p>
+                        </div>
+                        <div class="title-area d-flex justify-content-center align-items-center">
+
+                            內容物
+                        </div>
+                        <div class="bgc-yellow-2 p-5 content">
+                            <p>
+                                楓糖無花果磅蛋糕切片 1 入</p>
+                            <p>
+                                泰式奶茶瑪德蓮 1 入</p>
+                            <p>
+                                莊園巧克力費南雪（4入一組) 1 組</p>
+                            <p>
+                                青檸橄欖油瑪德蓮 1 入</p>
+                            <p class="pt-2">
+                                *常溫點心皆為蛋奶素</p>
+                        </div>
+                        <div class="bar"></div>
+                        <div class="bgc-yellow-2 p-4 d-flex justify-content-around">
+                            <div><label for="number-select">
+                                    <p class="mr-3">數量</p>
+                                </label>
+                                <select name="quantity" id="number-select">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
+                            </div>
+                            <div class="cart-btn py-1 px-4">
+                                加入購物車 <i class="fas fa-chevron-right"></i>
+
+
+                            </div>
+                        </div>
+                        <div class="time text-right">販售期間 :  22/01/01 ~ 22/02/21</div>
+
+
+                    </div>
+                </div>
+            </div>
         </section>
 
     </main>
@@ -141,6 +224,7 @@
     <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
 
     <script src="/js/template.js"></script>
+    <script src="/js/frontpage/product_detail.js"></script>
 
 </body>
 
