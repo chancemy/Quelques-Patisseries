@@ -138,8 +138,8 @@ body nav .burger-icon {
         -ms-flex-direction: column;
             flex-direction: column;
     background-color: #f4f3ef;
-    -webkit-transition: 0.2s;
-    transition: 0.2s;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
   }
   body nav .nav-group ul {
     padding: 0;

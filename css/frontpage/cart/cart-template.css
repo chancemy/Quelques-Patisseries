@@ -45,16 +45,10 @@ body main .progress-style .quarter-round .round .roundcircle-style {
   line-height: 60px;
 }
 
-body main .progress-style .quarter-round .round .active {
-  background-color: #666666;
-  color: whitesmoke;
-  border-color: #54594d;
-}
-
 body main .progress-style .quarter-round .round .roundcircle-style::before {
   width: 75%;
   height: 4px;
-  background-color: #54594d;
+  background-color: rgba(6, 38, 221, 0.5);
   border-radius: 30px;
   content: "";
   position: absolute;
@@ -74,6 +68,12 @@ body main .progress-style .quarter-round .round .roundcircle-style-line {
   font-size: 26px;
   text-align: center;
   line-height: 60px;
+}
+
+body main .progress-style .quarter-round .round .active {
+  background-color: #666666;
+  color: whitesmoke;
+  border-color: #54594d;
 }
 
 body main .progress-style .quarterround-text-pd {
@@ -194,7 +194,7 @@ body .bgc-gray-3 {
 }
 
 body .bgc-light-green {
-  background-color: #54594d;
+  background-color: rgba(84, 89, 77, 0.5);
 }
 
 body .bgc-light-gray {
