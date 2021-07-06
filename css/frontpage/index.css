@@ -154,8 +154,26 @@ body main .section-about .container-about {
   padding: 10vh 0;
 }
 
+@media (max-width: 992px) {
+  body main .section-about .container-about {
+    padding: 0%;
+  }
+}
+
 body main .section-about .container-about .about-img {
   height: 80vh;
+}
+
+@media (max-width: 992px) {
+  body main .section-about .container-about .about-img {
+    height: 60vh;
+  }
+}
+
+@media (max-width: 992px) {
+  body main .section-about .container-about .content {
+    height: 40vh;
+  }
 }
 
 body main .section-about .about-bg-block {

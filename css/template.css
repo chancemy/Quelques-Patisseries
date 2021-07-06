@@ -84,10 +84,87 @@ body nav li {
   padding: 20px;
 }
 
-body nav .icon-group {
+body nav .burger-icon {
+  z-index: 150;
+  display: none;
+}
+
+@media (max-width: 776px) {
+  body nav .burger-icon {
+    display: inline-block;
+    cursor: pointer;
+  }
+  body nav .burger-icon .bar1,
+  body nav .burger-icon .bar2,
+  body nav .burger-icon .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+  }
+  body nav .burger-icon.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+  }
+  body nav .burger-icon.change .bar2 {
+    opacity: 0;
+  }
+  body nav .burger-icon.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+  }
+}
+
+@media (max-width: 776px) {
+  body nav .nav-group {
+    position: fixed;
+    z-index: 120;
+    right: -100%;
+    top: 0;
+    height: 100vh;
+    width: 60%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: #f4f3ef;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+  }
+  body nav .nav-group ul {
+    padding: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+body nav .nav-group.show {
+  right: 0;
+  opacity: 1;
+}
+
+body nav .nav-group .icon-group {
   width: 120px;
   margin-left: 10px;
   font-size: 30px;
+}
+
+@media (max-width: 776px) {
+  body nav .nav-group .icon-group {
+    margin: 0;
+  }
 }
 
 body .top-btn {
@@ -129,11 +206,11 @@ body .bgc-yellow {
 }
 
 body .bgc-yellow-2 {
-  background-color: #FFFBEF;
+  background-color: #fffbef;
 }
 
 body .bgc-cart {
-  background-color: #FFFBF6;
+  background-color: #fffbf6;
 }
 
 body .bgc-gray-2 {
@@ -141,7 +218,7 @@ body .bgc-gray-2 {
 }
 
 body .bgc-gray-3 {
-  background-color: #54594D;
+  background-color: #54594d;
 }
 
 @media (max-width: 1500px) {
