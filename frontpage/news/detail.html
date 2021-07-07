@@ -25,9 +25,13 @@
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <!-- 滾輪效果動畫套件 -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- lightbox -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.css"
+        integrity="sha512-Woz+DqWYJ51bpVk5Fv0yES/edIMXjj3Ynda+KWTIkGoynAMHrqTcDUQltbipuiaD5ymEo9520lyoVOo9jCQOCA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link rel="stylesheet" href="/css/template.css">
-    <link rel="stylesheet" href="/css/frontpage/product/detail.css">
+    <link rel="stylesheet" href="/css/frontpage/news/news_detail.css">
     <title>Document</title>
 </head>
 
@@ -111,97 +115,29 @@
 
 
     <main class="bgc-gray position-relative">
-        <section class="w-100 product-detail">
-            <div class="bgc-white-block" ></div>
-            <div class="bgc-white-block-down"></div>
-            <div class="container-fluid row no-gutters detail-container mx-auto">
-                <div class="col-6 pr-4 d-flex flex-column ">
-                    <div class="w-100 mb-3 product-title d-flex align-items-end justify-content-start">年年有甜</div>
-                    <div class="w-100 row no-gutters product-img ">
-                        <div class="col-2 w-100 d-flex flex-column-reverse overflow-auto img-small pr-4">
-                            <div class="img-container mt-4">
-                                <div class="mask"></div>
-                                <img data-src="/img/frontpage/product/detail/sample_1.png" src="/img/frontpage/product/detail/sample_1.png" alt="">
-                            </div>
-                            <div class="img-container mt-4">
-                                <div class="mask"></div>
-                                <img data-src="/img/frontpage/product/detail/sample_2.png" src="/img/frontpage/product/detail/sample_2.png" alt="">
-                            </div>
-                            <div class="img-container mt-4">
-                                <div class="mask"></div>
-                                <img data-src="/img/frontpage/product/detail/sample_3.png" src="/img/frontpage/product/detail/sample_3.png" alt="">
-                            </div>
-                            <div class="img-container mt-4">
-                                <div class="mask"></div>
-                                <img data-src="/img/frontpage/product/detail/sample_1.png" src="/img/frontpage/product/detail/sample_1.png" alt="">
-                            </div>
-                            <div class="img-container mt-4">
-                                <div class="mask"></div>
-                                <img data-src="/img/frontpage/product/detail/sample_2.png" src="/img/frontpage/product/detail/sample_2.png" alt="">
-                            </div>
-                            <div class="img-container mt-4">
-                                <div class="mask"></div>
-                                <img data-src="/img/frontpage/product/detail/sample_3.png" src="/img/frontpage/product/detail/sample_3.png" alt="">
-                            </div>
-                        </div>
-                        <div class="col-10 w-100 img-big">
-                            <div class="mask"></div>
-                            <img src="/img/frontpage/product/detail/sample_1.png" alt="">
-                        </div>
-                    </div>
+        <div class="btm-gray-block bgc-yellow"></div>
+        <div class="top-gray-block"></div>
+        <section class="news-detail w-100">
+            <div class="container-fluid p-0 detail-container row mx-auto no-gutters">
+                <div class="col-12 news-title-area">
+                    <div class="news-type">活動預告</div>
+                    <div class="news-title">期間限定＿草莓紫蘇聖多諾黑</div>
                 </div>
-                <div class="col-6 pl-4 d-flex flex-column">
-                    <div class="product-type pb-2">期間限定商品</div>
-                    <div>
-                        <div class="title-area d-flex justify-content-center align-items-center">
-
-                            NT$ <span>550 </span>／<span> 盒</span>
-                        </div>
-                        <div class="bgc-yellow-2 p-5">
-                            <p style="color: #333333;">
-                                2021春節限定禮盒開始預購了唷～今年的春節限定禮盒超可愛！家裡有養狗兒的朋友，有沒有在封面春聯上找到自己的狗兒呢?</p>
-                        </div>
-                        <div class="title-area d-flex justify-content-center align-items-center">
-
-                            內容物
-                        </div>
-                        <div class="bgc-yellow-2 p-5 content">
-                            <p>
-                                楓糖無花果磅蛋糕切片 1 入</p>
-                            <p>
-                                泰式奶茶瑪德蓮 1 入</p>
-                            <p>
-                                莊園巧克力費南雪（4入一組) 1 組</p>
-                            <p>
-                                青檸橄欖油瑪德蓮 1 入</p>
-                            <p class="pt-2">
-                                *常溫點心皆為蛋奶素</p>
-                        </div>
-                        <div class="bar"></div>
-                        <div class="bgc-yellow-2 p-4 d-flex justify-content-around">
-                            <div><label for="number-select">
-                                    <p class="mr-3">數量</p>
-                                </label>
-                                <select name="quantity" id="number-select">
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <option value="4">4</option>
-                                    <option value="5">5</option>
-                                </select>
-                            </div>
-                            <div class="cart-btn py-1 px-4">
-                                加入購物車 <i class="fas fa-chevron-right"></i>
+                <div class="col-8 news-img w-100">
+                    <a href="/img/frontpage/news/detail/2021-04-24_010728.jpg" data-lightbox="news-img"
+                       ><img src="/img/frontpage/news/detail/2021-04-24_010728.jpg" alt=""></a>
 
 
-                            </div>
-                        </div>
-                        <div class="time text-right">販售期間 :  22/01/01 ~ 22/02/21</div>
-
-
-                    </div>
                 </div>
+                <div class="col-4 news-text pl-5 d-flex flex-column justify-content-around">
+                    <div class="time">販售期間：22/01/01 ~ 22/02/21</div>
+                    <div class="discript">趁著草莓季，讓蛋糕櫃沐浴著草莓香，咬下一口，會驚艷草莓與紫蘇原來如此契合，淡淡的紫蘇提味卻不搶草莓風采，</div>
+                   <div class="price text-right">NT$ 260</div>
+
+                </div>
+
             </div>
+
         </section>
 
     </main>
@@ -229,9 +165,11 @@
     <!-- parallax 套件2-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
-
+    <!-- light box -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.js"
+        integrity="sha512-UHlZzRsMRK/ENyZqAJSmp/EwG8K/1X/SzErVgPc0c9pFyhUwUQmoKeEvv9X0uNw8x46FxgIJqlD2opSoH5fjug=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="/js/template.js"></script>
-    <script src="/js/frontpage/product_detail.js"></script>
 
 </body>
 

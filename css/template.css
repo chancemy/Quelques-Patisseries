@@ -63,12 +63,20 @@ body nav {
   top: 0;
 }
 
+@media (max-width: 576px) {
+  body nav {
+    height: 80px;
+  }
+}
+
 body nav .logo {
   position: absolute;
   left: 30px;
-  top: 16px;
+  top: 50%;
   width: 88px;
   height: 88px;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
 }
 
 body nav .logo .a {
@@ -80,6 +88,13 @@ body nav .logo .b {
   stroke: #201512;
   stroke-miterlimit: 10;
   stroke-width: 2px;
+}
+
+@media (max-width: 576px) {
+  body nav .logo {
+    height: 60px;
+    width: 60px;
+  }
 }
 
 body nav.hide-up {
@@ -95,7 +110,7 @@ body nav .burger-icon {
   display: none;
   position: absolute;
   top: 50%;
-  right: 10%;
+  right: 30px;
   -webkit-transform: translate(0, -50%);
           transform: translate(0, -50%);
 }
@@ -203,6 +218,12 @@ body footer {
   background-color: #000;
   height: 108px;
   width: 100%;
+}
+
+@media (max-width: 576px) {
+  body footer {
+    height: 80px;
+  }
 }
 
 body footer span {

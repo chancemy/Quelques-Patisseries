@@ -13,13 +13,9 @@ img {
 }
 
 .product-detail .detail-container {
-  padding: 10px 10%;
-}
-
-@media (max-width: 1400px) {
-  .product-detail .detail-container {
-    padding: 10px 50px;
-  }
+  padding: 10px 0;
+  width: 1475px;
+  max-width: 90%;
 }
 
 .product-detail .product-title {

@@ -53,13 +53,17 @@ body {
         position: fixed;
         transition: 0.4s ease-in-out;
         top: 0;
+        @media(max-width:576px){
+            height: 80px;
+        }
 
         .logo {
             position: absolute;
             left: 30px;
-            top: 16px;
+            top: 50%;
             width: 88px;
             height: 88px;
+            transform: translate(0,-50%);
             .a {
                 fill: #201512;
             }
@@ -69,6 +73,11 @@ body {
                 stroke: #201512;
                 stroke-miterlimit: 10;
                 stroke-width: 2px;
+            }
+            @media(max-width:576px) {
+                
+                height: 60px;
+                width: 60px;
             }
         }
         //這個是把nav藏起來用的 不要放東西在裡面
@@ -83,7 +92,7 @@ body {
             display: none;
             position: absolute;
             top: 50%;
-            right: 10%;
+            right: 30px;
             transform: translate(0,-50%);
             @media (max-width: 776px) {
                 display: inline-block;
@@ -174,6 +183,10 @@ body {
 
         height: 108px;
         width: 100%;
+        @media(max-width:576px){
+            height: 80px;
+        }
+
 
         span {
             color: #fff;
