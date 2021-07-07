@@ -78,13 +78,29 @@ body main .product-area .product-type li.checked::before {
   background-color: #42210b;
 }
 
-body main .product-area .product-list-area::-webkit-scrollbar {
-  display: none;
-}
-
 body main .product-area .product-list-area {
   max-height: 120vh;
   overflow-y: auto;
+  /* Track */
+  /* Handle */
+  /* Handle on hover */
+}
+
+body main .product-area .product-list-area::-webkit-scrollbar {
+  width: 10px;
+}
+
+body main .product-area .product-list-area::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+body main .product-area .product-list-area::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: #888;
+}
+
+body main .product-area .product-list-area::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
 
 body main .product-area .product-list-area .product-container {

@@ -69,12 +69,29 @@ body {
                     background-color: #42210b;
                 }
             }
-            .product-list-area::-webkit-scrollbar {
-                display: none;
-            }
+            
             .product-list-area {
                 max-height: 120vh;
                 overflow-y: auto;
+                &::-webkit-scrollbar {
+                    width: 10px;
+                }
+
+                /* Track */
+                &::-webkit-scrollbar-track {
+                    background: transparent;
+                }
+
+                /* Handle */
+                &::-webkit-scrollbar-thumb {
+                    border-radius: 10px;
+                    background: #888;
+                }
+
+                /* Handle on hover */
+                &::-webkit-scrollbar-thumb:hover {
+                    background: #555;
+                }
                 .product-container {
                     width: 33%;
                     .img-container {
