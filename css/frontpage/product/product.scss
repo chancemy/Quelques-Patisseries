@@ -16,6 +16,9 @@ body {
             position: absolute;
             top: 0;
             z-index: 2;
+            @media(max-width: 992px){
+                height: 200px;
+            }
         }
         .top-white-block {
             height: 100px;
@@ -25,30 +28,65 @@ body {
             position: absolute;
             top: 180px;
             left: 0;
+            @media(max-width: 992px){
+                height: 40px;
+                top: 160px;
+            }
+
         }
         .product-area {
             padding: 100px 2.5% 0;
+            @media(max-width: 992px){
+                padding: 0%;
+            }
             h1 {
                 margin-bottom: 10vh;
+                @media (max-width: 992px) {
+                    margin: 0%;
+                }
+                @media(max-width: 768px){
+                    font-size: 80px;
+                }
             }
             .product-type {
-                font-size: 17px;
-                line-height: 35px;
-
                 position: absolute;
                 top: 100px;
                 left: 5%;
+                font-size: 17px;
+                line-height: 35px;
+
+                @media (max-width: 992px) {
+                    position: static;
+                    top: unset;
+                    left: unset;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: flex-start;
+                   
+                }
 
                 ul {
+                    padding: 0;
                     .type-btn {
+                        position: relative;
+                        @media(max-width: 992px){
+                            padding:10px 15px;
+                            font-size: 14px;
+                        }
+                        
                         ul {
                             padding-left: 2rem;
+
+                            @media (max-width: 992px) {
+                                padding: 0%;
+                               
+                            }
                         }
                         .item-btn.hide {
                             display: none;
                         }
                     }
-                    padding: 0;
                 }
                 li::before {
                     content: "";
@@ -58,6 +96,10 @@ body {
                     height: 1rem;
                     border-radius: 50%;
                     border: #42210b solid 0.33rem;
+                    @media (max-width: 992px) {
+                        margin-right: 0;
+                        display: none;
+                    }
                 }
                 li.checked::before {
                     content: "";
@@ -67,11 +109,25 @@ body {
                     height: 1rem;
                     border-radius: 50%;
                     background-color: #42210b;
+                    @media (max-width: 992px) {
+                        display: none;
+                    }
+                }
+                li.checked::after {
+                    content: "";
+                    @media (max-width: 992px) {
+                        content: "";
+                        display: block;
+                        margin-bottom: 2px;
+                        height: 2px;
+                        width: 100%;
+                        background-color: #42210b;
+                    }
                 }
             }
-            
+
             .product-list-area {
-                max-height: 120vh;
+                max-height: 80vh;
                 overflow-y: auto;
                 &::-webkit-scrollbar {
                     width: 10px;
@@ -94,6 +150,11 @@ body {
                 }
                 .product-container {
                     width: calc(100% / 3);
+                    @media(max-width:576px) {
+                        width: 50%;
+                        font-size: 12px;
+                        
+                    }
                     .img-container {
                         width: 100%;
                         padding-top: 100%; /* 1:1 Aspect Ratio */
