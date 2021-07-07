@@ -4,20 +4,29 @@ body{
         .block-a{
             width: 100%;
             height: calc(100vh - 108px);
-            
+            position: relative;
+            @media (max-width:768px) {
+                height: 763px;             
+            }
             .title-frame{
                 padding-top: 10%;
-                padding-right: 4.7%;
-                @media (max-width:576px){
+                padding-right: 3.125%;
+                display: flex;
+                justify-content: flex-end;  
+                @media (max-width:1600px){
                     display: flex;
-                    justify-content: center;
+                    justify-content: flex-start;
                     align-items: center;
                     padding-top: 0;
-                    padding-right: 0;
+                    padding-left: 3.125%;
                 }
                 .title{
                     width: 520px;
-                    height: 420px;                
+                    height: 420px;
+                    @media (max-width:768px){
+                        width: 260px;
+                        height: 208px;
+                    }                
                     // background-color: yellow;
                     .title-text{
                         font-size: 150px;
@@ -25,17 +34,11 @@ body{
                         @media (max-width:1600px){
                             font-size: 100px;
                         }
-                        @media (max-width:900px){
-                            font-size: 80px;
-                        }
-                        @media (max-width:720px){
-                            font-size: 50px;
-                        }
                     }
                     .text{
                         font-size: 1.625rem;
                         @media (max-width:1600px){
-                            font-size: 1rem;
+                            font-size: 0.875rem;
                         }
                     }            
                 }
@@ -45,27 +48,39 @@ body{
                 background-position: center;
                 background-size: cover;
                 padding-top: 66.72%;
+                @media (max-width:768px) {
+                    padding-top: 74.52%;                
+                }
                 
             }
             .back-group{
                 z-index: -1;
                 width: 100%;
-                height: 100%;
-                @media (max-width:576px){
-                    height: 30%;
-                }
+                height: 100%;                
                 position: absolute;
                 top: 0;
                 left: 0;
+                @media (max-width:768px){
+                    height: 331px;
+                    top: 56.61%;
+                    left: 0;
+                }
                 .white-div{
                     width: 100%;
                     height: 40%;
                     background-color: white;
+                    @media (max-width:768px){
+                        height: 50%;
+                        background-color: #F4F3EF;
+                    }
                 }
                 .gray-div{
                     width: 100%;
                     height: 60%;
                     background-color: #E6E3E0;
+                    @media (max-width:768px){
+                        height: 50%;
+                    }
                 }
             }
         }
