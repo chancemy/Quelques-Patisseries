@@ -32,10 +32,10 @@ body {
             left: 105px;
             top: 50%;
             transform: translate(0, -50%);
-            @media(max-width:576px){
+            @media (max-width: 576px) {
                 left: 50%;
                 top: 50%;
-                transform: translate(-50%,-50%);
+                transform: translate(-50%, -50%);
             }
             .path {
                 stroke-dasharray: 1000;
@@ -86,9 +86,6 @@ body {
             div {
                 width: 100%;
                 height: 100vh;
-                img {
-                    width: 100%;
-                }
             }
         }
         .logo {
@@ -98,10 +95,10 @@ body {
             left: 105px;
             top: 50%;
             transform: translate(0, -50%);
-            @media(max-width:576px){
+            @media (max-width: 576px) {
                 left: 50%;
                 top: 50%;
-                transform: translate(-50%,-50%);
+                transform: translate(-50%, -50%);
             }
             //banner 的 logo 顏色
             .a {
@@ -130,19 +127,36 @@ body {
             overflow-y: hidden;
         }
         .section-about {
+            .cherry {
+                position: absolute;
+                bottom: 0%;
+                right: 10px;
+                width: 30%;
+                z-index: -1;
+                img {
+                    display: block;
+                    object-position: center;
+                    object-fit: unset;
+
+                    height: unset;
+                }
+                @media (max-width: 992px) {
+                    display: none;
+                }
+            }
             .container-about {
                 padding: 10vh 0;
-                @media(max-width:992px){
+                @media (max-width: 992px) {
                     padding: 0%;
                 }
                 .about-img {
                     height: 80vh;
-                    @media(max-width:992px){
+                    @media (max-width: 992px) {
                         height: 60vh;
                     }
                 }
-                .content{
-                    @media(max-width:992px){
+                .content {
+                    @media (max-width: 992px) {
                         height: 40vh;
                         min-height: 400px;
                     }
@@ -158,9 +172,27 @@ body {
             }
         }
         .section-news {
+            .news-cherry {
+                position: absolute;
+                top: 20vh;
+                right: 10px;
+                width:20%;
+                z-index: -1;
+                display: none;
+                img {
+                    display: block;
+                    object-position: center;
+                    object-fit: unset;
+                    height: unset;
+                }
+
+                @media (max-width: 576px) {
+                    display: block;
+                }
+            }
             .container-news {
                 padding: 10vh 0;
-                @media(max-width:576px){
+                @media (max-width: 576px) {
                     padding: 0;
                 }
             }
@@ -170,7 +202,7 @@ body {
                 left: 35%;
                 transform: translate(0, -50%);
                 z-index: 5;
-                @media(max-width:576px){
+                @media (max-width: 576px) {
                     position: static;
                     top: unset;
                     left: 25%;
@@ -178,12 +210,11 @@ body {
                     transform: unset;
                     height: 40vh;
                     min-height: 400px;
-                    
                 }
             }
             .news-img {
                 height: 100vh;
-                @media(max-width:576px){
+                @media (max-width: 576px) {
                     height: 60vh;
                 }
             }
@@ -194,21 +225,20 @@ body {
                 left: 50%;
                 transform: translate(-50%, 0);
                 z-index: -5;
-                @media(max-width:576px) {
+                @media (max-width: 576px) {
                     width: 80%;
                     height: 20%;
-                    top:0;
+                    top: 0;
                     right: 0;
                     left: unset;
-                    transform: translate(0,0);
-                    
+                    transform: translate(0, 0);
                 }
             }
         }
         .section-product {
             overflow-x: hidden;
-            .product-title{
-                @media(max-width:576px){
+            .product-title {
+                @media (max-width: 576px) {
                     height: 40vh;
                     min-height: 400px;
                 }
@@ -217,7 +247,7 @@ body {
                 padding: 10vh 0;
                 margin: 0 -20px;
                 width: calc(100% + 40px);
-                @media(max-width:576px){
+                @media (max-width: 576px) {
                     padding: 0;
                 }
                 .product-img {
@@ -225,18 +255,17 @@ body {
                     &:nth-child(2n) {
                         margin-top: -93px;
                     }
-                    @media(max-width:576px) {
-                        &:nth-child(2){
+                    @media (max-width: 576px) {
+                        &:nth-child(2) {
                             margin-top: 0;
                             height: 60vh;
                         }
-                        &:nth-child(2){
+                        &:nth-child(2) {
                             display: none;
                         }
-                        &:nth-child(3){
+                        &:nth-child(3) {
                             display: none;
                         }
-                        
                     }
                 }
             }
@@ -244,7 +273,7 @@ body {
         .section-store {
             .container-store {
                 padding: 0;
-                @media(max-width:576px){
+                @media (max-width: 576px) {
                     padding: 10vh 0;
                 }
                 .store-bg-white {
@@ -279,13 +308,11 @@ body {
                     z-index: 5;
                     .img-area {
                         height: 90vh;
-                        @media(max-width:576px) {
+                        @media (max-width: 576px) {
                             height: 40vh;
-                            
-                            margin-top : 8vh ;
-                            
-                        }
 
+                            margin-top: 8vh;
+                        }
                     }
                 }
                 .address {
@@ -293,7 +320,7 @@ body {
                     z-index: 10;
                     p {
                         font-size: 24px;
-                        @media(max-width: 576px){
+                        @media (max-width: 576px) {
                             font-size: 14px;
                         }
                     }
@@ -304,10 +331,9 @@ body {
                     bottom: 10vh;
                     right: 5%;
                     z-index: 50;
-                    @media(max-width:576px) {
+                    @media (max-width: 576px) {
                         top: 2%;
                         right: 5%;
-                        
                     }
                 }
             }

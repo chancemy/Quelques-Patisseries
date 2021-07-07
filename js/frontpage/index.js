@@ -30,3 +30,16 @@ function showPage() {
 }
 var scene = document.getElementById('scene');
 var parallaxInstance = new Parallax(scene);
+
+window.addEventListener('scroll', function (e) {
+    var aboutTop = document.querySelector('.section-about').offsetTop;
+    var aboutHeight = document.querySelector('.section-about').offsetHeight;
+    let scrollY = this.scrollY;
+
+    var cherry = document.querySelector('.cherry');
+    var cherryMove = ((scrollY - aboutTop) / aboutHeight) * 100;
+    cherry.style.bottom = cherryMove + '%'
+
+
+
+})
