@@ -580,8 +580,13 @@
         var pageBtns = document.querySelectorAll('.page-btn');
         pageBtns.forEach(pageBtn => {
             pageBtn.addEventListener('click',function(){
-                this.style.color =  "#036893";
-                this.style.borderColor =  "#036893";
+                pageBtns.forEach(function(pageBtn){
+                    pageBtn.style.color = 'black';
+                    pageBtn.style.borderColor = '#42210B';
+
+                });
+                this.style.color =  '#036893';
+                this.style.borderColor =  '#036893';
                 var index  = Number(this.innerText) - 1 ;
                 swiper.slideTo(index);
                 console.log(swiper.activeIndex);
