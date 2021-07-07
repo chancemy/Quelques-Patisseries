@@ -104,7 +104,7 @@ body main .product-area .product-list-area::-webkit-scrollbar-thumb:hover {
 }
 
 body main .product-area .product-list-area .product-container {
-  width: 33%;
+  width: calc(100% / 3);
 }
 
 body main .product-area .product-list-area .product-container .img-container {

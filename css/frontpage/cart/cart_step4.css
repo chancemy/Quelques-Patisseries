@@ -1,12 +1,17 @@
-
 .cart-table {
     text-align: center;
-    border-radius: 10px;
     font-size: 18px;
 }
 .cart-table thead {
     font-size: 26px;
     font-weight: 200;
+}
+.cart-table .cart-products {
+    height: 130px;
+}
+.cart-table .cart-img {
+    width: 120px;
+    height: 72px;
 }
 .cart-table thead tr::after {
     content: "";
@@ -35,10 +40,9 @@
     bottom: 0%;
     left: 2.5%;
 }
-.info-area{
+.info-area {
     padding: 10px 0;
 }
-.info-area .row{
-padding: 10px 5%;
-
+.info-area .row {
+    padding: 10px 5%;
 }

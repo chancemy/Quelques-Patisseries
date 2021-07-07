@@ -93,7 +93,7 @@ body {
                     background: #555;
                 }
                 .product-container {
-                    width: 33%;
+                    width: calc(100% / 3);
                     .img-container {
                         width: 100%;
                         padding-top: 100%; /* 1:1 Aspect Ratio */

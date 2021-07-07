@@ -150,10 +150,10 @@
                 </div>
             </div>
         </section>
-        
+
         <!--  以下表單內容  -->
         <section class="bgc-yellow py-5">
-            <div class="container" style="padding: 108px 0 100px 0;">
+            <div class="container">
                 <form action="" class="bgc-yellow-2 w-100 cart-form">
                     <div class="w-100 bgc-gray-3 cart-title d-flex justify-content-center align-items-center ">
                         訂購人資訊
@@ -204,37 +204,37 @@
                     </div>
 
 
-                    <button type="submit" hidden id="form-submit"></button>
-                </form>
+                    <button type="submit" hidden id="form-submit"></button><!-- 表單內結帳資訊 -->
+                    <div class="d-flex flex-column align-items-end justify-content-end  bgc-yellow-2  cart-bottom  ">
+                        <div style="width: 328px;">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class=" mr-2 ">數量</span>
+                                <span id="qty-total">3</span>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class=" mr-2 ">運費</span>
+                                <span id="shipping">NT$ 31.5</span>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class=" mr-2 ">小計</span>
+                                <span id="sub-total">NT$ 31.5</span>
+                            </div>
+                            <div class="w-100 py-2">
+                                <div style="background-color: black;height:1px;"></div>
+                            </div>
 
-                <!-- 表單內結帳資訊 -->
-                <div class="d-flex flex-column align-items-end justify-content-end  bgc-yellow-2  cart-bottom  ">
-                    <div style="width: 328px;">
-                        <div class="d-flex justify-content-between align-items-center">
-                            <span class=" mr-2 ">數量</span>
-                            <span id="qty-total">3</span>
-                        </div>
-                        <div class="d-flex justify-content-between align-items-center">
-                            <span class=" mr-2 ">運費</span>
-                            <span id="shipping">NT$ 31.5</span>
-                        </div>
-                        <div class="d-flex justify-content-between align-items-center">
-                            <span class=" mr-2 ">小計</span>
-                            <span id="sub-total">NT$ 31.5</span>
-                        </div>
-                        <div class="w-100 py-2">
-                            <div style="background-color: black;height:1px;"></div>
-                        </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="">訂單總計</span>
+                                <span id="total">NT$ 56.4</span>
+                            </div>
 
-                        <div class="d-flex justify-content-between align-items-center">
-                            <span class="">訂單總計</span>
-                            <span id="total">NT$ 56.4</span>
                         </div>
-
                     </div>
-                </div>
-                <div class="bgc-gray-3"
-                    style="height: 40px;border-bottom-left-radius: 10px;border-bottom-right-radius: 10px;"></div>
+                    <div class="bgc-gray-3"
+                        style="height: 40px;border-bottom-left-radius: 10px;border-bottom-right-radius: 10px;"></div>
+
+
+                </form>
 
 
 

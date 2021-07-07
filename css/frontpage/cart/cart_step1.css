@@ -1,12 +1,16 @@
-
 .cart-table {
     text-align: center;
-    border-radius: 10px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
     font-size: 18px;
 }
 .cart-table thead {
     font-size: 26px;
     font-weight: 200;
+}
+.cart-table .cart-img {
+    width: 120px;
+    height: 72px;
 }
 .cart-table tbody tr::after {
     content: "";
