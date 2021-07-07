@@ -8,44 +8,77 @@ main{
     }
     .block-a{
         width: 100%;
-        // height: 843px;
+        // height: 931px;
         position: relative;
+        display: flex;
+        @media (max-width:768px) {
+            display: block;
+        }
         .img{
             width: 55.57%;
             height: 37vw;
             background-image: url('/img/frontpage/aboutUs/img-a.jpg');
             background-position: center;
             background-size: cover;
+            order: 2;
+            margin-bottom: 219px;
             @media (max-width:768px) {
                 width: 100%;
                 height: 74.52vw;
+                order: 1;
+                margin-bottom: 0;
             }
         }
         .text-frame{
+            order: 1;
+            width: 44.43%;
             @media (max-width:768px) {
                 width: 100%;
+                order: 2;
             }
             .about{
+                font-size: 200px;
+                line-height: 200px;
+                padding-top: 119px;
+                padding-left: 184px;
                 @media (max-width:768px) {
                     padding-top: 12vw;
                     padding-left: 8.68vw;
                     font-size: 100px;
+                    padding-top: 0;
+                    padding-right: 0;
                 }
             }
             .content{
                 width: 100%;
-                @media (max-width:768px) {
-                    .us{
+                .us{
+                    font-size: 200px;
+                    line-height: 200px;
+                    padding-left: 184px;
+                    margin-bottom: 80px;
+                    @media (max-width:768px) {
                         padding-left: 8.68vw;
                         font-size: 100px;
                         display: flex;
                         align-items: flex-start;
-                    }
-                    .text{
-                        padding-top: 4.16vw;
-                        font-size: 14px;
+                        line-height: normal;
+                        margin-bottom: 0;
+                        
                     }
                 }
+                .text{ 
+                    font-size: 26px;
+                    padding-left: 184px;
+                    padding-right: 51px;
+                    @media (max-width:768px) {
+                        padding-top: 4.16vw;
+                        font-size: 14px;
+                        padding-left: 0;
+                        padding-right: 0;
+
+                    }
+                }
+                
             }
             
         }
