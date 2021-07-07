@@ -4,11 +4,12 @@ body main.move-down {
 
 body main.move-down .block-a {
   width: 100%;
+  height: calc(100vh - 108px);
 }
 
 body main.move-down .block-a .title-frame {
-  padding-top: 115px;
-  padding-right: 0.75%;
+  padding-top: 10%;
+  padding-right: 4.7%;
 }
 
 @media (max-width: 576px) {
@@ -37,7 +38,19 @@ body main.move-down .block-a .title-frame .title .title-text {
   font-weight: bolder;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 1600px) {
+  body main.move-down .block-a .title-frame .title .title-text {
+    font-size: 100px;
+  }
+}
+
+@media (max-width: 900px) {
+  body main.move-down .block-a .title-frame .title .title-text {
+    font-size: 80px;
+  }
+}
+
+@media (max-width: 720px) {
   body main.move-down .block-a .title-frame .title .title-text {
     font-size: 50px;
   }
@@ -47,7 +60,7 @@ body main.move-down .block-a .title-frame .title .text {
   font-size: 1.625rem;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 1600px) {
   body main.move-down .block-a .title-frame .title .text {
     font-size: 1rem;
   }
@@ -63,7 +76,7 @@ body main.move-down .block-a .img-a {
 body main.move-down .block-a .back-group {
   z-index: -1;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   position: absolute;
   top: 0;
   left: 0;
@@ -71,7 +84,7 @@ body main.move-down .block-a .back-group {
 
 @media (max-width: 576px) {
   body main.move-down .block-a .back-group {
-    height: 50vh;
+    height: 30%;
   }
 }
 
@@ -94,42 +107,56 @@ body main.move-down .block-b {
 
 body main.move-down .block-b .img-b {
   width: 100%;
-  height: 100vh;
+  height: 0;
+  padding-top: 56.25%;
   background-image: url("/img/frontpage/aboutUs/img-b.jpg");
   background-size: cover;
   background-position: center;
+  position: relative;
 }
 
 body main.move-down .block-b .img-b .content {
-  padding-top: 653px;
-  padding-right: 35px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding-top: 39.54%;
+  padding-right: 3.24%;
   color: white;
   font-size: 1.625rem;
   text-align: center;
 }
 
+@media (max-width: 1600px) {
+  body main.move-down .block-b .img-b .content {
+    font-size: 1rem;
+  }
+}
+
 body main.move-down .block-c {
   width: 100%;
   height: 100vh;
+  margin-bottom: 16.94vh;
   position: relative;
 }
 
 body main.move-down .block-c .img-frame {
-  padding-top: 190px;
+  width: 100%;
+  padding-top: 12.625%;
 }
 
 body main.move-down .block-c .img-frame .img-c {
-  width: 810px;
-  height: 827px;
+  width: 84.375%;
+  height: 0;
   background-image: url("/img/frontpage/aboutUs/img-c.jpg");
   background-position: center;
   background-size: cover;
+  padding-top: 84.375%;
 }
 
 body main.move-down .block-c .title-frame {
-  padding-top: 450px;
-  padding-right: 132px;
-  padding-left: 125px;
+  padding-top: 41.66%;
+  padding-right: 13.75%;
+  padding-left: 13%;
 }
 
 body main.move-down .block-c .title-frame .title {
@@ -137,8 +164,32 @@ body main.move-down .block-c .title-frame .title {
   font-weight: bolder;
 }
 
+@media (max-width: 1600px) {
+  body main.move-down .block-c .title-frame .title {
+    font-size: 100px;
+  }
+}
+
+@media (max-width: 900px) {
+  body main.move-down .block-c .title-frame .title {
+    font-size: 80px;
+  }
+}
+
+@media (max-width: 720px) {
+  body main.move-down .block-c .title-frame .title {
+    font-size: 50px;
+  }
+}
+
 body main.move-down .block-c .title-frame .content {
   font-size: 1.625rem;
+}
+
+@media (max-width: 1600px) {
+  body main.move-down .block-c .title-frame .content {
+    font-size: 1rem;
+  }
 }
 
 body main.move-down .block-c .back-group {
@@ -171,13 +222,13 @@ body main.move-down .block-c .back-group .gray-div .white-div {
 body main.move-down .block-d {
   width: 100%;
   height: 100vh;
-  margin-top: 120px;
   position: relative;
 }
 
 body main.move-down .block-d .img-d {
-  width: 1085px;
-  height: 730px;
+  width: 100%;
+  height: 0;
+  padding-top: 62.15%;
   background-image: url("/img/frontpage/aboutUs/img-d.jpg");
   background-position: center;
   background-size: cover;
