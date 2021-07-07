@@ -8,11 +8,13 @@ img {
 
 .product-detail {
     padding: 108px 0;
+    @media (max-width: 992px) {
+        padding: 80px 0;
+    }
     .detail-container {
         padding: 10px 0;
         width: 1475px;
         max-width: 90%;
-        
     }
     .product-title {
         height: 16%;
@@ -30,20 +32,33 @@ img {
     .bgc-white-block-down {
         background-color: white;
         position: absolute;
-        bottom: 85px;
+        top: 850px;
         right: 0;
         width: 16%;
         height: 2vh;
     }
     .product-img {
         height: 650px;
+       
+        @media(max-width:992px) {
+            height: unset;
+            
+        }
 
         .img-small {
             height: 100%;
+            overflow-y: scroll;
+            @media (max-width: 992px) {
+               height: unset;
+                overflow-x: scroll;
+                
+            }
+
             &::-webkit-scrollbar {
-                width: 5px;
-                position: absolute;
-                left: 0;
+                width: 4px;
+                @media(max-width:992px){
+                    height: 4px;
+                }
             }
 
             /* Track */
@@ -61,14 +76,23 @@ img {
             &::-webkit-scrollbar-thumb:hover {
                 background: #555;
             }
+            .product-imgs {
+                width: 100%;
+                @media (max-width: 992px) {
+                    height: 100%;
+                    width: 16%;
+                }
+            }
+
             .img-container {
                 width: 100%;
                 padding-top: 112%;
                 position: relative;
                 cursor: pointer;
+              
                 &:hover > .mask {
                     opacity: 0;
-                    transition: .2s;
+                    transition: 0.2s;
                 }
                 .mask {
                     position: absolute;
@@ -81,7 +105,6 @@ img {
                     z-index: 5;
                     background-color: rgba(240, 240, 240, 0.548);
                 }
-
                 img {
                     position: absolute;
                     top: 0;
@@ -94,6 +117,9 @@ img {
 
         .img-big {
             height: 100%;
+            @media (max-width: 992px) {
+               height: 60vh;
+            }
         }
     }
     .product-type {
@@ -130,5 +156,10 @@ img {
     .time {
         color: #4d4d4d;
         font-size: 18px;
+        @media (max-width: 992px) {
+            position: absolute;
+            top: 0;
+            right: 0%;
+        }
     }
 }

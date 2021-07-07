@@ -12,6 +12,12 @@ img {
   padding: 108px 0;
 }
 
+@media (max-width: 992px) {
+  .product-detail {
+    padding: 80px 0;
+  }
+}
+
 .product-detail .detail-container {
   padding: 10px 0;
   width: 1475px;
@@ -36,7 +42,7 @@ img {
 .product-detail .bgc-white-block-down {
   background-color: white;
   position: absolute;
-  bottom: 85px;
+  top: 850px;
   right: 0;
   width: 16%;
   height: 2vh;
@@ -46,17 +52,35 @@ img {
   height: 650px;
 }
 
+@media (max-width: 992px) {
+  .product-detail .product-img {
+    height: unset;
+  }
+}
+
 .product-detail .product-img .img-small {
   height: 100%;
+  overflow-y: scroll;
   /* Track */
   /* Handle */
   /* Handle on hover */
 }
 
+@media (max-width: 992px) {
+  .product-detail .product-img .img-small {
+    height: unset;
+    overflow-x: scroll;
+  }
+}
+
 .product-detail .product-img .img-small::-webkit-scrollbar {
-  width: 5px;
-  position: absolute;
-  left: 0;
+  width: 4px;
+}
+
+@media (max-width: 992px) {
+  .product-detail .product-img .img-small::-webkit-scrollbar {
+    height: 4px;
+  }
 }
 
 .product-detail .product-img .img-small::-webkit-scrollbar-track {
@@ -72,6 +96,17 @@ img {
   background: #555;
 }
 
+.product-detail .product-img .img-small .product-imgs {
+  width: 100%;
+}
+
+@media (max-width: 992px) {
+  .product-detail .product-img .img-small .product-imgs {
+    height: 100%;
+    width: 16%;
+  }
+}
+
 .product-detail .product-img .img-small .img-container {
   width: 100%;
   padding-top: 112%;
@@ -81,8 +116,8 @@ img {
 
 .product-detail .product-img .img-small .img-container:hover > .mask {
   opacity: 0;
-  -webkit-transition: .2s;
-  transition: .2s;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
 .product-detail .product-img .img-small .img-container .mask {
@@ -107,6 +142,12 @@ img {
 
 .product-detail .product-img .img-big {
   height: 100%;
+}
+
+@media (max-width: 992px) {
+  .product-detail .product-img .img-big {
+    height: 60vh;
+  }
 }
 
 .product-detail .product-type {
@@ -145,5 +186,13 @@ img {
 .product-detail .time {
   color: #4d4d4d;
   font-size: 18px;
+}
+
+@media (max-width: 992px) {
+  .product-detail .time {
+    position: absolute;
+    top: 0;
+    right: 0%;
+  }
 }
 /*# sourceMappingURL=detail.css.map */
