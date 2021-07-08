@@ -16,18 +16,21 @@ img {
 }
 .top-gray-block {
     position: absolute;
-    top: 270px;
+    top: 300px;
     left: 0;
     width: 40%;
     height: 4px;
     background-color: #808080;
     @media (max-width: 992px) {
-        top:250px;
+        top: 250px;
     }
 }
 .news-detail {
     padding: 108px 0;
     color: #4d4d4d;
+    @media (max-width: 768px) {
+        padding: 80px 0;
+    }
     .detail-container {
         width: 1312px;
         max-width: 90%;
@@ -57,9 +60,17 @@ img {
     .news-text {
         font-size: 26px;
         line-height: 50px;
+        text-align: justify;
+        text-justify: inter-ideograph;
+
         @media (max-width: 992px) {
-            margin-top: 50px;
+            margin-top: 20px;
             font-size: 20px;
+        }
+        .time {
+            @media (max-width: 1400px) {
+                font-size: 20px;
+            }
         }
     }
 }
