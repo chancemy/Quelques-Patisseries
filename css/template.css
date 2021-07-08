@@ -243,11 +243,18 @@ body footer span {
   font-family: times, serif;
   font-size: 16px;
   letter-spacing: 1px;
+  text-align: center;
 }
 
 @media (max-width: 576px) {
   body footer span {
     font-size: 14px;
+  }
+}
+
+@media (max-width: 430px) {
+  body footer span {
+    font-size: 12px;
   }
 }
 
