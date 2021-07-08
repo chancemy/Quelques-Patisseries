@@ -121,7 +121,12 @@ body{
                                         text-overflow: ellipsis;
                                         @media (max-width:1366px){
                                             font-size: 1rem;
-                                        }                                      
+                                            -webkit-line-clamp: 3;
+                                        }
+                                        @media (max-width:1200px){
+                                            font-size: 0.875rem;
+                                            -webkit-line-clamp: 2;
+                                        }                                       
                                     }
                                 }
                                 .photo{

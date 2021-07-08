@@ -165,6 +165,14 @@ body main .block-a .swiper-frame .swiper-container .swiper-slide .news-frame .li
 @media (max-width: 1366px) {
   body main .block-a .swiper-frame .swiper-container .swiper-slide .news-frame .line-frame .description .content {
     font-size: 1rem;
+    -webkit-line-clamp: 3;
+  }
+}
+
+@media (max-width: 1200px) {
+  body main .block-a .swiper-frame .swiper-container .swiper-slide .news-frame .line-frame .description .content {
+    font-size: 0.875rem;
+    -webkit-line-clamp: 2;
   }
 }
 
