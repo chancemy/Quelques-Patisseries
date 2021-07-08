@@ -8,7 +8,7 @@ body{
             top: 0;
             left: 0;
             width: 100%;
-            height: 21.5vh;
+            height: 12vw;
             z-index: -1;
             background-color: #F4F3EF;
             .white-div{
@@ -16,7 +16,7 @@ body{
                 bottom: 0;
                 right: 0;
                 width: 77.4vw;
-                height: 13.8vh;
+                height: 7.7625vw;
                 background-color: #FFFBEF;
             }
         }
@@ -27,12 +27,12 @@ body{
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                margin-top: 12vh;
-                margin-bottom: 10vh;
+                margin-top: 5.73vw;
+                margin-bottom: 5.72vw;
             }
             .news-type{
                 width: 100%;
-                height: 75vh;
+                height: 44.84375vw;
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: center;
@@ -40,7 +40,11 @@ body{
                 .type{
                     width: 105px;
                     font-size: 17px;
-                    margin: 68px auto 0 auto;                
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    // margin: 0 auto 10px;
+                    margin: 32px auto  ;                
                 }
                 
                 .type::before{
@@ -103,12 +107,7 @@ body{
                                     .title{
                                         width: 100%;
                                         padding-bottom: 10%;
-                                        font-size: 1.5625rem;
                                         color: black;
-                                        @media (max-width:1366px){
-                                            padding-bottom: 10%;
-                                            font-size: 1.1rem;
-                                        }
                                     }
                                     .content{
                                         width: 100%;
@@ -213,8 +212,8 @@ body{
                 }
                 .pagination{
                     width: 100%;
-                    height: 10vh;
-                    margin-bottom: 16vh;
+                    height: 5.625vw;
+                    margin-bottom: 9.375vw;
                     // background-color: aqua;
                     display: flex;
                     justify-content: center;
