@@ -40,7 +40,6 @@ body main .progress-style .quarter-round .round .roundcircle-style {
   border-width: 3px;
   border-style: solid;
   color: #b2b2b2;
-  font-size: 26px;
   text-align: center;
   line-height: 60px;
 }
@@ -65,15 +64,38 @@ body main .progress-style .quarter-round .round .roundcircle-style-line {
   border-width: 2px;
   border-style: solid;
   color: #b2b2b2;
-  font-size: 26px;
   text-align: center;
   line-height: 60px;
 }
 
-body main .progress-style .quarter-round .round .active {
+body main .progress-style .quarter-round .round .roundcircle-style-line::before {
+  width: 75%;
+  height: 4px;
+  background-color: rgba(58, 71, 59, 0.5);
+  border-radius: 30px;
+  content: "";
+  position: absolute;
+  left: 108%;
+  top: 50%;
+}
+
+body main .progress-style .quarter-round .round .round-active {
   background-color: #666666;
   color: whitesmoke;
   border-color: #54594d;
+}
+
+body main .progress-style .quarter-round .round .active {
+  color: #54594d;
+}
+
+@media (max-width: 576px) {
+  body main .progress-style .quarter-round .round .roundcircle-style,
+  body main .progress-style .quarter-round .round .roundcircle-style-line {
+    width: 46px;
+    height: 46px;
+    line-height: 40px;
+  }
 }
 
 body main .progress-style .quarterround-text-pd {
@@ -98,6 +120,35 @@ body main .progress-style .mr_4 {
   margin-right: 18px;
 }
 
+body main .table-head {
+  line-height: 90px;
+  height: 90px;
+}
+
+body main .table-bottom {
+  width: 100%;
+  height: 55.5px;
+  border-radius: 0px 0px 8px 8px;
+}
+
+body main .cart-form {
+  border-radius: 10px;
+  font-size: 18px;
+}
+
+body main .cart-count {
+  height: 265px;
+  font-size: 18px;
+  padding: 28px 38px;
+  position: relative;
+}
+
+body main .count-line {
+  background-color: #666666;
+  height: 1px;
+  margin: 10px 0px;
+}
+
 body main .input-area {
   height: 70px;
   padding: 0 2.5%;
@@ -105,26 +156,6 @@ body main .input-area {
 
 body main .input-area input {
   margin-right: 10px;
-}
-
-body main .input-area::after {
-  content: "";
-  width: 95%;
-  height: 2px;
-  background-color: #cbcbcb;
-  position: absolute;
-  bottom: 0%;
-  left: 2.5%;
-}
-
-body main .input-area:last-child::after {
-  content: "";
-  width: 95%;
-  height: 2px;
-  background-color: transparent;
-  position: absolute;
-  bottom: 0%;
-  left: 2.5%;
 }
 
 body main img {
@@ -140,24 +171,12 @@ body main img {
 body main .cart-title {
   color: white;
   height: 70px;
-  font-size: 26px;
   font-weight: 200;
 }
 
 body main .cart-title:first-child {
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
-}
-
-body main .cart-form {
-  border-radius: 10px;
-  font-size: 18px;
-}
-
-body main .cart-bottom {
-  height: 265px;
-  font-size: 18px;
-  padding: 30px 2.5%;
 }
 
 body main .back-btn {

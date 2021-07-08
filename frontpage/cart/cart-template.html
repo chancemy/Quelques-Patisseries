@@ -26,16 +26,17 @@
     <!-- 滾輪效果動畫套件 -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
+    <link rel="stylesheet" href="/font-cssstyle/font-style-guide.css">
     <link rel="stylesheet" href="/css/template.css">
     <link rel="stylesheet" href="/css/frontpage/cart/cart-template.css">
-    <title>Document</title>
+
+    <title>cart-template</title>
 </head>
 
 <body>
-    <div id="top"></div>
     <nav class="d-flex bgc-gray-2">
-        <div class="container-fluid d-flex align-items-center justify-content-end"
-            style="height: 100%;padding: 0 70px 0 0;">
+        <div class="container-fluid d-flex align-items-center justify-content-end nav-container"
+            style="height: 100%;padding: 0 5% 0 0;">
             <div class="logo front-logo"><a href="">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 248 178.99">
 
@@ -78,14 +79,19 @@
                             points="246 175.8 123.75 175.8 1.51 175.8 100.72 37.39 111.48 43.43 139.84 3.25" />
                     </svg></a>
             </div>
-            <div class="d-flex align-items-center">
+            <div class="burger-icon" onclick="toggleThis(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+            <div class="nav-group d-md-flex align-items-center">
                 <ul class="d-flex align-items-center">
                     <li><a href="">關於我們</a></li>
                     <li><a href="">最新消息</a></li>
                     <li><a href="">線上商城</a></li>
                     <li><a href="">聯絡我們</a></li>
                 </ul>
-                <div class="d-flex  align-items-center justify-content-between icon-group">
+                <div class="d-md-flex  align-items-center justify-content-between icon-group">
                     <a href="">
                         <i class="fas fa-shopping-cart"></i>
                     </a>
@@ -96,13 +102,6 @@
             </div>
         </div>
     </nav>
-
-    <!-- <div class="top-btn">
-        <a href="#top">
-            <i class="far fa-arrow-alt-circle-up"></i>
-        </a>
-
-    </div> -->
 
 
 
@@ -115,117 +114,100 @@
                     <div class="d-flex">
                         <div class="quarter-round">
                             <div class="round">
-                                <div class="roundcircle-style-line active">
-                                    01</div>
+                                <div class="roundcircle-style-line h4 active">
+                                    1</div>
                             </div>
                         </div>
                         <div class="quarter-round">
                             <div class="round">
-                                <div class="roundcircle-style active">
-                                    02</div>
+                                <div class="roundcircle-style h4">
+                                    2</div>
                             </div>
                         </div>
                         <div class="quarter-round">
                             <div class="round">
-                                <div class="roundcircle-style">
-                                    03</div>
+                                <div class="roundcircle-style h4">
+                                    3</div>
                             </div>
                         </div>
                         <div class="quarter-round">
                             <div class="round">
-                                <div class="roundcircle-style">
-                                    04</div>
+                                <div class="roundcircle-style h4">
+                                    4</div>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-12 d-flex p-0">
                         <div class="w-100 mt-2 d-flex justify-content-around">
-                            <p class="quarterround-text-pd mr_1 active">確認購物車</p>
-                            <p class="quarterround-text-pd mr_2 active">付款與運送方式</p>
-                            <p class="quarterround-text-pd mr_3">填寫資料</p>
-                            <p class="quarterround-text-pd mr_4">完成訂購</p>
+                            <p class="quarterround-text-pd h4 mr_1 active">確認購物車</p>
+                            <p class="quarterround-text-pd h4 mr_2 active">付款與運送方式</p>
+                            <p class="quarterround-text-pd h4 mr_3">填寫資料</p>
+                            <p class="quarterround-text-pd h4 mr_4">完成訂購</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- 以下開始表單內容 -->
         <section class="bgc-yellow py-5">
             <div class="container">
-                <form action="" class="bgc-yellow-2 w-100 cart-form">
-                    <div class="w-100 bgc-gray-3 cart-title d-flex justify-content-center align-items-center">
-                        大標
-                    </div>
-                    <div class="py-2">
-                        <div class="input-area position-relative d-flex justify-content-start align-items-center">
-                        </div>
-                        <div class="input-area position-relative  d-flex justify-content-start align-items-center">
-                        </div>
-                        <div class="input-area position-relative  d-flex justify-content-start align-items-center">
-                        </div>
-                    </div>
-                    <div class="w-100 bgc-gray-3 cart-title d-flex justify-content-center align-items-center">
-                        大標
-                    </div>
-                    <div class="py-2">
-                        <div class="input-area position-relative d-flex justify-content-between align-items-center">
-                            <div></div>
-                            <div></div>
-                        </div>
-                        <div class="input-area position-relative  d-flex justify-content-between align-items-center">
-                            <div></div>
-                            <div></div>
-                        </div>
-                        <div class="input-area position-relative  d-flex justify-content-between align-items-center">
-                            <div></div>
-                        </div>
-                    </div>
-            </div>
-            </div>
-            <button type="submit" hidden id="form-submit"></button>
-            </form>
+                <table class="cart-table bgc-yellow-2 w-100 ">
+                    <thead class="table-head h4 bgc-gray-3">
+                        <tr>
+                            <th scope="col" style="width:180px;border-top-left-radius:10px ;"></th>
+                            <th scope="col">品名</th>
+                            <th scope="col">數量</th>
+                            <th scope="col">單價</th>
+                            <th scope="col">小計</th>
+                            <th scope="col" style="border-top-right-radius:10px ;"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr style="height: 130px;position: relative;" class="cart-products">
+                            <td scope="row d-flex justify-content-center">
+                                <div class="mx-auto cart-img"></div>
+                            </td>
+                            <td class="text-center"></td>
+                            <td><select class="qty-select">
+                                    <option value="1">1</option>
+                                </select></td>
+                            <td></td>
+                            <td class="text-center">
+                                <div class="delete-btn"><i class="far fa-trash-alt"></i></div>
+                            </td>
+                        </tr>
+                    </tbody>
 
-            <!-- 以下表單內結帳部分 -->
-            <div class="d-flex flex-column align-items-end justify-content-end  bgc-yellow-2 cart-bottom ">
-                <div style="width: 328px;">
-                    <div class="d-flex justify-content-between align-items-center">
-                        <span class=" mr-2 ">數量</span>
-                        <span id="qty-total">3</span>
+                </table>
+                <div class="d-flex flex-column align-items-end justify-content-end  bgc-yellow-2 cart-count">
+                    <div style="width: 328px;">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="mb-2 h5">數量</span>
+                            <span class="mb-2 h5" id="qty-total">3</span>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="h5">小計</span>
+                            <span class="h5" id="sub-total">NT$ 31.5</span>
+                        </div>
+                        <div class="w-100 count-line"></div>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="h5">訂單總計</span>
+                            <span id="total" class="h5 position-relative">NT$ 56.4</span>
+                        </div>
+                        <div class="d-flex justify-content-end align-items-center">
+                            <span class="h6">（不含運）</span>
+                        </div>
                     </div>
-                    <div class="d-flex justify-content-between align-items-center">
-                        <span class=" mr-2 ">運費</span>
-                        <span id="shipping">NT$ 31.5</span>
-                    </div>
-                    <div class="d-flex justify-content-between align-items-center">
-                        <span class=" mr-2 ">小計</span>
-                        <span id="sub-total">NT$ 31.5</span>
-                    </div>
-                    <div class="w-100 py-2">
-                        <div style="background-color: black;height:1px;"></div>
-                    </div>
-
-                    <div class="d-flex justify-content-between align-items-center">
-                        <span class="">訂單總計</span>
-                        <span id="total">NT$ 56.4</span>
-                    </div>
-
                 </div>
-            </div>
-
-            <!-- 按鈕 -->
-            <div class="bgc-gray-3"
-                style="height: 40px;border-bottom-left-radius: 10px;border-bottom-right-radius: 10px;"></div>
-
-            <div class="d-flex justify-content-between pt-4 pb-3 px-4">
-                <a href="">
-                    <div class="back-btn px-3 py-2"><i class="fas fa-chevron-left mr-2"></i>上一步</div>
-                </a>
-
-                <label for="form-submit">
-                    <div class="next-btn px-3 py-2 ">下一步<i class="fas fa-chevron-right ml-2"></i></div>
-                </label>
-            </div>
+                <div class="bgc-gray-3 table-bottom"></div>
+                <div class="d-flex justify-content-between pt-4 pb-3 px-4">
+                    <a href="">
+                        <div class="back-btn px-3 py-2">繼續選購</div>
+                    </a>
+                    <a href="">
+                        <div class="next-btn  px-3 py-2 ">下一步<i class="fas fa-chevron-right ml-2"></i></div>
+                    </a>
+                </div>
             </div>
         </section>
     </main>
@@ -256,6 +238,7 @@
 
     <script src="/js/template.js"></script>
     <script src="/js/frontpage/cart.js"></script>
+
 
 </body>
 
