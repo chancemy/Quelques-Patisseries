@@ -75,7 +75,7 @@ body nav {
   top: 0;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   body nav {
     height: 80px;
   }
@@ -102,7 +102,7 @@ body nav .logo .b {
   stroke-width: 2px;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   body nav .logo {
     height: 60px;
     width: 60px;

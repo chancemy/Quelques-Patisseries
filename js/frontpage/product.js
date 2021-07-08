@@ -5,10 +5,12 @@ typeBtns.forEach(typeBtn => typeBtn.addEventListener('click', toggleItem), {
 function toggleItem(e) {
     e.stopPropagation();
     const item = this.querySelector('.item-btn');
+    var items = document.querySelectorAll('.item-btn');
+    items.forEach(element => element.classList.add('hide'));
     if (!item) {
         return
     } else {
-        item.classList.toggle('hide');
+        item.classList.remove('hide');
     }
 }
 const checkBoxes = document.querySelectorAll('.product-type li')
