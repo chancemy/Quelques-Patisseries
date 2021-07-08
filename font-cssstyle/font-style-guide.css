@@ -1,8 +1,8 @@
 :root {
   --font-color: rgb(36, 36, 36);
   --font-size: 12px;
-  --title-size: 10.75px;
-  --line-hight: 10.75px;
+  --title-size: 6px;
+  --line-hight: 18px;
   --font-family: "Noto Serif TC", serif;
   --text: 'Mobile Size!'
   ;
@@ -12,8 +12,8 @@
   :root {
     --font-color: rgb(36, 36, 36);
     --font-size: 14px;
-    --title-size: 14px;
-    --line-hight: 14px;
+    --title-size: 10px;
+    --line-hight: 18px;
     --font-family: "Noto Serif TC", serif;
     --text: 'Table Size!'
     ;
@@ -25,7 +25,7 @@
     --font-color: rgb(36, 36, 36);
     --font-size: 16px;
     --title-size: 16px;
-    --line-hight: 16px;
+    --line-hight: 18px;
     --font-family: "Noto Serif TC", serif;
     --text: 'Table Size!'
     ;
@@ -62,7 +62,7 @@ title-h1 {
 
 title-h2 {
   font-size: calc(var(--title-size) * 9.3);
-  line-height: calc(var(--line-hight)*9.3);
+  line-height: calc(var(--line-hight)*11);
   font-family: var(--font-family);
 }
 /*# sourceMappingURL=font-style-guide.css.map */
