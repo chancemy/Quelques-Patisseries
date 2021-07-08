@@ -127,25 +127,48 @@ main .block-a .text-frame .content .text {
 
 main .block-a .mask {
   width: 100%;
-  height: 64.08vw;
+  height: 100%;
   position: absolute;
-  top: 74.52vw;
+  top: 0;
   left: 0;
   z-index: -1;
 }
 
+@media (max-width: 768px) {
+  main .block-a .mask {
+    width: 100%;
+    height: 64.08vw;
+    position: absolute;
+    top: 74.52vw;
+    left: 0;
+  }
+}
+
 main .block-a .mask .white {
-  height: 50%;
+  height: 35%;
   background-color: #F4F3EF;
 }
 
+@media (max-width: 768px) {
+  main .block-a .mask .white {
+    height: 50%;
+  }
+}
+
 main .block-a .mask .gray {
-  height: 50%;
+  height: 65%;
   background-color: #E6E3E0;
+}
+
+@media (max-width: 768px) {
+  main .block-a .mask .gray {
+    height: 50%;
+  }
 }
 
 main .block-b {
   width: 100%;
+  position: relative;
 }
 
 main .block-b .img {
@@ -164,15 +187,15 @@ main .block-b .img {
 }
 
 main .block-b .content {
-  width: 25%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding-top: 6.95vw;
-  position: relative;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 34%;
+  padding-top: 34vw;
+  padding-right: 1.9vw;
+  color: white;
+  font-size: 26px;
+  text-align: center;
 }
 
 @media (max-width: 768px) {
@@ -186,12 +209,20 @@ main .block-b .content {
             justify-content: center;
     padding-top: 6.95vw;
     position: relative;
+    color: black;
+    font-size: 14px;
   }
 }
 
 main .block-b .content .title {
-  width: 60%;
-  height: 27vw;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  main .block-b .content .title {
+    width: 60%;
+    height: 27vw;
+  }
 }
 
 main .block-b .content .mask {
@@ -217,102 +248,238 @@ main .block-b .content .mask .triangle {
 
 main .block-c {
   width: 100%;
-  height: 759px;
+  position: relative;
 }
 
 main .block-c .title-frame {
   width: 100%;
-  height: 170px;
+  padding-top: 13.38vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+@media (max-width: 768px) {
+  main .block-c .title-frame {
+    padding-top: 0;
+    height: 170px;
+  }
 }
 
 main .block-c .title-frame .title {
-  font-size: 100px;
+  font-size: 10.416vw;
+  line-height: 10.416vw;
+  text-align: center;
 }
 
-main .block-c .img {
-  width: 100%;
-  height: 73.26vw;
-  background-image: url("/img/frontpage/aboutUs/img-c.jpg");
-  background-position: center;
-  background-size: cover;
+@media (max-width: 768px) {
+  main .block-c .title-frame .title {
+    font-size: 100px;
+  }
 }
 
-main .block-c .content {
-  width: 100%;
-  height: 168px;
+main .block-c .title-frame .text {
+  width: 36.45vw;
+  display: block;
+  font-size: 26px;
+  text-align: center;
+  margin: auto;
+}
+
+@media (max-width: 768px) {
+  main .block-c .title-frame .text {
+    display: none;
+  }
+}
+
+main .block-c .img-frame {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-top: 50px;
-  position: relative;
 }
 
-main .block-c .content .text {
-  width: 400px;
-  font-size: 14px;
-  text-align: end;
+main .block-c .img-frame .img {
+  width: 42.13vw;
+  height: 43.07vw;
+  background-image: url("/img/frontpage/aboutUs/img-c.jpg");
+  background-position: center;
+  background-size: cover;
+  margin-top: 9.9vw;
 }
 
-main .block-c .content .mask {
+@media (max-width: 768px) {
+  main .block-c .img-frame .img {
+    margin-top: 0;
+    width: 100%;
+    height: 73.26vw;
+  }
+}
+
+main .block-c .content {
+  display: none;
+}
+
+@media (max-width: 769px) {
+  main .block-c .content {
+    display: block;
+    width: 100%;
+    height: 168px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-top: 50px;
+    position: relative;
+  }
+  main .block-c .content .text {
+    width: 400px;
+    font-size: 14px;
+    text-align: end;
+  }
+}
+
+@media (max-width: 769px) and (max-width: 768px) {
+  main .block-c .content .mask {
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-color: #F4F3EF;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+@media (max-width: 769px) and (max-width: 768px) {
+  main .block-c .content .mask .triangle {
+    width: 246px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    -webkit-clip-path: polygon(100% 0, 0 100%, 100% 100%);
+            clip-path: polygon(100% 0, 0 100%, 100% 100%);
+    background-color: #E6E3E0;
+  }
+}
+
+main .block-c .mask {
   width: 100%;
   height: 100%;
   z-index: -1;
-  background-color: #F4F3EF;
   position: absolute;
   top: 0;
   left: 0;
+  background-color: #E6E3E0;
 }
 
-main .block-c .content .mask .triangle {
-  width: 246px;
-  height: 100%;
+@media (max-width: 768px) {
+  main .block-c .mask {
+    display: none;
+  }
+}
+
+main .block-c .mask .triangle {
   position: absolute;
-  top: 0;
+  top: 6.38%;
   right: 0;
-  -webkit-clip-path: polygon(100% 0, 0 100%, 100% 100%);
-          clip-path: polygon(100% 0, 0 100%, 100% 100%);
-  background-color: #E6E3E0;
+  width: 100%;
+  height: 94%;
+  -webkit-clip-path: polygon(0 60%, 100% 0, 100% 100%, 0 100%);
+          clip-path: polygon(0 60%, 100% 0, 100% 100%, 0 100%);
+  background-color: white;
 }
 
 main .block-d {
   width: 100%;
+  position: relative;
 }
 
 main .block-d .img {
-  width: 100%;
-  height: 66.84vw;
+  width: 56.45vw;
+  height: 37.96vw;
+  margin: 9.53vw auto  5.2vw;
   background-image: url("/img/frontpage/aboutUs/img-d.jpg");
   background-position: center;
   background-size: cover;
 }
 
+@media (max-width: 768px) {
+  main .block-d .img {
+    width: 100%;
+    height: 66.84vw;
+    margin: 0;
+  }
+}
+
 main .block-d .text-frame {
-  width: 100%;
-  height: 164px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: #E6E3E0;
+  margin: auto;
+}
+
+@media (max-width: 768px) {
+  main .block-d .text-frame {
+    width: 100%;
+    height: 164px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #E6E3E0;
+    margin: unset;
+  }
 }
 
 main .block-d .text-frame .text {
-  width: 445px;
-  font-size: 14px;
-  text-align: center;
+  width: 52vw;
+  font-size: 26px;
+  margin-bottom: 9vw;
+}
+
+@media (max-width: 768px) {
+  main .block-d .text-frame .text {
+    width: 445px;
+    font-size: 14px;
+    text-align: center;
+    margin: 0;
+  }
+}
+
+main .block-d .mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+@media (max-width: 768px) {
+  main .block-d .mask {
+    display: none;
+  }
+}
+
+main .block-d .mask .triangle {
+  position: absolute;
+  top: 32.21%;
+  right: 0;
+  width: 100%;
+  height: 67.78%;
+  -webkit-clip-path: polygon(0 59.63%, 100% 0, 100% 100%, 0 100%);
+          clip-path: polygon(0 59.63%, 100% 0, 100% 100%, 0 100%);
+  background-color: #E6E3E0;
 }
 /*# sourceMappingURL=aboutUs.css.map */

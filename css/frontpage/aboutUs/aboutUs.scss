@@ -85,24 +85,39 @@ main{
         }
         .mask{
             width: 100%;
-            height: 64.08vw;
+            height: 100%;
             position: absolute;
-            top: 74.52vw;
+            top: 0;
             left: 0;
             z-index: -1;
+            @media (max-width:768px) {
+                width: 100%;
+                height: 64.08vw;
+                position: absolute;
+                top: 74.52vw;
+                left: 0;
+            }
+            
             .white{
-                height: 50%;
+                height: 35%;
                 background-color: #F4F3EF;
+                @media (max-width:768px) {
+                    height: 50%;
+                }                
             }
             .gray{
-                height: 50%;
+                height: 65%;
                 background-color: #E6E3E0;
+                @media (max-width:768px) {
+                    height: 50%;
+                }                
             }
         }    
     }
     .block-b{
         width: 100%;
         // height: 587px;
+        position: relative;
         .img{
             width: 100%;
             height: 100vh;
@@ -115,22 +130,30 @@ main{
             }
         }
         .content{
-            width: 25%;
-            display: flex;
-            justify-content: center;
-            padding-top: 6.95vw;
-            position: relative;
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 34%;
+            padding-top: 34vw;
+            padding-right: 1.9vw;
+            color: white;
+            font-size: 26px;
+            text-align: center;
             @media (max-width:768px) {
                 width: 100%;
                 display: flex;
                 justify-content: center;
                 padding-top: 6.95vw;
                 position: relative;
+                color: black;
+                font-size: 14px;
             }
-            
             .title{
+                width: 100%;
+                @media (max-width:768px) {
                 width: 60%;
                 height: 27vw;
+                }
             }
             .mask{
                 width: 100%;
@@ -155,75 +178,174 @@ main{
     }
     .block-c{
         width: 100%;
-        height: 759px;
+        position: relative;
         .title-frame{
             width: 100%;
-            height: 170px;
+            padding-top: 13.38vw;            
             display: flex;
             justify-content: center;
+            @media (max-width:768px) {
+                padding-top: 0;                
+                height: 170px;
+            }
+            
             .title{
-                font-size: 100px;
-            }
-        }
-        .img{
-            width: 100%;
-            height: 73.26vw;
-            background-image: url('/img/frontpage/aboutUs/img-c.jpg');
-            background-position: center;
-            background-size: cover;
-        }
-        .content{
-            width: 100%;
-            height: 168px;
-            display: flex;
-            justify-content: center;
-            padding-top: 50px;
-            position: relative;
-            .text{
-                width: 400px;
-                font-size: 14px;
-                text-align: end;
-            }
-            .mask{
-                width: 100%;
-                height: 100%;
-                z-index: -1;
-                background-color: #F4F3EF;                    
-                position: absolute;
-                top: 0;
-                left: 0;                
-                .triangle{
-                    width: 246px;
-                    height: 100%;
-                    position: absolute;
-                    top: 0;
-                    right: 0;
-                    clip-path: polygon(100% 0, 0 100%, 100% 100%);
-                    background-color: #E6E3E0;
+                font-size: 10.416vw;
+                line-height: 10.416vw;
+                text-align: center;
+                @media (max-width:768px) {                    
+                    font-size: 100px;
                 }
             }
+            .text{
+                width: 36.45vw;
+                display: block;
+                font-size: 26px;
+                text-align: center;
+                margin: auto;
+                @media (max-width:768px) {
+                    display: none;
+                }
+            }
+        }
+        .img-frame{
+            display: flex;
+            justify-content: center;            
+            .img{
+                width: 42.13vw;
+                height: 43.07vw;            
+                background-image: url('/img/frontpage/aboutUs/img-c.jpg');
+                background-position: center;
+                background-size: cover;
+                margin-top: 9.9vw;
+                @media (max-width:768px) {
+                    margin-top: 0;
+                    width: 100%;
+                    height: 73.26vw;
+                }
+            }
+        }
+        .content{
+            display: none;
+            @media (max-width:769px) {
+                display: block;
+                width: 100%;
+                height: 168px;
+                display: flex;
+                justify-content: center;
+                padding-top: 50px;
+                position: relative;
+                .text{
+                    width: 400px;
+                    font-size: 14px;
+                    text-align: end;
+                }
+                .mask{
+                    @media (max-width:768px) {
+                        width: 100%;
+                        height: 100%;
+                        z-index: -1;
+                        background-color: #F4F3EF;                    
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                    }
+                    .triangle{                        
+                        @media (max-width:768px) {
+                            width: 246px;
+                            height: 100%;
+                            position: absolute;
+                            top: 0;
+                            right: 0;
+                            clip-path: polygon(100% 0, 0 100%, 100% 100%);
+                            background-color: #E6E3E0;
+                        }                        
+                    }
+                }
+            }
+        }
+        .mask{
+            @media (max-width:768px) {
+                display: none;
+            }
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: #E6E3E0;
+            .triangle{
+                position: absolute;
+                top: 6.38%;
+                right: 0;
+                width: 100%;
+                height: 94%;
+                clip-path: polygon(0 60%, 100% 0, 100% 100%, 0 100%);
+                background-color: white;
+            }
+            
         }
     }
     .block-d{
         width: 100%;
+        position: relative;
         .img{
-            width: 100%;
-            height: 66.84vw;
+            width: 56.45vw;
+            height: 37.96vw;
+            margin: 9.53vw auto  5.2vw;
             background-image: url('/img/frontpage/aboutUs/img-d.jpg');
             background-position: center;
             background-size: cover;
+            @media (max-width:768px) {
+                width: 100%;
+                height: 66.84vw;
+                margin: 0;
+
+            }
         }
         .text-frame{
+            margin: auto;
+            @media (max-width:768px) {
+                width: 100%;
+                height: 164px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: #E6E3E0;
+                margin: unset;
+            }
+            .text{                
+                width: 52vw;
+                font-size: 26px;
+                margin-bottom: 9vw;
+                @media (max-width:768px) {
+                    width: 445px;
+                    font-size: 14px;
+                    text-align: center;
+                    margin: 0;
+                }                
+            }
+        }
+        .mask{            
+            position: absolute;
+            top: 0;
+            left: 0;
             width: 100%;
-            height: 164px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: #E6E3E0;
-            .text{
-                width: 445px;
-                font-size: 14px;
-                text-align: center;
+            height: 100%;
+            z-index: -1;
+            @media (max-width:768px
+        ) {
+                display: none;
+            }
+            .triangle{
+                position: absolute;
+                top: 32.21%;
+                right: 0;
+                width: 100%;
+                height: 67.78%;
+                clip-path: polygon(0 59.63%, 100% 0, 100% 100%, 0 100%);
+                background-color: #E6E3E0;
             }
         }
     }
