@@ -210,7 +210,6 @@ body main .section-about .container-about .about-img {
 @media (max-width: 992px) {
   body main .section-about .container-about .content {
     height: 40vh;
-    min-height: 400px;
   }
 }
 
@@ -228,7 +227,7 @@ body main .section-news .news-cherry {
   position: absolute;
   top: 20vh;
   right: 10px;
-  width: 20%;
+  width: 40%;
   z-index: -1;
   display: none;
 }
@@ -254,7 +253,7 @@ body main .section-news .container-news {
 
 @media (max-width: 576px) {
   body main .section-news .container-news {
-    padding: 0;
+    padding: 0 0 10vh 0;
   }
 }
 
@@ -276,7 +275,6 @@ body main .section-news .text-area-news {
     -webkit-transform: unset;
             transform: unset;
     height: 40vh;
-    min-height: 400px;
   }
 }
 
@@ -316,10 +314,9 @@ body main .section-product {
   overflow-x: hidden;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 992px) {
   body main .section-product .product-title {
     height: 40vh;
-    min-height: 400px;
   }
 }
 
@@ -329,7 +326,7 @@ body main .section-product .container-product {
   width: calc(100% + 40px);
 }
 
-@media (max-width: 576px) {
+@media (max-width: 992px) {
   body main .section-product .container-product {
     padding: 0;
   }
@@ -343,27 +340,21 @@ body main .section-product .container-product .product-img:nth-child(2n) {
   margin-top: -93px;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 992px) {
   body main .section-product .container-product .product-img:nth-child(2) {
     margin-top: 0;
     height: 60vh;
   }
-  body main .section-product .container-product .product-img:nth-child(2) {
+  body main .section-product .container-product .product-img:nth-child(3) {
     display: none;
   }
-  body main .section-product .container-product .product-img:nth-child(3) {
+  body main .section-product .container-product .product-img:nth-child(4) {
     display: none;
   }
 }
 
 body main .section-store .container-store {
   padding: 0;
-}
-
-@media (max-width: 576px) {
-  body main .section-store .container-store {
-    padding: 10vh 0;
-  }
 }
 
 body main .section-store .container-store .store-bg-white {
@@ -376,6 +367,12 @@ body main .section-store .container-store .store-bg-white {
   z-index: 8;
 }
 
+@media (max-width: 992px) {
+  body main .section-store .container-store .store-bg-white {
+    display: none;
+  }
+}
+
 body main .section-store .container-store .store-bg-yellow {
   height: 10vh;
   position: absolute;
@@ -383,6 +380,28 @@ body main .section-store .container-store .store-bg-yellow {
   top: 0;
   left: 0;
   z-index: 5;
+}
+
+@media (max-width: 992px) {
+  body main .section-store .container-store .store-bg-yellow {
+    display: none;
+  }
+}
+
+body main .section-store .container-store .store-bg-yellow-2 {
+  height: 50%;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  display: none;
+}
+
+@media (max-width: 992px) {
+  body main .section-store .container-store .store-bg-yellow-2 {
+    display: block;
+  }
 }
 
 body main .section-store .container-store .store-title {
@@ -397,6 +416,18 @@ body main .section-store .container-store .store-title {
   white-space: nowrap;
 }
 
+@media (max-width: 992px) {
+  body main .section-store .container-store .store-title {
+    -webkit-transform: none;
+            transform: none;
+    position: relative;
+    top: unset;
+    left: unset;
+    z-index: 10;
+    padding: 50px 0;
+  }
+}
+
 body main .section-store .container-store .store-img {
   z-index: 5;
 }
@@ -405,16 +436,21 @@ body main .section-store .container-store .store-img .img-area {
   height: 90vh;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 992px) {
   body main .section-store .container-store .store-img .img-area {
-    height: 40vh;
-    margin-top: 8vh;
+    height: 50vh;
   }
 }
 
 body main .section-store .container-store .address {
-  padding: 10vh 5%;
   z-index: 10;
+  padding: 10vh 5%;
+}
+
+@media (max-width: 576px) {
+  body main .section-store .container-store .address {
+    padding: 5vh 5%;
+  }
 }
 
 body main .section-store .container-store .address p {
@@ -435,10 +471,9 @@ body main .section-store .container-store .logo {
   z-index: 50;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 992px) {
   body main .section-store .container-store .logo {
-    top: 2%;
-    right: 5%;
+    display: none;
   }
 }
 /*# sourceMappingURL=index.css.map */
