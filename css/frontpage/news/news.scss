@@ -149,35 +149,41 @@ body{
                                     }
                                     .type{
                                         padding-bottom: 7.36%;
-                                        font-size: 1.0875rem;
+                                        font-size: 0.9vw;
                                         color: #42210B;
                                     }
                                     .title{
                                         width: 100%;
+                                        font-size: 1.3vw;
                                         padding-bottom: 10%;
                                         color: black;
                                     }
                                     .content{
                                         width: 100%;
                                         // height: 57%;
-                                        font-size: 1.0875rem;
+                                        font-size: 0.9vw;
                                         color: black;
                                         overflow: hidden;  
                                         display: -webkit-inline-box;                                      
                                         -webkit-line-clamp: 4;
                                         -webkit-box-orient: vertical;
                                         text-overflow: ellipsis;
-                                        @media (max-width:1366px){
-                                            font-size: 1rem;
+                                        
+                                        @media (max-width:1200px){
+                                            font-size: 0.875rem;
                                             -webkit-line-clamp: 3;
                                         }
-                                        @media (max-width:1200px){
+                                        @media (max-width:1050px){
+                                            font-size: 0.875rem;
+                                            -webkit-line-clamp: 3;
+                                        }
+                                        @media (max-width:900px){
                                             font-size: 0.875rem;
                                             -webkit-line-clamp: 2;
                                         }
-                                        @media (max-width:1050px){
-                                            display: none;
-                                        } 
+                                        @media (max-width:876px){
+                                            display: none;;
+                                        }
                                         @media (max-width:768px){
                                             display: block;
                                         }                                        
@@ -212,25 +218,25 @@ body{
                                     display:inline-block;
                                     position: absolute;
                                     top: -20px;
-                                    left: 50%;
-                                    font-size: 2.125rem;
-                                    line-height: 40px;
+                                    left: 50%;;
                                     transform: translate(-50%,0);
                                     background-color: #E6E3E0;
                                     display: flex;
                                     justify-content: center;
                                     align-content: center;
-                                    .month-text{
-                                        font-size: 2.125rem;
+                                    .month-text{                                        
+                                        font-size: 1.77vw;
                                         font-weight: 600;
+                                        line-height: 1.77vw;
                                         display: flex;
                                         justify-content: center;
                                         align-items: center;
                                     }
-                                    .date-text{
-                                        margin-left: 1rem;
-                                        font-size: 2.125rem;
+                                    .date-text{                                        
+                                        font-size: 1.77vw;
                                         font-weight: 600;
+                                        line-height: 1.77vw;
+                                        margin-left: 1rem;
                                         display: flex;
                                         justify-content: center;
                                         align-items: center;
