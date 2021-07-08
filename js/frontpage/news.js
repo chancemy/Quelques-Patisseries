@@ -3,11 +3,11 @@
 const swiper = new Swiper('.swiper-container', {
     // Optional parameters
     
-    slidesPerView: 1,
+    // slidesPerView: 1,
     direction: 'horizontal',
     loop: false,
-    centeredSlides: true,
-    centeredSlidesBounds: true,
+    // centeredSlides: true,
+    // centeredSlidesBounds: true,
 });
 
 //分頁按鈕控制

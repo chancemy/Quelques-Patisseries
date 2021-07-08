@@ -119,8 +119,8 @@ body{
                         margin: 8.68vw auto 0;
                     }
                     .swiper-slide{
-                        background-color: yellow;
-                        margin: 20px;
+                        // background-color: yellow;
+                        margin-top: 20px;
                         .news-frame{
                             width: 100%;                            
                             .line-frame{
@@ -222,12 +222,15 @@ body{
                                     align-content: center;
                                     .month-text{
                                         font-size: 2.125rem;
+                                        font-weight: 600;
                                         display: flex;
                                         justify-content: center;
                                         align-items: center;
                                     }
                                     .date-text{
                                         margin-left: 1rem;
+                                        font-size: 2.125rem;
+                                        font-weight: 600;
                                         display: flex;
                                         justify-content: center;
                                         align-items: center;
@@ -243,7 +246,7 @@ body{
                                 }
                                 .right{
                                     position: absolute;
-                                    top: 0;
+                                    top: 1.0416vw;
                                     right: 0;
                                     width: 5.3px;
                                     height: 91.6%;
@@ -251,7 +254,7 @@ body{
                                 }
                                 .left{
                                     position: absolute;
-                                    top: 0;
+                                    top: 1.0416vw;
                                     left: 0;
                                     width: 5.3px;
                                     height: 91.6%;
@@ -290,8 +293,8 @@ body{
                             justify-content: center;
                             align-items: center;
                             margin-left: 1.5rem;
-                            border: 1px solid #42210B; 
-                                                    
+                            border: 0px solid #42210B;
+                            cursor: pointer;               
                         }
                     }
                 }

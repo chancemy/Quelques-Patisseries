@@ -173,8 +173,7 @@ body main .block-a .swiper-frame .swiper-container {
 }
 
 body main .block-a .swiper-frame .swiper-container .swiper-slide {
-  background-color: yellow;
-  margin: 20px;
+  margin-top: 20px;
 }
 
 body main .block-a .swiper-frame .swiper-container .swiper-slide .news-frame {
@@ -314,6 +313,7 @@ body main .block-a .swiper-frame .swiper-container .swiper-slide .news-frame .li
 
 body main .block-a .swiper-frame .swiper-container .swiper-slide .news-frame .line-frame .month .month-text {
   font-size: 2.125rem;
+  font-weight: 600;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -327,6 +327,8 @@ body main .block-a .swiper-frame .swiper-container .swiper-slide .news-frame .li
 
 body main .block-a .swiper-frame .swiper-container .swiper-slide .news-frame .line-frame .month .date-text {
   margin-left: 1rem;
+  font-size: 2.125rem;
+  font-weight: 600;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -349,7 +351,7 @@ body main .block-a .swiper-frame .swiper-container .swiper-slide .news-frame .li
 
 body main .block-a .swiper-frame .swiper-container .swiper-slide .news-frame .line-frame .right {
   position: absolute;
-  top: 0;
+  top: 1.0416vw;
   right: 0;
   width: 5.3px;
   height: 91.6%;
@@ -358,7 +360,7 @@ body main .block-a .swiper-frame .swiper-container .swiper-slide .news-frame .li
 
 body main .block-a .swiper-frame .swiper-container .swiper-slide .news-frame .line-frame .left {
   position: absolute;
-  top: 0;
+  top: 1.0416vw;
   left: 0;
   width: 5.3px;
   height: 91.6%;
@@ -413,6 +415,7 @@ body main .block-a .swiper-frame .pagination .page-frame .page-btn {
       -ms-flex-align: center;
           align-items: center;
   margin-left: 1.5rem;
-  border: 1px solid #42210B;
+  border: 0px solid #42210B;
+  cursor: pointer;
 }
 /*# sourceMappingURL=news.css.map */
