@@ -23,7 +23,7 @@ img {
 
 .top-gray-block {
   position: absolute;
-  top: 300px;
+  top: 270px;
   left: 0;
   width: 40%;
   height: 4px;
@@ -39,12 +39,6 @@ img {
 .news-detail {
   padding: 108px 0;
   color: #4d4d4d;
-}
-
-@media (max-width: 768px) {
-  .news-detail {
-    padding: 80px 0;
-  }
 }
 
 .news-detail .detail-container {
@@ -88,19 +82,11 @@ img {
 .news-detail .news-text {
   font-size: 26px;
   line-height: 50px;
-  text-align: justify;
-  text-justify: inter-ideograph;
 }
 
 @media (max-width: 992px) {
   .news-detail .news-text {
-    margin-top: 20px;
-    font-size: 20px;
-  }
-}
-
-@media (max-width: 1400px) {
-  .news-detail .news-text .time {
+    margin-top: 50px;
     font-size: 20px;
   }
 }

@@ -75,7 +75,7 @@ body nav {
   top: 0;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 576px) {
   body nav {
     height: 80px;
   }
@@ -102,7 +102,7 @@ body nav .logo .b {
   stroke-width: 2px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 576px) {
   body nav .logo {
     height: 60px;
     width: 60px;
@@ -243,18 +243,11 @@ body footer span {
   font-family: times, serif;
   font-size: 16px;
   letter-spacing: 1px;
-  text-align: center;
 }
 
 @media (max-width: 576px) {
   body footer span {
     font-size: 14px;
-  }
-}
-
-@media (max-width: 430px) {
-  body footer span {
-    font-size: 12px;
   }
 }
 

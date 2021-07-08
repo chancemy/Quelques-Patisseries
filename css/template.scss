@@ -59,7 +59,7 @@ body {
         position: fixed;
         transition: 0.4s ease-in-out;
         top: 0;
-        @media (max-width: 768px) {
+        @media (max-width: 576px) {
             height: 80px;
         }
 
@@ -80,7 +80,7 @@ body {
                 stroke-miterlimit: 10;
                 stroke-width: 2px;
             }
-            @media (max-width: 768px) {
+            @media (max-width: 576px) {
                 height: 60px;
                 width: 60px;
             }
@@ -197,12 +197,8 @@ body {
             font-family: times, serif;
             font-size: 16px;
             letter-spacing: 1px;
-            text-align: center;
             @media (max-width: 576px) {
                 font-size: 14px;
-            }
-            @media (max-width: 430px) {
-                font-size: 12px;
             }
         }
         .footer-container {
