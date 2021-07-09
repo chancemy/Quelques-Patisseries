@@ -160,7 +160,7 @@ body {
             background-color: $bgc-gray-d;
             padding: 68px 14%;
 
-            //表單樣式
+            //第1頁樣式
             .cart-table {
                 background-color: $bgc-white;
                 font-size: $h5;
@@ -187,39 +187,53 @@ body {
                     position: relative;
                 }
             }
-            .cart-count {
-                height: 244px;
-                font-size: $h5;
-                color: $green-d;
+            //2、3、4頁樣式
+            .cart-form {
                 background-color: $bgc-white;
-                padding: 28px 38px;
-                .count-up {
-                    width: 326px;
-                    margin-bottom: 10px;
-                }
-                .count-down {
-                    width: 326px;
-                    margin-bottom: 10px;
-                }
-                .count-up::after {
-                    content: " ";
-                    width: 326px;
-                    height: 1px;
-                    background-color: $gray-s;
-                    position: absolute;
-                    right: 18%;
-                }
-            }
-            .form-middle {
-                height: 68px;
-                background-color: $green-d;
                 font-size: $h4;
-                color: $gray-xxs;
-            }
-            .from-bottom {
-                height: 68px;
-                background-color: $green-d;
-                border-radius: 0px 0px 8px 8px;
+                border-radius: 8px;
+
+                .form-head {
+                    height: 90px;
+                    background-color: $green-d;
+                    font-size: $h4;
+                    color: $gray-xxs;
+                    border-radius: 8px 8px 0px 0px;
+                }
+                .cart-count {
+                    height: 244px;
+                    font-size: $h5;
+                    color: $green-d;
+                    background-color: $bgc-white;
+                    padding: 28px 38px;
+                    .count-up {
+                        width: 326px;
+                        margin-bottom: 10px;
+                    }
+                    .count-down {
+                        width: 326px;
+                        margin-bottom: 10px;
+                    }
+                    .count-up::after {
+                        content: " ";
+                        width: 326px;
+                        height: 1px;
+                        background-color: $gray-s;
+                        position: absolute;
+                        right: 18%;
+                    }
+                }
+                .form-middle {
+                    height: 60px;
+                    background-color: $green-d;
+                    font-size: $h4;
+                    color: $gray-xxs;
+                }
+                .from-bottom {
+                    height: 60px;
+                    background-color: $green-d;
+                    border-radius: 0px 0px 8px 8px;
+                }
             }
 
             // 按鈕樣式
@@ -228,12 +242,14 @@ body {
 
                 .back-btn {
                     border: $green-d 1px solid;
-                    padding: 12px 15px;
+                    padding: 10px 20px;
+                    border-radius: 3px;
                 }
                 .next-btn {
                     background-color: $green-d;
                     color: $gray-xxs;
-                    padding: 12px 15px;
+                    padding: 10px 20px;
+                    border-radius: 3px;
                 }
             }
         }

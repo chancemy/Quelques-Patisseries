@@ -1,10 +1,3 @@
-input,
-select {
-    border: black 1px solid;
-    border-radius: 5px;
-    padding: 5px 10px;
-}
-
 @import "../../CSSstyle/variable";
 
 body {
@@ -25,14 +18,25 @@ body {
 
             label {
                 margin-bottom: 10px;
+                padding-left: 8px;
+            }
+            input{
+                margin-bottom: 17px;
+                height: 41px;
+                color: $green-d;
+                border: $green-d 1.5px solid;
+                font-size: $h5;
+                border-radius: 4px;
+                padding: 3px 14px;
             }
 
-            input {
+            .custom-select {
                 margin-bottom: 17px;
-                line-height: 41px;
+                height: 41px;
                 color: $green-d;
-                border: $green-d 1px solid;
+                border: $green-d 1.5px solid;
                 font-size: $h5;
+                border-radius: 4px;
             }
         }
 

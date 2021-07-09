@@ -30,7 +30,7 @@
     <link rel="stylesheet" href="/css/frontpage/cart/cart-template.css">
 
     <link rel="stylesheet" href="/css/frontpage/cart/cart_step3.css">
-    <title>Document</title>
+    <title>step3</title>
 </head>
 
 
@@ -135,22 +135,21 @@
                                 <div class="city-selector-set row">
                                     <div class="col-4 d-flex">
                                         <!-- 郵遞區號欄位 (建議加入 readonly 屬性，防止修改) -->
-                                        <input class="zipcode w-100" name="zipcode" type="text" size="3" readonly
+                                        <input class="zipcode w-100" name="zipcode" type="text" size="2" readonly
                                             placeholder="郵遞區號">
                                     </div>
                                     <div class="col-4 d-flex">
                                         <!-- 縣市選單 -->
-                                        <select name="county" class="county w-100"></select>
+                                        <select name="county" class="custom-select county w-100"></select>
                                     </div>
                                     <div class="col-4 d-flex">
                                         <!-- 區域選單 -->
-                                        <select class="district w-100" name="district"></select>
+                                        <select name="district" class="custom-select district w-100"></select>
                                     </div>
                                     <div class="col-12 d-flex mt-3">
                                         <!-- 區域選單 -->
                                         <input class="w-100" type="text" name="address" placeholder="地址">
                                     </div>
-
                                 </div>
                             </div>
                         </div>
@@ -197,7 +196,7 @@
                 </form>
 
                 <div class="d-flex justify-content-between btn-pd">
-                    <a href="">
+                    <a href="/frontpage/cart/step2.html">
                         <div class="back-btn">
                             <i class="fas fa-chevron-left mr-2"></i>
                             上一步
@@ -205,10 +204,12 @@
                     </a>
 
                     <label for="form-submit">
-                        <div class="next-btn">
-                            下一步
-                            <i class="fas fa-chevron-right ml-2"></i>
-                        </div>
+                        <a href="/frontpage/cart/step4.html">
+                            <div class="next-btn">
+                                下一步
+                                <i class="fas fa-chevron-right ml-2"></i>
+                            </div>
+                        </a>
                     </label>
                 </div>
             </div>

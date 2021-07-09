@@ -1,10 +1,3 @@
-input,
-select {
-  border: black 1px solid;
-  border-radius: 5px;
-  padding: 5px 10px;
-}
-
 h1, h2, h3, h4, h5, h6, title-h1, title-h2 {
   margin: 0;
   font-family: "Noto Serif JP", "Noto Serif TC";
@@ -39,14 +32,26 @@ body .cart-form .from-content {
 
 body .cart-form .from-content label {
   margin-bottom: 10px;
+  padding-left: 8px;
 }
 
 body .cart-form .from-content input {
   margin-bottom: 17px;
-  line-height: 41px;
+  height: 41px;
   color: #54594d;
-  border: #54594d 1px solid;
+  border: #54594d 1.5px solid;
   font-size: 13.8px;
+  border-radius: 4px;
+  padding: 3px 14px;
+}
+
+body .cart-form .from-content .custom-select {
+  margin-bottom: 17px;
+  height: 41px;
+  color: #54594d;
+  border: #54594d 1.5px solid;
+  font-size: 13.8px;
+  border-radius: 4px;
 }
 
 body .cart-form .notice {
