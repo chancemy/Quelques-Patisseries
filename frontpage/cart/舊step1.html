@@ -28,9 +28,9 @@
 
     <link rel="stylesheet" href="/css/template.css">
     <link rel="stylesheet" href="/css/frontpage/cart/cart-template.css">
-    
+
     <link rel="stylesheet" href="/css/frontpage/cart/cart.css">
-    <link rel="stylesheet" href="/css/frontpage/cart/cart_step4.css">
+    <link rel="stylesheet" href="/css/frontpage/cart/cart_step1.css">
     <title>Document</title>
 </head>
 
@@ -104,8 +104,7 @@
         </div>
     </nav>
 
-
-
+    
 
     <main class="bgc-gray">
         <section class="d-flex justify-content-center align-items-end pb-4" style="height: 338px;">
@@ -117,25 +116,25 @@
                         <div class="quarter-round">
                             <div class="round">
                                 <div class="roundcircle-style-line active">
-                                    1</div>
+                                    01</div>
                             </div>
                         </div>
                         <div class="quarter-round">
                             <div class="round">
-                                <div class="roundcircle-style active">
-                                    2</div>
+                                <div class="roundcircle-style">
+                                    02</div>
                             </div>
                         </div>
                         <div class="quarter-round">
                             <div class="round">
-                                <div class="roundcircle-style active">
-                                    3</div>
+                                <div class="roundcircle-style">
+                                    03</div>
                             </div>
                         </div>
                         <div class="quarter-round">
                             <div class="round">
-                                <div class="roundcircle-style active">
-                                    4</div>
+                                <div class="roundcircle-style">
+                                    04</div>
                             </div>
                         </div>
                     </div>
@@ -150,15 +149,13 @@
                 </div>
             </div>
         </section>
+
         <section class="bgc-yellow py-5">
-            <div class="container ">
-                <div class="w-100 bgc-gray-3 cart-title d-flex justify-content-center align-items-center">
-                    您的訂單已成立！
-                </div>
+            <div class="container">
                 <table class="cart-table bgc-yellow-2 w-100 ">
-                    <thead class="px-4" style="height: 70px;">
-                        <tr class="position-relative">
-                            <th scope="col" style="width:180px;border-top-left-radius:10px;"></th>
+                    <thead class="bgc-gray-3 px-4" style="color: white;height: 70px;">
+                        <tr >
+                            <th scope="col" class="thead-img" style="border-top-left-radius:10px;"></th>
                             <th scope="col">品名</th>
                             <th scope="col">數量</th>
                             <th scope="col">單價</th>
@@ -167,87 +164,85 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr class="cart-products position-relative">
+                        <tr style="height: 130px;position: relative;" class="cart-products">
                             <td scope="row d-flex justify-content-center">
                                 <div class="mx-auto cart-img"><img
                                         src="/img/frontpage/cart/sample.jpg" alt="">
                                 </div>
                             </td>
                             <td class="text-center">十四松</td>
-                            <td>1</td>
+                            <td><select class="qty-select">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select></td>
                             <td class="text-center">NT$ <span class="item-price" data-price="200">200</span></td>
                             <td class="text-center">NT$ <span class="item-total">100</span></td>
-                            
+                            <td class="text-center">
+                                <div class="delete-btn"><i class="far fa-trash-alt"></i></div>
+                            </td>
                         </tr>
-                        <tr class="cart-products position-relative">
+                        <tr style="height: 130px;position: relative;" class="cart-products">
                             <td scope="row d-flex justify-content-center">
                                 <div class="mx-auto cart-img"><img
                                         src="/img/frontpage/cart/sample.jpg" alt="">
                                 </div>
                             </td>
                             <td class="text-center">十四松</td>
-                            <td>1</td>
+                            <td><select  class="qty-select">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select></td>
                             <td class="text-center">NT$<span class="item-price" data-price="100">100</span></td>
                             <td class="text-center">NT$<span class="item-total">100</span></td>
-                           
+                            <td class="text-center">
+                                <div class="delete-btn"><i class="far fa-trash-alt"></i></div>
+                            </td>
                         </tr>
                     </tbody>
 
                 </table>
-                <div class="w-100 bgc-gray-3 cart-title d-flex justify-content-center align-items-center">
-                    訂購人資訊
-                </div>
-                <div class="bgc-yellow-2 info-area">
-                    <div class="row">
-                        <div class="col-md-2 col-4">購買姓名</div>
-                        <div class="col-md-10 col-8">王曉明</div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-2 col-4">連絡電話</div>
-                        <div class="col-md-10 col-8">123456789</div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-2 col-4">連絡地址</div>
-                        <div class="col-md-10 col-8">420 台中市小鎮村英雄路一號</div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-2 col-4">電子郵件</div>
-                        <div class="col-md-10 col-8">123456789@gmail.com</div>
-                    </div>
-                </div>
-                <div class="w-100 bgc-gray-3 cart-title d-flex justify-content-center align-items-center">
-                    訂單明細
-                </div>
-                <div class="bgc-yellow-2 info-area">
-                    <div class="row">
-                        <div class="col-md-2 col-4">數量</div>
-                        <div class="col-md-10 col-8">3</div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-2 col-4">運費</div>
-                        <div class="col-md-10 col-8">NT$ 60</div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-2 col-4">小計</div>
-                        <div class="col-md-10 col-8">NT$ 60</div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-2 col-4">總計</div>
-                        <div class="col-md-10 col-8">NT$ 60</div>
+                <div class="d-flex flex-column align-items-end justify-content-end  bgc-yellow-2 cart-bottom ">
+                    <div style="width: 328px;">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class=" mr-2 ">數量</span>
+                            <span id="qty-total">3</span>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class=" mr-2 ">小計</span>
+                            <span id="sub-total">NT$ 31.5</span>
+                        </div>
+                        <div class="w-100 py-2">
+                            <div style="background-color: black;height:1px;"></div>
+                        </div>
+
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="">訂單總計</span>
+                            <span id="total" class="position-relative">NT$ 56.4</span>
+                        </div>
+                        <div class="d-flex justify-content-end align-items-center">
+                            
+                            <span>（不含運）</span>
+                        </div>
                     </div>
                 </div>
                 <div class="bgc-gray-3"
                     style="height: 40px;border-bottom-left-radius: 10px;border-bottom-right-radius: 10px;"></div>
-                <div class="d-flex justify-content-end pt-4 pb-3 px-4">
-
+                <div class="d-flex justify-content-between pt-4 pb-3 px-4">
+                    <a href="" >
+                        <div class="back-btn px-3 py-2">繼續選購</div>
+                    </a>
                     <a href="">
-                        <div class="next-btn  px-3 py-2 ">回首頁<i class="fas fa-chevron-right ml-2"></i></div>
+                        <div class="next-btn  px-3 py-2 ">下一步<i class="fas fa-chevron-right ml-2"></i></div>
                     </a>
                 </div>
-
             </div>
         </section>
-
     </main>
 
     <footer>
@@ -276,6 +271,7 @@
 
     <script src="/js/template.js"></script>
     <script src="/js/frontpage/cart.js"></script>
+    
 
 </body>
 
