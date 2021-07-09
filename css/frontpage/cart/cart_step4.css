@@ -6,6 +6,9 @@
     font-size: 26px;
     font-weight: 200;
 }
+.thead-img{
+    width: 180px;
+}
 .cart-table .cart-products {
     height: 130px;
 }
