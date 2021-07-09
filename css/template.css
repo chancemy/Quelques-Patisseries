@@ -251,6 +251,12 @@ body footer span {
   }
 }
 
+@media (max-width: 430px) {
+  body footer span {
+    font-size: 12px;
+  }
+}
+
 body footer .footer-container {
   height: 100%;
 }

@@ -39,6 +39,10 @@ img {
         height: 16%;
         font-size: 72px;
         color: #4d4d4d;
+        @media (max-width:992px) {
+            font-size: 50px;
+            margin-top: 10px;
+        }
     }
     .bgc-white-block {
         background-color: white;
@@ -169,6 +173,9 @@ img {
         &:first-child {
             border-top-left-radius: 10px;
             border-top-right-radius: 10px;
+        }
+        @media (max-width: 992px){
+            font-size: 20px;
         }
     }
 

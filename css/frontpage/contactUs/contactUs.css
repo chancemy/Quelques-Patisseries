@@ -38,6 +38,13 @@ img {
   color: #4d4d4d;
 }
 
+@media (max-width: 992px) {
+  .contactus-detail .contactus-title {
+    font-size: 50px;
+    margin-top: 10px;
+  }
+}
+
 .contactus-detail .bgc-white-block {
   background-color: white;
   position: absolute;
@@ -82,6 +89,10 @@ img {
 
 .contactus-detail .contactus-img .img-big1 {
   height: 47%;
+  background-image: url(/img/frontpage/contactUs/Customization5.jpg);
+  background-size: cover;
+  background-position: bottom;
+  border-radius: 10px;
 }
 
 @media (max-width: 992px) {
@@ -92,12 +103,16 @@ img {
 
 .contactus-detail .contactus-img .img-big2 {
   height: 47%;
+  background-image: url(/img/frontpage/contactUs/Customization2.jpg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
   margin-left: auto;
 }
 
 @media (max-width: 992px) {
   .contactus-detail .contactus-img .img-big2 {
-    height: 453px;
+    height: 0px;
   }
 }
 
@@ -122,6 +137,12 @@ img {
 .contactus-detail .title-area:first-child {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+}
+
+@media (max-width: 992px) {
+  .contactus-detail .title-area {
+    font-size: 20px;
+  }
 }
 
 .contactus-detail .content p {
@@ -151,16 +172,5 @@ img {
   color: white;
   border-radius: 20px;
   cursor: pointer;
-}
-
-.contactus-detail .time {
-  color: #4d4d4d;
-  font-size: 18px;
-}
-
-@media (max-width: 768px) {
-  .contactus-detail .time {
-    font-size: 14px;
-  }
 }
 /*# sourceMappingURL=contactUs.css.map */

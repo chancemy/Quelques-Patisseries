@@ -106,73 +106,96 @@
             <div class="bgc-white-block"></div>
             <div class="bgc-white-block-down"></div>
             <div class="container-fluid row no-gutters detail-container mx-auto position-relative">
-                
+
                 <div class="col-lg-6 pr-lg-4 d-flex flex-column m-lg-0 mb-4">
                     <div class="w-100 mb-3 contactus-title d-flex align-items-lg-end justify-content-lg-start align-items-center justify-content-center">
-                        客製化外匯
+                        客製化商品
                     </div>
                     <div class="w-100 row no-gutters contactus-img flex-column-reverse flex-lg-row">
-                        <div class="col-lg-11 w-100 img-big1">
-                            <img src="/img/frontpage/contactUs/Customization1.jpg" alt="" style="background-image: ;">
-                        </div>
-                        <div class="col-lg-11 w-100 img-big2">
-                            <img src="/img/frontpage/contactUs/Customization2.jpg" alt="">
-                        </div>
+                        <div class="col-lg-11 w-100 img-big1"></div>
+                        <div class="col-lg-11 w-100 img-big2"></div>
                     </div>
                 </div>
+
+
+                <!-- 卡體 -->
                 <div class="col-lg-6 pl-lg-4 d-flex flex-column m-lg-0 mt-4 position-relative">
-
-                    <div class="contactus-type pb-2">期間限定商品</div>
-                    <div>
-                        <div class="title-area d-flex justify-content-center align-items-center">
-                            NT$ 550 / 盒
-                        </div>
-                        <div class="bgc-yellow-2 p-lg-5 p-4">
-                            <p style="color: #333333;">
-                                2021春節限定禮盒開始預購了唷</p>
-                        </div>
-                        <div class="title-area d-flex justify-content-center align-items-center">
-
-                            內容物
-                        </div>
-                        <div class="bgc-yellow-2 p-lg-5 p-4 content">
-                            <p>
-                                楓糖無花果磅蛋糕切片 1 入</p>
-                            <p>
-                                泰式奶茶瑪德蓮 1 入</p>
-                            <p>
-                                莊園巧克力費南雪（4入一組) 1 組</p>
-                            <p>
-                                青檸橄欖油瑪德蓮 1 入</p>
-                            <p class="pt-2">
-                                *常溫點心皆為蛋奶素</p>
-                        </div>
-                        <div class="bar"></div>
-                        <div class="bgc-yellow-2 p-4 d-flex justify-content-around">
-                            <div class="d-flex"><label for="number-select"></label>
-                                <p class="mr-2">數量</p>
-                                </label>
-                                <div class="select-div">
-                                    <select class="quantity-select" name="quantity" id="number-select">
-                                        <option value="1">1</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
-                                        <option value="4">4</option>
-                                        <option value="5">5</option>
-                                    </select>
-                                </div>
-
-                            </div>
-                            <div class="cart-btn py-1 px-4">
-                                加入購物車 <i class="fas fa-chevron-right"></i>
-
-
-                            </div>
-                        </div>
-                        <div class="time text-right">販售期間 : 22/01/01 ~ 22/02/21</div>
-
-
+                    <div class="title-area d-flex justify-content-center align-items-center">
+                        項目內容
                     </div>
+                    <div class="bgc-yellow-2 p-lg-5 p-4">
+                        <p style="color: #333333;">客製化商品包含外匯、造型聖多諾黑、婚禮禮盒及彌月禮盒。</p>
+                    </div>
+                    <div class="title-area d-flex justify-content-center align-items-center">
+                        聯絡我們
+                    </div>
+                    <!-- 回饋 -->
+                    <!-- <form action="{{ asset('admin/contactus/store') }}" method="POST"
+                        class="introduce-container d-flex bg-white justify-content-end">
+                        @csrf -->
+                    <div class="bgc-yellow-2 p-lg-5 p-4 content">
+                        <!-- 姓名、電話 -->
+                        <div class="row mb-3">
+                            <div class="col-sm-6">
+                                <div class="md-form mb-0">
+                                    <label for="name" class="mb-1">姓名</label>
+                                    <input type="text" id="name" name="name" class="form-control">
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6">
+                                <div class="md-form mb-0">
+                                    <label for="phone" class="mb-1">電話</label>
+                                    <input type="text" id="phone" name="phone" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 填入信箱 -->
+                        <div class="row  mb-3">
+                            <div class="col-md-12">
+                                <div class="md-form mb-0">
+                                    <label for="email" class="mb-1">信箱</label>
+                                    <input type="email" id="email" name="email" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 填入主旨 -->
+                        <div class="row  mb-3">
+                            <div class="col-md-12">
+                                <div class="md-form mb-0">
+                                    <label for="subject" class="mb-1">主旨</label>
+                                    <input type="text" id="subject" name="subject" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--內文-->
+                        <div class="row  mb-3">
+                            <div class="col-md-12">
+                                <div class="md-form">
+                                    <label for="message" class="mb-1">內文</label>
+                                    <textarea type="text" id="message" name="message" rows="4"
+                                        class="form-control md-textarea">
+                                    </textarea>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 送出按鈕 -->
+                        <button type="submit" class="btn btn-primary btn-lg btn-block mb-3"
+                            style=" background-color: #85a596;">
+                            送出
+                        </button>
+
+                        <!-- 提醒 -->
+                        <p class="fs-6"
+                            style="line-height: 1rem; margin-bottom: 0;color: rgb(103,111,123);">
+                            請確認您的聯絡方式是否填寫正確。
+                        </p>
+                    </div>
+                    <!-- </form> -->
                 </div>
             </div>
         </section>
@@ -204,7 +227,6 @@
     <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
 
     <script src="/js/template.js"></script>
-    <script src="/js/frontpage/product_detail.js"></script>
 
 </body>
 

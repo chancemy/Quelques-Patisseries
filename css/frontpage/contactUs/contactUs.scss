@@ -26,6 +26,10 @@ img {
         height: 16%;
         font-size: 72px;
         color: #4d4d4d;
+        @media (max-width:992px) {
+            font-size: 50px;
+            margin-top: 10px;
+        }
     }
     .bgc-white-block {
         background-color: white;
@@ -59,15 +63,23 @@ img {
 
         .img-big1 {
             height: 47%;
+            background-image: url(/img/frontpage/contactUs/Customization5.jpg);
+            background-size: cover;
+            background-position:bottom;
+            border-radius: 10px;
             @media (max-width: 992px) {
                 height: 453px;
             }
         }
         .img-big2 {
             height: 47%;
+            background-image: url(/img/frontpage/contactUs/Customization2.jpg);
+            background-size: cover;
+            background-position:center;
+            border-radius: 10px;
             margin-left: auto;
             @media (max-width: 992px) {
-                height: 453px;
+                height: 0px;
             }
         }
     }
@@ -88,6 +100,9 @@ img {
         &:first-child {
             border-top-left-radius: 10px;
             border-top-right-radius: 10px;
+        }
+        @media (max-width: 992px){
+            font-size: 20px;
         }
     }
 
@@ -118,12 +133,5 @@ img {
         border-radius: 20px;
         cursor: pointer;
     }
-    .time {
-        color: #4d4d4d;
-        font-size: 18px;
-
-        @media (max-width: 768px) {
-            font-size: 14px;
-        }
-    }
+    
 }
