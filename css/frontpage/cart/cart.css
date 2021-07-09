@@ -1,0 +1,35 @@
+img {
+    display: block;
+    object-position: center;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.cart-title {
+    color: white;
+    height: 70px;
+
+    font-size: 26px;
+    font-weight: 200;
+}
+.cart-title:first-child {
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.cart-form{
+    border-radius: 10px;
+    font-size: 18px;
+}
+.cart-bottom {
+    height: 265px;
+    font-size: 18px;
+    padding: 30px 2.5%;
+}
+
+.back-btn {
+    border: #54594d 1px solid;
+}
+.next-btn {
+    background-color: #54594d;
+    color: white;
+}
