@@ -1,29 +1,85 @@
-.input-area {
-  height: 70px;
-  padding: 0 2.5%;
+h1, h2, h3, h4, h5, h6, title-h1, title-h2 {
+  margin: 0;
+  font-family: "Noto Serif JP", "Noto Serif TC";
+  color: #181818;
 }
 
-.input-area input {
-  margin-right: 10px;
+title-h1 {
+  line-height: 134.375px;
 }
 
-.input-area::after {
+title-h2 {
+  line-height: 99.975px;
+}
+
+body .cart-form {
+  background-color: #fffbef;
+  font-size: 19.44px;
+  color: #54594d;
+  border-radius: 8px;
+}
+
+body .cart-form .form-head {
+  height: 90px;
+  background-color: #54594d;
+  font-size: 19.44px;
+  color: #f1f1f1;
+  border-radius: 8px 8px 0px 0px;
+}
+
+body .cart-form .from-content {
+  padding: 22px 68px;
+}
+
+body .cart-form .from-content .input-area {
+  height: 68px;
+}
+
+body .cart-form .from-content .input-area input {
+  margin-right: 32px;
+}
+
+body .cart-form .from-content .input-area input[type=custom] {
+  display: none;
+}
+
+body .cart-form .from-content .input-area input[type=custom] {
+  display: inline-block;
+  background-color: #54594d8f;
+  height: 18px;
+  width: 18px;
+  line-height: 18px;
+  border: 1px solid #929292;
+  border-radius: 50px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  font-size: 0;
+  cursor: pointer;
+}
+
+body .cart-form .from-content .input-area input:active + input:checked + input[type=custom] {
+  background-color: #54594d;
+}
+
+body .cart-form .from-content .input-area::after {
   content: "";
-  width: 95%;
-  height: 1.5px;
-  background-color: #cbcbcb;
+  width: 110%;
+  height: 2px;
+  background-color: #e5e5e5;
   position: absolute;
   bottom: 0%;
-  left: 2.5%;
+  left: -4%;
 }
 
-.input-area:last-child::after {
+body .cart-form .from-content .input-area:last-child::after {
   content: "";
-  width: 95%;
-  height: 1.5px;
-  background-color: transparent;
+  width: 0%;
+  height: 0px;
+  background-color: #e5e5e5;
   position: absolute;
   bottom: 0%;
-  left: 2.5%;
+  left: -4%;
 }
 /*# sourceMappingURL=cart_step2.css.map */

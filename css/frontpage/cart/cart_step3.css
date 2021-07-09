@@ -1,16 +1,57 @@
-input, select {
+input,
+select {
   border: black 1px solid;
   border-radius: 5px;
   padding: 5px 10px;
 }
 
-.input-area:last-child::after {
-  content: "";
-  width: 95%;
-  height: 2px;
-  background-color: transparent;
-  position: absolute;
-  bottom: 0%;
-  left: 2.5%;
+h1, h2, h3, h4, h5, h6, title-h1, title-h2 {
+  margin: 0;
+  font-family: "Noto Serif JP", "Noto Serif TC";
+  color: #181818;
+}
+
+title-h1 {
+  line-height: 134.375px;
+}
+
+title-h2 {
+  line-height: 99.975px;
+}
+
+body .cart-form {
+  background-color: #fffbef;
+  font-size: 19.44px;
+  border-radius: 8px;
+}
+
+body .cart-form .form-head {
+  height: 90px;
+  background-color: #54594d;
+  font-size: 19.44px;
+  color: #f1f1f1;
+  border-radius: 8px 8px 0px 0px;
+}
+
+body .cart-form .from-content {
+  padding: 33px 88px 0px 88px;
+}
+
+body .cart-form .from-content label {
+  margin-bottom: 10px;
+}
+
+body .cart-form .from-content input {
+  margin-bottom: 17px;
+  line-height: 41px;
+  color: #54594d;
+  border: #54594d 1px solid;
+  font-size: 13.8px;
+}
+
+body .cart-form .notice {
+  text-align: center;
+  font-size: 13.8px;
+  padding-bottom: 80px;
 }
 /*# sourceMappingURL=cart_step3.css.map */

@@ -1,27 +1,68 @@
-.input-area {
-    height: 70px;
-    padding: 0 2.5%;
-    input {
-        margin-right: 10px;
+@import "../../CSSstyle/variable";
+
+body {
+    .cart-form {
+        background-color: $bgc-white;
+        font-size: $h4;
+        color: $green-d;
+        border-radius: 8px;
+
+        .form-head {
+            height: 90px;
+            background-color: $green-d;
+            font-size: $h4;
+            color: $gray-xxs;
+            border-radius: 8px 8px 0px 0px;
+        }
+        .from-content {
+            padding: 22px 68px;
+
+            .input-area {
+                height: 68px;
+
+                input {
+                    margin-right: 32px;
+                }
+                
+                input[type=custom] {
+                    display: none;
+                }
+                input[type=custom] {
+                    display: inline-block;
+                    background-color: $green-l;
+                    height: 18px;
+                    width: 18px;
+                    line-height: 18px;
+                    border: 1px solid $gray-s;
+                    border-radius: 50px;
+                    user-select:none;
+                    font-size: 0;
+                    cursor: pointer;
+                }
+
+                input:active + input:checked + input[type=custom] {
+                    background-color: $green-d;
+                }
+            }
+            .input-area::after {
+                content: "";
+                width: 110%;
+                height: 2px;
+                background-color: $gray-xs;
+                position: absolute;
+                bottom: 0%;
+                left: -4%;
+            }
+            .input-area:last-child::after {
+                content: "";
+                width: 0%;
+                height: 0px;
+                background-color: $gray-xs;
+                position: absolute;
+                bottom: 0%;
+                left: -4%;
+            }
+        }
+        
     }
 }
-
-.input-area::after {
-    content: "";
-    width: 95%;
-    height: 1.5px;
-    background-color: #cbcbcb;
-    position: absolute;
-    bottom: 0%;
-    left: 2.5%;
-}
-.input-area:last-child::after {
-    content: "";
-    width: 95%;
-    height: 1.5px;
-    background-color: transparent;
-    position: absolute;
-    bottom: 0%;
-    left: 2.5%;
-}
-
