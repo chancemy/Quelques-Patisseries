@@ -11,6 +11,9 @@ body{
             height: 12vw;
             z-index: -1;
             background-color: #F4F3EF;
+            @media (max-width:768px) {
+                height: 21.56vw;
+            }
             .white-div{
                 position: absolute;
                 bottom: 0;
@@ -18,17 +21,33 @@ body{
                 width: 77.4vw;
                 height: 7.7625vw;
                 background-color: #FFFBEF;
+                @media (max-width:768px) {
+                    width: 52.67%;
+                    height: 13vw;
+
+                }
             }
         }
         .block-a{
             // background-color: #E6E3E0;
             margin-top: 108px;
+            @media (max-width:768px) {
+               margin-top: 80px;
+            }
             .news{
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 margin-top: 5.73vw;
                 margin-bottom: 5.72vw;
+                font-size: 10.416vw;
+                line-height: 10.416vw;
+                @media (max-width:768px) {
+                    font-size: 17.39vw;
+                    line-height: 17.39vw;
+                    margin-top: 4.35vw;
+                    margin-bottom: 3.82vw;
+                }
             }
             .news-type{
                 width: 100%;
@@ -37,44 +56,73 @@ body{
                 flex-wrap: wrap;
                 justify-content: center;
                 align-content: center;
-                .type{
-                    width: 105px;
-                    font-size: 17px;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    // margin: 0 auto 10px;
-                    margin: 32px auto  ;                
+                @media (max-width:768px) {
+                    height: unset;                    
+                }
+                .type-frame{
+                    @media (max-width:768px) {
+                        width: 100%;
+                        height: 100%;
+                        text-align: center;
+                    }
+                    .type{
+                        width: 105px;
+                        font-size: 17px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        // margin: 0 auto 10px;
+                        margin: 32px auto ;
+                        color: #42210B;                    
+                        @media (max-width:768px) {
+                            display: inline;
+                            font-size: 14px;
+                            &.border-checked{
+                                border-bottom: 2px solid #42210b;
+                            }
+                        }
+                                        
+                    }
                 }
                 
                 .type::before{
                     content:'';
                     display: inline-block; 
                     margin-right: 1.3125rem;               
-                    width: 1rem;
-                    height: 1rem;
+                    width: 15px;
+                    height: 15px;
                     border-radius: 50%;
                     border: #42210B solid 0.33rem;
+                    @media (max-width:768px) {
+                        display: none;
+                    } 
                 }
                 .checked::before{
                     content:'';
                     display: inline-block; 
                     margin-right: 1.3125rem;               
-                    width: 1rem;
-                    height: 1rem;
+                    width: 15px;
+                    height: 15px;
                     border-radius: 50%;
                     background-color: #42210B;
+                    @media (max-width:768px) {
+                        display: none;
+                    }
                 }
                 
             }
             .swiper-frame{
                 .swiper-container {
                     width: 100%;
+                    @media (max-width:768px) {
+                        width: 67%;
+                        margin: 8.68vw auto 0;
+                    }
                     .swiper-slide{
                         // background-color: yellow;
                         margin-top: 20px;
                         .news-frame{
-                            width: 100%;
+                            width: 100%;                            
                             .line-frame{
                                 width: 100%;
                                 padding-bottom: 87.6%;
@@ -101,32 +149,44 @@ body{
                                     }
                                     .type{
                                         padding-bottom: 7.36%;
-                                        font-size: 1.0875rem;
+                                        font-size: 0.9vw;
                                         color: #42210B;
                                     }
                                     .title{
                                         width: 100%;
+                                        font-size: 1.3vw;
                                         padding-bottom: 10%;
                                         color: black;
                                     }
                                     .content{
                                         width: 100%;
                                         // height: 57%;
-                                        font-size: 1.0875rem;
+                                        font-size: 0.9vw;
                                         color: black;
                                         overflow: hidden;  
                                         display: -webkit-inline-box;                                      
                                         -webkit-line-clamp: 4;
                                         -webkit-box-orient: vertical;
                                         text-overflow: ellipsis;
-                                        @media (max-width:1366px){
-                                            font-size: 1rem;
-                                            -webkit-line-clamp: 3;
-                                        }
+                                        
                                         @media (max-width:1200px){
                                             font-size: 0.875rem;
+                                            -webkit-line-clamp: 3;
+                                        }
+                                        @media (max-width:1050px){
+                                            font-size: 0.875rem;
+                                            -webkit-line-clamp: 3;
+                                        }
+                                        @media (max-width:900px){
+                                            font-size: 0.875rem;
                                             -webkit-line-clamp: 2;
-                                        }                                       
+                                        }
+                                        @media (max-width:876px){
+                                            display: none;;
+                                        }
+                                        @media (max-width:768px){
+                                            display: block;
+                                        }                                        
                                     }
                                 }
                                 .photo{
@@ -158,21 +218,24 @@ body{
                                     display:inline-block;
                                     position: absolute;
                                     top: -20px;
-                                    left: 50%;
-                                    font-size: 2.125rem;
-                                    line-height: 40px;
+                                    left: 50%;;
                                     transform: translate(-50%,0);
                                     background-color: #E6E3E0;
                                     display: flex;
                                     justify-content: center;
                                     align-content: center;
-                                    .month-text{
-                                        font-size: 2.125rem;
+                                    .month-text{                                        
+                                        font-size: 1.77vw;
+                                        font-weight: 600;
+                                        line-height: 1.77vw;
                                         display: flex;
                                         justify-content: center;
                                         align-items: center;
                                     }
-                                    .date-text{
+                                    .date-text{                                        
+                                        font-size: 1.77vw;
+                                        font-weight: 600;
+                                        line-height: 1.77vw;
                                         margin-left: 1rem;
                                         display: flex;
                                         justify-content: center;
@@ -189,7 +252,7 @@ body{
                                 }
                                 .right{
                                     position: absolute;
-                                    top: 0;
+                                    top: 1.0416vw;
                                     right: 0;
                                     width: 5.3px;
                                     height: 91.6%;
@@ -197,7 +260,7 @@ body{
                                 }
                                 .left{
                                     position: absolute;
-                                    top: 0;
+                                    top: 1.0416vw;
                                     left: 0;
                                     width: 5.3px;
                                     height: 91.6%;
@@ -213,6 +276,7 @@ body{
                                 }
                             }
                         }
+                        
                     }
                 }
                 .pagination{
@@ -235,8 +299,8 @@ body{
                             justify-content: center;
                             align-items: center;
                             margin-left: 1.5rem;
-                            border: 1px solid #42210B; 
-                                                    
+                            border: 0px solid #42210B;
+                            cursor: pointer;               
                         }
                     }
                 }
