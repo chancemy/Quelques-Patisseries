@@ -16,24 +16,17 @@
   //pad Size
   @media (min-width: 768px) {
     $h6: 14px;
-    $h1: $h6 * 4.5;
-      $h2: $h6 * 3.75; 
-      $h3: $h6 * 2.25; 
-      $h4: $h6 * 1.62; 
-      $h5: $h6 * 1.15;
     $title-size: 14px;
-    $font-family: "Noto Serif JP", "Noto Serif TC";
-
     }
   
   //Table Size
   @media (min-width: 992px) {  
       $h6: 16px;
       $h1: $h6 * 4.5;
-      $h2: $h6 * 3.75; 
-      $h3: $h6 * 2.25; 
-      $h4: $h6 * 1.62; 
-      $h5: $h6 * 1.15;
+    $h2: $h6 * 3.75; 
+    $h3: $h6 * 2.25; 
+    $h4: $h6 * 1.62; 
+    $h5: $h6 * 1.15;
       $title-size: 16px;
       $line-hight: 16px;
       $font-family: "Noto Serif JP", "Noto Serif TC";

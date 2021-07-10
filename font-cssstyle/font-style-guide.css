@@ -1,0 +1,68 @@
+:root {
+  --font-color: rgb(36, 36, 36);
+  --font-size: 12px;
+  --title-size: 10.75px;
+  --line-hight: 10.75px;
+  --font-family: "Noto Serif TC", serif;
+  --text: 'Mobile Size!'
+  ;
+}
+
+@media (min-width: 768px) {
+  :root {
+    --font-color: rgb(36, 36, 36);
+    --font-size: 14px;
+    --title-size: 14px;
+    --line-hight: 14px;
+    --font-family: "Noto Serif TC", serif;
+    --text: 'Table Size!'
+    ;
+  }
+}
+
+@media (min-width: 992px) {
+  :root {
+    --font-color: rgb(36, 36, 36);
+    --font-size: 16px;
+    --title-size: 16px;
+    --line-hight: 16px;
+    --font-family: "Noto Serif TC", serif;
+    --text: 'Table Size!'
+    ;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  color: var(--font-color);
+  font-family: var(--font-family);
+}
+
+h1 {
+  font-size: calc(var(--font-size) * 4.5);
+}
+
+h2 {
+  font-size: calc(var(--font-size) * 3.75);
+}
+
+h3 {
+  font-size: calc(var(--font-size) * 2.25);
+}
+
+h4 {
+  font-size: calc(var(--font-size) * 1.62);
+}
+
+title-h1 {
+  font-size: calc(var(--title-size) * 12.5);
+  line-height: calc(var(--line-hight)*11);
+  font-family: var(--font-family);
+}
+
+title-h2 {
+  font-size: calc(var(--title-size) * 9.3);
+  line-height: calc(var(--line-hight)*9.3);
+  font-family: var(--font-family);
+}
+/*# sourceMappingURL=font-style-guide.css.map */

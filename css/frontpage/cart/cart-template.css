@@ -12,26 +12,18 @@ title-h2 {
   line-height: 99.975px;
 }
 
-body img {
-  display: block;
-  -o-object-position: center;
-     object-position: center;
-  -o-object-fit: cover;
-     object-fit: cover;
-  width: 100%;
-  height: 100%;
-}
-
 body nav {
   background-color: #f4f3ef;
 }
 
 body nav .logo {
   position: absolute;
-  left: 40px;
+  left: 30px;
   top: 50%;
   width: 88px;
   height: 88px;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
 }
 
 @media (max-width: 576px) {
@@ -74,7 +66,7 @@ body main .progress-style .quarter-round .round {
   position: relative;
 }
 
-body main .progress-style .quarter-round .round .qr-circle-style {
+body main .progress-style .quarter-round .round .roundcircle-style {
   width: 69.5px;
   height: 69.5px;
   background-color: #e5e5e5;
@@ -88,7 +80,7 @@ body main .progress-style .quarter-round .round .qr-circle-style {
   line-height: 60px;
 }
 
-body main .progress-style .quarter-round .round .qr-circle-style::before {
+body main .progress-style .quarter-round .round .roundcircle-style::before {
   width: 75%;
   height: 4px;
   background-color: #54594d8f;
@@ -99,10 +91,10 @@ body main .progress-style .quarter-round .round .qr-circle-style::before {
   top: 50%;
 }
 
-body main .progress-style .quarter-round .round .qr-circle-no-line {
+body main .progress-style .quarter-round .round .roundcircle-style-line {
   width: 69.5px;
   height: 69.5px;
-  background-color: #4d4d4d;
+  background-color: #e5e5e5;
   border-radius: 50%;
   border-color: #929292;
   border-width: 2px;
@@ -113,18 +105,14 @@ body main .progress-style .quarter-round .round .qr-circle-no-line {
   line-height: 60px;
 }
 
-body main .progress-style .quarter-round .round .qr-line {
-  content: "";
-}
-
-body main .progress-style .quarter-round .round .qr-line::after {
+body main .progress-style .quarter-round .round .roundcircle-style-line::before {
   width: 75%;
   height: 4px;
+  background-color: #54594d8f;
   border-radius: 30px;
-  background-color: #54594d;
   content: "";
   position: absolute;
-  left: 107%;
+  left: 108%;
   top: 50%;
 }
 
@@ -134,9 +122,13 @@ body main .progress-style .quarter-round .round .round-active {
   border-color: #54594d;
 }
 
+body main .progress-style .quarter-round .round .active {
+  color: #54594d;
+}
+
 @media (max-width: 770px) {
-  body main .progress-style .quarter-round .round .qr-circle-style,
-  body main .progress-style .quarter-round .round .qr-circle-no-line {
+  body main .progress-style .quarter-round .round .roundcircle-style,
+  body main .progress-style .quarter-round .round .roundcircle-style-line {
     width: 46px;
     height: 46px;
     font-size: 19.44px;
@@ -148,10 +140,6 @@ body main .progress-style .round-text {
   color: #54594d8f;
   font-size: 19.44px;
   padding: 0px 3%;
-}
-
-body main .progress-style .active {
-  color: #54594d;
 }
 
 body main .progress-style .mr_1 {
@@ -203,7 +191,7 @@ body main .main-down .cart-table {
   font-size: 13.8px;
   color: #181818;
   text-align: center;
-  border-radius: 8px 8px 0px 0px;
+  border-radius: 8px 0px 0px 8px;
 }
 
 body main .main-down .cart-table .table-head {
@@ -220,6 +208,16 @@ body main .main-down .cart-table .table-bottom {
   padding: 30px 2.5%;
 }
 
+body main .main-down .cart-table tr::after {
+  content: "";
+  width: 68%;
+  height: 1.5px;
+  background-color: #929292;
+  position: absolute;
+  bottom: 30px;
+  left: 16%;
+}
+
 body main .main-down .cart-table .cart-products {
   height: 130px;
   position: relative;
@@ -228,7 +226,7 @@ body main .main-down .cart-table .cart-products {
 body main .main-down .cart-count {
   height: 244px;
   font-size: 13.8px;
-  color: #54594d;
+  color: #181818;
   background-color: #fffbef;
   padding: 28px 38px;
 }
@@ -252,31 +250,12 @@ body main .main-down .cart-count .count-up::after {
   right: 18%;
 }
 
-body main .main-down .form-middle {
-  height: 68px;
-  background-color: #54594d;
-  font-size: 19.44px;
-  color: #f1f1f1;
-}
-
-body main .main-down .from-bottom {
-  height: 68px;
-  background-color: #54594d;
-  border-radius: 0px 0px 8px 8px;
-}
-
-body main .main-down .btn-pd {
-  margin: 35px 33px 85px 33px;
-}
-
-body main .main-down .btn-pd .back-btn {
+body main .main-down .back-btn {
   border: #54594d 1px solid;
-  padding: 12px 15px;
 }
 
-body main .main-down .btn-pd .next-btn {
+body main .main-down .next-btn {
   background-color: #54594d;
   color: #f1f1f1;
-  padding: 12px 15px;
 }
 /*# sourceMappingURL=cart-template.css.map */

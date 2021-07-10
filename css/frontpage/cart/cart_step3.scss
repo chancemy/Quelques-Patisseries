@@ -1,45 +1,14 @@
-input,
-select {
-    border: black 1px solid;
-    border-radius: 5px;
-    padding: 5px 10px;
-}
+input,select{
+border: black 1px solid;
+border-radius: 5px;
+padding: 5px 10px;}
 
-@import "../../CSSstyle/variable";
-
-body {
-    .cart-form {
-        background-color: $bgc-white;
-        font-size: $h4;
-        border-radius: 8px;
-
-        .form-head {
-            height: 90px;
-            background-color: $green-d;
-            font-size: $h4;
-            color: $gray-xxs;
-            border-radius: 8px 8px 0px 0px;
-        }
-        .from-content {
-            padding: 33px 88px 0px 88px;
-
-            label {
-                margin-bottom: 10px;
-            }
-
-            input {
-                margin-bottom: 17px;
-                line-height: 41px;
-                color: $green-d;
-                border: $green-d 1px solid;
-                font-size: $h5;
-            }
-        }
-
-        .notice {
-            text-align: center;
-            font-size: $h5;
-            padding-bottom: 80px;
-        }
-    }
+.input-area:last-child::after {
+    content: "";
+    width: 95%;
+    height: 2px;
+    background-color: transparent;
+    position: absolute;
+    bottom: 0%;
+    left: 2.5%;
 }
