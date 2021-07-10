@@ -1,18 +1,29 @@
 @import "../../CSSstyle/variable";
 
 body {
-    .main-down {
+    .cart-form {
+        background-color: $bgc-white;
+        font-size: $h4;
+        border-radius: 8px;
+
+        .form-head {
+            height: 90px;
+            background-color: $green-d;
+            font-size: $h4;
+            color: $gray-xxs;
+            border-radius: 8px 8px 0px 0px;
+        }
+
         .cart-table {
             color: $bgc-white;
-            border-bottom: $gray-xs;
 
-            thead {
-                height: 55px;
+            .table-head {
+                height: 70px;
                 font-size: $h5;
                 background-color: $bgc-white;
                 border-bottom: $gray-xs;
                 border-bottom: solid;
-                border-width: 1px;
+                border-width: 2px;
             }
         }
 
@@ -28,17 +39,8 @@ body {
 
             tr::after {
                 content: "";
-                width: 95%;
+                width: 65%;
                 height: 2px;
-                background-color: $gray-xs;
-                position: absolute;
-                bottom: 9%;
-                left: 3%;
-            }
-            tr:last-child::after {
-                content: "";
-                width: 0;
-                height: 0;
                 background-color: $gray-xs;
                 position: absolute;
                 bottom: 9%;
